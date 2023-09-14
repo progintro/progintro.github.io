@@ -38,7 +38,7 @@
 
 ## Πρόγραμμα Διαλέξεων
 
-Πρόσθεσέ το [https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmJxaXJqbGh1cm1ldm9tcTNxdW5qcmhtb2tfMjAyMzEwMDJUMDYwMDAwWiB0aGFuYXNzaXNAdW9hLmdy&tmsrc=thanassis%40uoa.gr&scp=ALL](στο calendar εδώ) ώστε να ακολουθείς της αλλαγές.
+Πρόσθεσέ το [https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmJxaXJqbGh1cm1ldm9tcTNxdW5qcmhtb2tfMjAyMzEwMDJUMDYwMDAwWiB0aGFuYXNzaXNAdW9hLmdy&tmsrc=thanassis%40uoa.gr&scp=ALL](στο calendar εδώ) ώστε να ακολουθείς τις αλλαγές.
 
 * Διαλέξεις: Δευτέρα και Παρασκευή 09:00-11:00 (Αμφιθέατρο)
 * Αναπλήρωση Διαλέξεων: Τρίτη ή Πέμπτη 09:00-11:00 όταν κρίνεται απαραίτητο
