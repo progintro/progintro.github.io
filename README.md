@@ -7,7 +7,6 @@
 
 Πρόσθεσέ το [στο calendar εδώ](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmJxaXJqbGh1cm1ldm9tcTNxdW5qcmhtb2tfMjAyMzEwMDJUMDYwMDAwWiB0aGFuYXNzaXNAdW9hLmdy&tmsrc=thanassis%40uoa.gr&scp=ALL) ώστε να ακολουθείς τις αλλαγές.
 
-* Αναπλήρωση Διαλέξεων: Τρίτη ή Πέμπτη 09:00-11:00 όταν κρίνεται απαραίτητο
 * Ώρες Γραφείου: Δευτέρα και Παρασκευή 11:00-13:00 (Α40)
 
 ## Εργασίες
