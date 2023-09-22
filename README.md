@@ -2,7 +2,8 @@
 
 ## Διαλέξεις
 
-* Δευτέρα και Παρασκευή 09:00-11:00 @ Αμφιθέατρο (Πρόσθεσε [στο calendar σου εδώ](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmJxaXJqbGh1cm1ldm9tcTNxdW5qcmhtb2tfMjAyMzEwMDJUMDYwMDAwWiB0aGFuYXNzaXNAdW9hLmdy&tmsrc=thanassis%40uoa.gr&scp=ALL - απαιτεί λογαριασμό sdi).
+* Δευτέρα και Παρασκευή 09:00-11:00 @ Αμφιθέατρο
+  * Πρόσθεσε το [στο calendar σου εδώ](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmJxaXJqbGh1cm1ldm9tcTNxdW5qcmhtb2tfMjAyMzEwMDJUMDYwMDAwWiB0aGFuYXNzaXNAdW9hLmdy&tmsrc=thanassis%40uoa.gr&scp=ALL) - απαιτεί λογαριασμό sdi.
 * Ώρες Γραφείου: Δευτέρα και Παρασκευή 11:00-13:00 @ Α40
 
 ## Εργασίες
@@ -10,6 +11,9 @@
 * Εργασία 1η. Ημερομηνία παράδοσης: 31/10/2023
 
 ## Υλικό Μαθήματος
+
+* [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
+* [Σημειώσεις από τον κ. Σταματόπουλο](resources/K04.pdf) - το υλικό που καλύπτουμε στις διαλέξεις
 
 | Ημερομηνία | Περιεχόμενο Μαθήματος |
 | --- | --- |
