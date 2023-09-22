@@ -1,6 +1,6 @@
 remote_theme: pages-themes/minimal@v0.2.0
 title: progintro @ dit
-logo: /assets/img/logo.png
+logo: /assets/img/logo.jpg
 description: 
 plugins:
   - jekyll-remote-theme
