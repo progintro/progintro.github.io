@@ -3,21 +3,27 @@
 ## Διαλέξεις
 
 * Δευτέρα και Παρασκευή 09:00-11:00 @ Αμφιθέατρο
-  * Πρόσθεσε το [στο calendar σου εδώ](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmJxaXJqbGh1cm1ldm9tcTNxdW5qcmhtb2tfMjAyMzEwMDJUMDYwMDAwWiB0aGFuYXNzaXNAdW9hLmdy&tmsrc=thanassis%40uoa.gr&scp=ALL) - απαιτεί λογαριασμό sdi.
-* Ώρες Γραφείου: Δευτέρα και Παρασκευή 11:00-13:00 @ Α40
+  * Πρόσθεσε το [στο google calendar εδώ](https://calendar.google.com/calendar/u/3?cid=Y182MTg0NDNiZDA4YWJiOGJkOWI0MjZiNWEwZWZmZmUzMjQ2NGYyM2M1NmFmODJiMDZiMTFhZjY1YWE0MDI5NDAwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) - απαιτεί λογαριασμό sdi.
+* Ώρες Γραφείου: Δευτέρα 11:00-13:00 @ Α40 και Παρασκευή 11:00-13:00 @ Α3
 
 ## Εργασίες
 
-* Εργασία 1η. Ημερομηνία παράδοσης: 31/10/2023
+* Εργασία 1η. Ημερομηνία παράδοσης: 09/11/2023
 
 ## Υλικό Μαθήματος
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
 * [Σημειώσεις από τον καθηγητή Παναγιώτη Σταματόπουλο](/resources/K04.pdf)
 
-[//]: # ( | Ημερομηνία | Περιεχόμενο Μαθήματος | )
-[//]: # ( | --- | --- | )
-[//]: # ( | 02/10 | Διάλεξη 0: Καλημέρα Κόσμε! | )
+## Συγγράμματα
+
+1. C: Από τη Θεωρία στην Εφαρμογή, Γ. Σ. Τσελίκης - Ν. Δ. Τσελίκας [[Link]](https://service.eudoxus.gr/search/#a/id:68383623:/0)
+2. Η Γλώσσα C Σε Βάθος, Νίκος Μ. Χατζηγιαννάκης [[Link]](https://service.eudoxus.gr/search/#a/id:68384925/0)
+3. Εισαγωγή στον Προγραμματισμό με την C, Μισυρλής ΝΙκόλαος [[Link]](https://service.eudoxus.gr/search/#a/id:112694609/0)
+4. Η Γλώσσα Προγραμματισμού C, Brian W. Kerninghan, Dennis M. Ritchie [[Link]](https://service.eudoxus.gr/search/#a/id:13956/0)
+5. Αρχές και τεχνικές προγραμματισμού με τη γλώσσα C, Hanly Jeri R., Koffman Elliot B. (Συγγρ.) - Καρα
+Βράκας Δημήτρης, Κυριαζής Δημοσθένης (Επιμ.) [[Link]](https://service.eudoxus.gr/search/#a/id:102071593/0)
+6. Μαθαίνετε εύκολα C, Καρολίδης Δημήτριος Α. [[Link]](https://service.eudoxus.gr/search/#a/id:102075247/0)
 
 ## Άλλοι Σύνδεσμοι
 
@@ -77,4 +83,4 @@
 
 ### Ευχαριστίες
 
-Θερμές ευχαριστίες στον [Παναγιώτη Σταματόπουλο](di.uoa.gr/~takis) και τον Στέφανο Σταμάτη χωρίς τους οποίους το μάθημα θα ήταν αδύνατο να στηθεί.
+Θερμές ευχαριστίες στον [Παναγιώτη Σταματόπουλο](di.uoa.gr/~takis) και τον [Στέφανο Σταμάτη](https://telekpa.uoa.gr/personalrec.php?lang=el&rid=7474) χωρίς τους οποίους το μάθημα θα ήταν αδύνατο να στηθεί.
