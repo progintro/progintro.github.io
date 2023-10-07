@@ -67,6 +67,7 @@
 
 ## Άλλοι Σύνδεσμοι
 
+* [Unix Tutorial από τον καθηγητή Παναγιώτη Σταματόπουλο](/resources/Unix.pdf)
 * [Οδηγίες εγκατάστασης VS Code από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/)
 * [Οδηγός Σπουδών για το μάθημα](https://www.di.uoa.gr/studies/undergraduate/courses/k04)
 
