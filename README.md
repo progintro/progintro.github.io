@@ -52,6 +52,7 @@
     | --- | --- | --- |
     | 02/10 | Διάλεξη 0: Καλημέρα Κόσμε! | [pdf](/resources/lec00.pdf) |
     | 06/10 | Διάλεξη 1: Γραμμή Εντολών, Πρόγραμματα και Μεταγλώττιση | [pdf](/resources/lec01.pdf) |
+    | 13/10 | Διάλεξη 2: Συναρτήσεις και Version Control | [pdf](/resources/lec02.pdf) |
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
 * [Σημειώσεις](/resources/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
