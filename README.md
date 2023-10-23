@@ -42,6 +42,7 @@
 
 * [Φυλλάδιο 1](/resources/lab01.pdf)
 * [Φυλλάδιο 2](/resources/lab02.pdf)
+* [Φυλλάδιο 3](/resources/lab03.pdf)
 
 
 ## Υλικό Μαθήματος
