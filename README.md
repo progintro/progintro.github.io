@@ -56,6 +56,7 @@
     | 13/10 | Διάλεξη 2: Συναρτήσεις και Version Control | [pdf](/resources/lec02.pdf) |
     | 18/10 | Διάλεξη 3: Μνήμη και Μεταβλητές | [pdf](/resources/lec03.pdf) |
     | 20/10 | Διάλεξη 4: Τελεστές | [pdf](/resources/lec04.pdf) |
+    | 23/10 | Διάλεξη 5: Εντολές και Ροή Ελέγχου | [pdf](/resources/lec05.pdf) |
 
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
