@@ -144,80 +144,63 @@
 
 ## Βιβλιοθήκη Προγραμμάτων
 
-<details>
-  <summary>Hello World (printf)</summary>
+1. Hello World (printf)
 
-  ###
+```c
+ /* File: helloworld.c */
+#include <stdio.h>
+int main() {
+  printf("Hello world\n");
+  return 0;
+}
+```
 
-  ```c
-   /* File: helloworld.c */
-  #include <stdio.h>
-  int main() {
-    printf("Hello world\n");
-    return 0;
+2. Υπολογισμός βαθμολογίας (argc, argv)
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// Compute grades using the class formula
+int grade(int final_exam, int homework, int lab) {
+  return final_exam * 50 / 100 + homework * 30 / 100 + lab * 20 / 100;
+}
+
+int main(int argc, char **argv) {
+  if (argc != 4) {
+    printf("Program needs to be called as `./prog final_exam homework lab`\n");
+    return 1;
   }
-  ```
+  int final_exam = atoi(argv[1]);
+  int homework = atoi(argv[2]);
+  int lab = atoi(argv[3]);
+  printf("Grade: %d\n", grade(final_exam, homework, lab));
+  return 0;
+}
+```
+3. Παραγοντικό/Factorial (αναδρομή/recursion)
 
-</details>
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
-<details>
-  <summary>Υπολογισμός βαθμολογίας (argc, argv)</summary>
-
-  ###
-
-  ```c
-  #include <stdio.h>
-  #include <stdlib.h>
-
-  // Compute grades using the class formula
-  int grade(int final_exam, int homework, int lab) {
-    return final_exam * 50 / 100 + homework * 30 / 100 + lab * 20 / 100;
+// Compute the factorial of a number using the recursive
+// formula.
+int factorial(int number) {
+  if (number == 0) {
+    return 1;
+  } else {
+    return number * factorial(number - 1);
   }
+}
 
-  int main(int argc, char **argv) {
-    if (argc != 4) {
-      printf("Program needs to be called as `./prog final_exam homework lab`\n");
-      return 1;
-    }
-    int final_exam = atoi(argv[1]);
-    int homework = atoi(argv[2]);
-    int lab = atoi(argv[3]);
-    printf("Grade: %d\n", grade(final_exam, homework, lab));
-    return 0;
+int main(int argc, char **argv) {
+  if (argc != 2) {
+    printf("Program needs to be called as `./prog number`\n");
+    return 1;
   }
-  ```
-
-</details>
-
-<details>
-  <summary>Παραγοντικό/Factorial (αναδρομή/recursion)</summary>
-
-  ###
-
-  ```c
-  #include <stdio.h>
-  #include <stdlib.h>
-
-  // Compute the factorial of a number using the recursive
-  // formula.
-  int factorial(int number) {
-    if (number == 0) {
-      return 1;
-    } else {
-      return number * factorial(number - 1);
-    }
-  }
-
-  int main(int argc, char **argv) {
-    if (argc != 2) {
-      printf("Program needs to be called as `./prog number`\n");
-      return 1;
-    }
-    int number = atoi(argv[1]);
-    printf("%d! = %d\n", number, factorial(number));
-    return 0;
-  }
-  ```
-
-</details>
-
+  int number = atoi(argv[1]);
+  printf("%d! = %d\n", number, factorial(number));
+  return 0;
+}
+```
