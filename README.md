@@ -70,8 +70,9 @@
 ## Βιβλιοθήκη Προγραμμάτων
 
 <details>
-<summary>Hello World</summary>
- ```c
+<summary>Hello World (printf)</summary>
+
+```c
  /* File: helloworld.c */
 #include <stdio.h>
 int main() {
@@ -79,6 +80,36 @@ int main() {
   return 0;
 }
 ```
+
+</details>
+
+<details>
+<summary>Υπολογισμός βαθμολογίας (argc, argv)</summary>
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// Compute grades using the class formula
+int grade(int final_exam, int homework, int lab) {
+  return final_exam * 50 / 100 + homework * 30 / 100 + lab * 20 / 100;
+}
+
+int main(int argc, char **argv) {
+  if (argc != 4) {
+    printf("Program needs to be called as `./prog final_exam homework lab`\n");
+    return 1;
+  }
+	 float foo;
+	 double bar;
+  int final_exam = atoi(argv[1]);
+  int homework = atoi(argv[2]);
+  int lab = atoi(argv[3]);
+  printf("Grade: %d\n", grade(final_exam, homework, lab));
+  return 0;
+}
+```
+
 </details>
 
 ## Συγγράμματα
