@@ -67,51 +67,6 @@
 
 1. [Εργασία 0](/resources/hw0.pdf). Προθεσμία: 08/11/2023, 23:59.
 
-## Βιβλιοθήκη Προγραμμάτων
-
-<details>
-<summary>Hello World (printf)</summary>
-
-```c
- /* File: helloworld.c */
-#include <stdio.h>
-int main() {
-  printf("Hello world\n");
-  return 0;
-}
-```
-
-</details>
-
-<details>
-<summary>Υπολογισμός βαθμολογίας (argc, argv)</summary>
-
-```c
-#include <stdio.h>
-#include <stdlib.h>
-
-// Compute grades using the class formula
-int grade(int final_exam, int homework, int lab) {
-  return final_exam * 50 / 100 + homework * 30 / 100 + lab * 20 / 100;
-}
-
-int main(int argc, char **argv) {
-  if (argc != 4) {
-    printf("Program needs to be called as `./prog final_exam homework lab`\n");
-    return 1;
-  }
-	 float foo;
-	 double bar;
-  int final_exam = atoi(argv[1]);
-  int homework = atoi(argv[2]);
-  int lab = atoi(argv[3]);
-  printf("Grade: %d\n", grade(final_exam, homework, lab));
-  return 0;
-}
-```
-
-</details>
-
 ## Συγγράμματα
 
 1. C: Από τη Θεωρία στην Εφαρμογή, Γ. Σ. Τσελίκης - Ν. Δ. Τσελίκας [[Link]](https://service.eudoxus.gr/search/#a/id:68383623:/0)
@@ -185,3 +140,78 @@ int main(int argc, char **argv) {
 ### Ευχαριστίες
 
 Θερμές ευχαριστίες στον [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/) και τον [Στέφανο Σταμάτη](https://telekpa.uoa.gr/personalrec.php?lang=el&rid=7474) χωρίς τους οποίους το μάθημα θα ήταν αδύνατο να στηθεί.
+
+
+## Βιβλιοθήκη Προγραμμάτων
+
+<details>
+  <summary>Hello World (printf)</summary>
+
+  ```c
+   /* File: helloworld.c */
+  #include <stdio.h>
+  int main() {
+    printf("Hello world\n");
+    return 0;
+  }
+  ```
+
+</details>
+
+<details>
+  <summary>Υπολογισμός βαθμολογίας (argc, argv)</summary>
+
+  ```c
+  #include <stdio.h>
+  #include <stdlib.h>
+
+  // Compute grades using the class formula
+  int grade(int final_exam, int homework, int lab) {
+    return final_exam * 50 / 100 + homework * 30 / 100 + lab * 20 / 100;
+  }
+
+  int main(int argc, char **argv) {
+    if (argc != 4) {
+      printf("Program needs to be called as `./prog final_exam homework lab`\n");
+      return 1;
+    }
+    int final_exam = atoi(argv[1]);
+    int homework = atoi(argv[2]);
+    int lab = atoi(argv[3]);
+    printf("Grade: %d\n", grade(final_exam, homework, lab));
+    return 0;
+  }
+  ```
+
+</details>
+
+<details>
+  <summary>Παραγοντικό/Factorial (αναδρομή/recursion)</summary>
+
+  ```c
+  #include <stdio.h>
+  #include <stdlib.h>
+
+  // Compute the factorial of a number using the recursive
+  // formula.
+  int factorial(int number) {
+    if (number == 0) {
+      return 1;
+    } else {
+      return number * factorial(number - 1);
+    }
+  }
+
+  int main(int argc, char **argv) {
+    if (argc != 2) {
+      printf("Program needs to be called as `./prog number`\n");
+      return 1;
+    }
+    int number = atoi(argv[1]);
+    printf("%d! = %d\n", number, factorial(number));
+    return 0;
+  }
+  ```
+
+</details>
+
