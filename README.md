@@ -147,6 +147,8 @@
 <details>
   <summary>Hello World (printf)</summary>
 
+  ###
+
   ```c
    /* File: helloworld.c */
   #include <stdio.h>
@@ -160,6 +162,8 @@
 
 <details>
   <summary>Υπολογισμός βαθμολογίας (argc, argv)</summary>
+
+  ###
 
   ```c
   #include <stdio.h>
@@ -187,6 +191,8 @@
 
 <details>
   <summary>Παραγοντικό/Factorial (αναδρομή/recursion)</summary>
+
+  ###
 
   ```c
   #include <stdio.h>
