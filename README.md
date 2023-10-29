@@ -67,6 +67,20 @@
 
 1. [Εργασία 0](/resources/hw0.pdf). Προθεσμία: 08/11/2023, 23:59.
 
+## Βιβλιοθήκη Προγραμμάτων
+
+<details>
+<summary>Hello World</summary>
+ ```c
+ /* File: helloworld.c */
+#include <stdio.h>
+int main() {
+  printf("Hello world\n");
+  return 0;
+}
+```
+</details>
+
 ## Συγγράμματα
 
 1. C: Από τη Θεωρία στην Εφαρμογή, Γ. Σ. Τσελίκης - Ν. Δ. Τσελίκας [[Link]](https://service.eudoxus.gr/search/#a/id:68383623:/0)
