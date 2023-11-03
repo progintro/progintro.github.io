@@ -60,7 +60,8 @@
     | 20/10 | Διάλεξη 4: Τελεστές | [pdf](/resources/lec04.pdf) |
     | 23/10 | Διάλεξη 5: Εντολές και Ροή Ελέγχου | [pdf](/resources/lec05.pdf) |
     | 27/10 | Διάλεξη 6: Επίλυση Προβλημάτων | [pdf](/resources/lec06.pdf) |
-    | 27/10 | Διάλεξη 7: Δομές Ελέγχου #2 | [pdf](/resources/lec07.pdf) |
+    | 30/10 | Διάλεξη 7: Δομές Ελέγχου #2 | [pdf](/resources/lec07.pdf) |
+    | 03/11 | Διάλεξη 8: Πίνακες | [pdf](/resources/lec08.pdf) |
 
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
