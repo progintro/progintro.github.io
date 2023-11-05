@@ -44,6 +44,7 @@
 * [Φυλλάδιο 2](/resources/lab02.pdf)
 * [Φυλλάδιο 3](/resources/lab03.pdf)
 * [Φυλλάδιο 4](/resources/lab04.pdf)
+* [Φυλλάδιο 5](/resources/lab05.pdf)
 
 
 
