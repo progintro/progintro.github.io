@@ -63,6 +63,7 @@
     | 27/10 | Διάλεξη 6: Επίλυση Προβλημάτων | [pdf](/resources/lec06.pdf) |
     | 30/10 | Διάλεξη 7: Δομές Ελέγχου #2 | [pdf](/resources/lec07.pdf) |
     | 03/11 | Διάλεξη 8: Πίνακες | [pdf](/resources/lec08.pdf) |
+    | 06/11 | Διάλεξη 9: Δείκτες | [pdf](/resources/lec09.pdf) |
 
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
