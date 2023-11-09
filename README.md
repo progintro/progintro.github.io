@@ -30,7 +30,7 @@
 * [Φυλλάδιο 5](/resources/lab05.pdf)
 
 
-* [Ενδεικτικές λύσεις για εργαστήρια](https://github.com/dimskomex/ip-labs-solutions) - ευχαριστούμε πολύ τον [@dimskomex](https://github.com/dimskomex)!
+* [Ενδεικτικές λύσεις για εργαστήρια](https://github.com/dimskomex/ip-labs-solutions) - ευχαριστούμε πολύ [@dimskomex](https://github.com/dimskomex)!
 
 
 ## Υλικό Μαθήματος
@@ -60,7 +60,10 @@
 1. [Εργασία 1](/resources/hw1.pdf). Προθεσμία: 06/12/2023, 23:59.
 
 
-* [uoabot](https://cgi.di.uoa.gr/~uoabot/) - ευχαριστούμε τον [@George-RG](https://github.com/George-RG/)
+* [uoabot](https://cgi.di.uoa.gr/~uoabot/) - ευχαριστούμε πολύ [@George-RG](https://github.com/George-RG/)!
+* Εντυπωσιακό [visualization της σειράς collatz](https://github.com/georomporas/collatz_visualization/) - ευχαριστούμε πολύ [@georomporas](https://github.com/georomporas/)!
+
+![Collatz Visualization](https://user-images.githubusercontent.com/146763073/280543572-848a46c0-a145-45ab-bbbd-7014794465ae.png)
 
 
 ## Τμήματα Εργαστηρίων
