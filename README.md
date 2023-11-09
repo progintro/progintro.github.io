@@ -48,7 +48,7 @@
 
 
 
-* [Ενδεικτικές λύσεις για εργαστήρια](https://github.com/dimskomex/ip-labs-solutions) - ευχαριστούμε πολύ τον [https://github.com/dimskomex](@dimskomex)!
+* [Ενδεικτικές λύσεις για εργαστήρια](https://github.com/dimskomex/ip-labs-solutions) - ευχαριστούμε πολύ τον [@dimskomex](https://github.com/dimskomex)!
 
 
 
