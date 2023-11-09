@@ -48,6 +48,10 @@
 
 
 
+* [Ενδεικτικές λύσεις για εργαστήρια](https://github.com/dimskomex/ip-labs-solutions) - ευχαριστούμε πολύ τον [https://github.com/dimskomex](@dimskomex)!
+
+
+
 ## Υλικό Μαθήματος
 
 * Διαλέξεις
