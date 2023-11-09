@@ -79,6 +79,9 @@
 1. [Εργασία 1](/resources/hw1.pdf). Προθεσμία: 06/12/2023, 23:59.
 
 
+* [uoabot](https://cgi.di.uoa.gr/~uoabot/) - ευχαριστούμε τον [@George-RG](https://github.com/George-RG/)
+
+
 ## Συγγράμματα
 
 1. C: Από τη Θεωρία στην Εφαρμογή, Γ. Σ. Τσελίκης - Ν. Δ. Τσελίκας [[Link]](https://service.eudoxus.gr/search/#a/id:68383623:/0)
