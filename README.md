@@ -51,6 +51,8 @@
     | 03/11 | Διάλεξη 8: Πίνακες | [pdf](/resources/lec08.pdf) |
     | 06/11 | Διάλεξη 9: Δείκτες | [pdf](/resources/lec09.pdf) |
     | 10/11 | Διάλεξη 10: Πίνακες και Δείκτες | [pdf](/resources/lec10.pdf) |
+    | 13/11 | Διάλεξη 11: Δεδομένα Εισόδου | [pdf](/resources/lec11.pdf) |
+
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
 * [Σημειώσεις](/resources/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
