@@ -53,6 +53,7 @@
     | 06/11 | Διάλεξη 9: Δείκτες | [pdf](/resources/lec09.pdf) |
     | 10/11 | Διάλεξη 10: Πίνακες και Δείκτες | [pdf](/resources/lec10.pdf) |
     | 13/11 | Διάλεξη 11: Δεδομένα Εισόδου | [pdf](/resources/lec11.pdf) |
+    | 13/11 | Guest Lecture on collatz | [pdf](/resources/optimizing-collatz-sequence-finding.pdf) |
     | 20/11 | Διάλεξη 12: Μνήμη | [pdf](/resources/lec12.pdf) |
 
 
