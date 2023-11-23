@@ -55,6 +55,7 @@
     | 13/11 | Διάλεξη 11: Δεδομένα Εισόδου | [pdf](/resources/lec11.pdf) |
     | 13/11 | Guest Lecture on collatz | [pdf](/resources/optimizing-collatz-sequence-finding.pdf) |
     | 20/11 | Διάλεξη 12: Μνήμη | [pdf](/resources/lec12.pdf) |
+    | 22/11 | Διάλεξη 13: Επίλυση Προβλημάτων |  |
 
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
