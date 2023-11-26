@@ -56,6 +56,7 @@
     | 13/11 | Guest Lecture on collatz | [pdf](/resources/optimizing-collatz-sequence-finding.pdf) |
     | 20/11 | Διάλεξη 12: Μνήμη | [pdf](/resources/lec12.pdf) |
     | 22/11 | Διάλεξη 13: Επίλυση Προβλημάτων |  |
+    | 24/11 | Διάλεξη 14: Πολυπλοκότητα και Προεπεξεργαστής | [pdf](/resources/lec14.pdf) |
 
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
