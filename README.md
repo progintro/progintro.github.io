@@ -30,7 +30,7 @@
 * [Φυλλάδιο 5](/resources/lab05.pdf)
 * [Φυλλάδιο 6](/resources/lab06.pdf)
 * [Φυλλάδιο 7](/resources/lab07.pdf)
-  
+* [Φυλλάδιο 8](/resources/lab08.pdf)
 
 * [Ενδεικτικές λύσεις για εργαστήρια](https://github.com/dimskomex/ip-labs-solutions) - ευχαριστούμε πολύ [@dimskomex](https://github.com/dimskomex)!
 
