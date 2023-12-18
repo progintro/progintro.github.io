@@ -67,6 +67,8 @@
     | 08/12 | Διάλεξη 18: Ταξινόμηση #2 | [pdf](/resources/lec18.pdf) |
     | 11/12 | Διάλεξη 19: Δομές | [pdf](/resources/lec19.pdf) |
     | 15/12 | Διάλεξη 20: Προχωρημένες Δομές | [pdf](/resources/lec20.pdf) |
+    | 18/12 | Διάλεξη 21: Λίστες | [pdf](/resources/lec21.pdf) |
+  
 
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
