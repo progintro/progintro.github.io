@@ -80,6 +80,7 @@
 1. [Εργασία 0](/resources/hw0.pdf). Προθεσμία: 08/11/2023, 23:59.
 1. [Εργασία 1](/resources/hw1.pdf). Προθεσμία: 06/12/2023, 23:59.
 1. [Εργασία 2](/resources/hw2.pdf). Προθεσμία: 10/01/2024, 23:59.
+1. [Εργασία 3](/resources/hw3.pdf). Προθεσμία: 13/02/2024, 23:59.
 
 
 * [uoabot](https://cgi.di.uoa.gr/~uoabot/) - ευχαριστούμε πολύ [@George-RG](https://github.com/George-RG/)!
