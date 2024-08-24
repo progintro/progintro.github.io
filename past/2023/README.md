@@ -34,7 +34,7 @@
 * [Φυλλάδιο 9](/resources/lab09.pdf)
 * [Φυλλάδιο 10](/resources/lab10.pdf)
 * [Φυλλάδιο 11](/resources/lab11.pdf)
-
+  
 * [Ενδεικτικές λύσεις για εργαστήρια](https://github.com/dimskomex/ip-labs-solutions) - ευχαριστούμε πολύ [@dimskomex](https://github.com/dimskomex)!
 
 
@@ -70,7 +70,11 @@
     | 18/12 | Διάλεξη 21: Λίστες | [pdf](/resources/lec21.pdf) |
     | 22/12 | Διάλεξη 22: Δέντρα | [pdf](/resources/lec22.pdf) |
     | 08/01 | Διάλεξη 23: Προχωρημένα Θέματα | [pdf](/resources/lec23.pdf) |
+  
 
+
+* [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
+* [Σημειώσεις](/resources/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
 
 ## Εργασίες
 
@@ -172,13 +176,6 @@
 * Δημήτρης-Στέφανος Πορίχης (sdi2100159)
 * Παύλος Νταής (sdi2100122)
 * Κυριακή Καραπλιού (sdi2000069)
-
-## Προηγούμενα Έτη
-
-* [2023](./past/2023/README.md)
-* [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
-* [Σημειώσεις](/resources/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
-
 
 ### Ευχαριστίες
 
