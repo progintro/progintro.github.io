@@ -1,0 +1,8 @@
+In the Pac-Man universe, Blinky is the red ghost who
+persistently chases the game's hero, earning the
+nickname "Shadow" for his relentless pursuit.
+Blinky's strategy intensifies as Pac-Man consumes
+more dots, making Blinky a formidable challenge and
+a central figure in game strategy. His vivid red hue
+not only marks Blinky as the primary antagonist but
+also signals the immediate threat he poses.

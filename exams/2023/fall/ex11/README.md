@@ -1,88 +1,137 @@
-# Τελική Εξέταση #11 - Logic Design Themed
+# Τελική Εξέταση #11 - Pacman Themed
 
 Σημαντικό: φροντίζουμε τα προγράμματά μας να είναι ευανάγνωστα, αποδοτικά (σε χώρο και χρόνο) και να έχουν έξοδο όμοια με τα παραδείγματα εκτέλεσης καθώς αυτό είναι μέρος της βαθμολόγησης. Για οποιαδήποτε είσοδο εκτός προδιαγραφών το πρόγραμμα πρέπει να τερματίζει με exit code 1 και αντίστοιχο μήνυμα σφάλματος.
 
-## 1. Αφαίρεση Μη Λατινικών Χαρακτήρων (25 Μονάδες)
+## 1. Αναζητώντας τον Blinky (25 Μονάδες)
 
-### Πρόγραμμα: bold.c
+### Πρόγραμμα: blinky.c
 
 Γράψτε ένα πρόγραμμα το οποίο διαβάζει κείμενο από την πρότυπη είσοδο (stdin) και το τυπώνει στην πρότυπη έξοδο (stdout) με τους εξής περιορισμούς:
-1. Οι αλλαγές γραμμής πρέπει να διατηρούνται.
-1. Πρέπει να μετατρέψει κάθε μη λατινικό χαρακτήρα (A-Za-z) σε κενό (space) χαρακτήρα ' '.
-1. Η πρώτη λέξη σε κάθε γραμμή θέλουμε να φαίνεται **bold**.
+1. Κάθε φορά που βρίσκει την λέξη Blinky - να την τοποθετεί ανάμεσα σε αστεράκια '*' και να την κάνει να αναβοσβήνει (blink).
+1. Αν το string Blinky είναι μέρος άλλης λέξης δεν χρειάζεται κάποια αλλαγή.
+1. Οι λέξεις αποτελούνται μόνο από λατινικούς χαρακτήρες (A-Za-z) οποιοσδήποτε άλλος χαρακτήρας θεωρείται διαχωριστικό λέξεων.
 
 Παράδειγμα εκτέλεσης ακολουθεί:
 
-![bold substitution](images/bold.png)
+[![asciicast](https://asciinema.org/a/js20ZyFDDS0t8ocszkBBo6b4J.svg)](https://asciinema.org/a/js20ZyFDDS0t8ocszkBBo6b4J)
 
-## 2. Ασημένιο Κλάσμα (25 Μονάδες)
-
-### Πρόγραμμα: silver.c
-
-Ένας τρόπος να προσεγγίσουμε την τιμή του $\sqrt{2}$ είναι μέσω της παράστασης:
-
-$$ 1 + \sqrt{2} = 2 + \frac{1}{2 + \frac{1}{2 + \frac{1}{2 + \cdots}}} $$
-
-Όπου η προσθήκη του κάθε όρου $\frac{1}{2 + \cdots}$ βελτιώνει την προσέγγιση. Γράψτε ένα πρόγραμμα το οποίο παίρνει ως όρισμα έναν θετικό ακέραιο που αναπαριστά τον αριθμό των όρων $\frac{1}{2 + \cdots}$ που θέλουμε να χρησιμοποιηθούν και τυπώνει την προσέγγιση του $\sqrt{2}$ με 20 δεκαδικά ψηφία ακριβείας. Παραδείγματα εκτέλεσης ακολουθούν:
+Αν για κάποιο λόγο δεν παίζει το παραπάνω link:
 
 ```
-$ ./silver 1
-sqrt(2) = 1.00000000000000000000
-$ ./silver 2
-sqrt(2) = 1.50000000000000000000
-$ ./silver 3
-sqrt(2) = 1.39999999999999991118
-$ ./silver 4
-sqrt(2) = 1.41666666666666651864
-$ ./silver 5
-sqrt(2) = 1.41379310344827580082
-$ ./silver 1000
-sqrt(2) = 1.41421356237309492343
+$ gcc -o blinky blinky.c
+$ cat description.txt
+In the Pac-Man universe, Blinky is the red ghost who
+persistently chases the game's hero, earning the
+nickname "Shadow" for his relentless pursuit.
+Blinky's strategy intensifies as Pac-Man consumes
+more dots, making Blinky a formidable challenge and
+a central figure in game strategy. His vivid red hue
+not only marks Blinky as the primary antagonist but
+also signals the immediate threat he poses.
+$ ./blinky < description.txt
+In the Pac-Man universe, *Blinky* is the red ghost who
+persistently chases the game's hero, earning the
+nickname "Shadow" for his relentless pursuit.
+*Blinky*'s strategy intensifies as Pac-Man consumes
+more dots, making *Blinky* a formidable challenge and
+a central figure in game strategy. His vivid red hue
+not only marks *Blinky* as the primary antagonist but
+also signals the immediate threat he poses.
 ```
 
-Για έναν όρο η δεξιά παράσταση είναι (2 + 0) -> sqrt(2) = 1, για 2 όρους η δεξιά παράσταση είναι (2 + 1 / 2) -> sqrt(2) = 1.5, κοκ.
+## 2. Τοποθέτηση του Pacman (25 Μονάδες)
 
-## 3. Κρυμμένο Μήνυμα (25 Μονάδες)
+### Πρόγραμμα: position.c
 
-### Πρόγραμμα: hidden.c
-
-Γράψτε ένα πρόγραμμα που παίρνει ως όρισμα το όνομα ενός αρχείου που περιέχει ένα κείμενο με λέξεις που αποτελούνται από λατινικούς χαρακτήρες (a-zA-Z) και θετικούς ακεραίους που αντιστοιχούν στην θέση της κάθε λέξης μέσα στο κείμενο και τυπώνει αυτές τις λέξεις με την σειρά που δίνονται ως ορίσματα στο πρόγραμμα. Παραδείγματα εκτέλεσης ακολουθούν:
+Γράψτε ένα πρόγραμμα που παίρνει ως πρώτο όρισμα την διάσταση ενός τετραγωνικού πλέγματος και ως υπόλοιπα ορίσματα τις θέσεις των φαντασμάτων (ghosts) του pacman και τυπώνει όλες τις θέσεις στο πλέγμα που θα μπορούσε να τοποθετηθεί ο pacman. Ο pacman δεν μπορεί να τοποθετηθεί στην ίδια γραμμή ή στήλη με κάποιο φάντασμα. Όλες οι διαστάσεις δίνονται ως "x,y" ορίσματα (όπου x, y είναι ακέραιοι). Εάν δεν υπάρχει δυνατή τοποθέτηση το πρόγραμμά σας θα πρέπει να τυπώνει ανάλογο μήνυμα. Παραδείγματα εκτέλεσης ακολουθούν:
 
 ```
-$ gcc -o hidden hidden.c
-$ cat message.txt
-In the quiet glade, where whispers of the past weave,
-Beneath the vault of heaven, a secret to conceive.
-The oak, ancient and large, guards a mystery so deep,
-Within its shadowed roots, a treasure lies asleep.
-Hidden by time's embrace, under earth's tender keep,
-Near the tree, love's promise, forever to reap
-$ ./hidden message.txt 19 34 35 42 1 23 20 49
-The treasure lies under the large oak tree
-$ ./hidden message.txt 19 34 35 29
-The treasure lies Within
+$ gcc -o position position.c
+$ ./position 4 0,4 3,2 2,1 1,3
+Pacman cannot be positioned anywhere
+$ ./position 4 0,4 3,2 2,1 0,3
+Pacman can be positioned at: 1,0
+$ ./position 4 0,4 3,2 2,1
+Pacman can be positioned at: 1,0
+Pacman can be positioned at: 1,3
+$ ./position 4 1,2 2,1
+Pacman can be positioned at: 0,0
+Pacman can be positioned at: 0,3
+Pacman can be positioned at: 3,0
+Pacman can be positioned at: 3,3
 ```
 
-Παρατηρούμε ότι η λέξη "The" τυπώνεται πρώτη καθώς είναι η 20η λέξη στο κείμενο, δηλαδή βρίσκεται στην θέση 19 και αυτός είναι ο πρώτος ακέραιος που δόθηκε ως όρισμα στην γραμμή εντολών μετά το αρχείο. Αντίστοιχα τυπώνονται και οι υπόλοιπες λέξεις.
+## 3. Κινήσεις σε Πλέγμα (25 Μονάδες)
 
-## 4. Πλησιάζοντας στον Στόχο (25 Μονάδες)
+### Πρόγραμμα: pacman.c
 
-### Πρόγραμμα: treasure.c
-
-Γράψτε ένα πρόγραμμα το οποίο παίρνει ως ορίσματα από την γραμμή εντολών μια συντεταγμένη στόχο (goal) και στην συνέχεια ένα σύνολο άλλων συντεταγμένων (starting points) και τυπώνει όλες τις συντεταγμένες ταξινομημένες σε αύξουσα σειρά με βάση την απόστασή τους από τον στόχο. Όλοι οι αριθμοί κινητής υποδιαστολής θέλουμε να τυπώνονται με ακρίβεια με δύο δεκαδικών ψηφίων. Όλες οι συντεταγμένες είναι της μορφής x,y όπου x,y είναι αριθμοί κινητής υποδιαστολής. Η απόσταση δύο σημείων x1,y1 και x2,y2 δίνεται από την έκφραση:
-
-$$ \sqrt{(x2 - x1)^2 + (y2 - y1)^2} $$
-
-Παράδειγμα εκτέλεσης ακολουθεί:
+Γράψτε ένα πρόγραμμα που παίρνει δύο ορίσματα: (1) το όνομα ενός αρχείου που περιέχει μια πίστα pacman και (2) τις κινήσεις που πρέπει να κάνει ο pacman πάνω στο πλέγμα και τυπώνει την τελική κατάσταση του παιχνιδιού μετά από αυτές τις κινήσεις. Το αρχείο θα έχει την ακόλουθη μορφή:
+1. Διάσταση του πλέγματος του παιχνιδιού (δεκαδικός ακέραιος).
+2. Τετράγωνο πλέγμα με χαρακτήρες '.' και ένα 'P' για την αρχική θέση του pacman. Όλοι οι άλλοι χαρακτήρες αγνοούνται.
+Οι κινήσεις που πρέπει να κάνει ο pacman θα αποτελούνται από 4 χαρακτήρες 'U' (Up), 'D' (Down), 'L' (Left), 'R' (Right). Όταν ο pacman κινείται σε κάποια θέση, τότε η τελεία ('.') σε εκείνη την θέση εξαφανίζεται. Η πίστα είναι τόρος, δηλαδή αν είσαι στην τελευταία γραμμή της και κινηθείς προς τα κάτω (D) τότε μεταφέρεσαι στην πρώτη γραμμή. Αντίστοιχα για κινήσεις αριστερά-δεξιά. Παραδείγματα εκτέλεσης ακολουθούν:
 
 ```
-$ gcc -o treasure treasure.c -lm
-$ ./treasure 17,42 3.01,50.5 27.27,7 32,65.1 25,4 77,42.42 50,50 30.30,12
-1. Point 3.01,50.50 is 16.37 steps away from the goal
-2. Point 32.00,65.10 is 27.54 steps away from the goal
-3. Point 30.30,12.00 is 32.82 steps away from the goal
-4. Point 50.00,50.00 is 33.96 steps away from the goal
-5. Point 27.27,7.00 is 36.48 steps away from the goal
-6. Point 25.00,4.00 is 38.83 steps away from the goal
-7. Point 77.00,42.42 is 60.00 steps away from the goal
+$ gcc -o pacman pacman.c
+$ cat level.txt
+7
+.......
+.......
+..P....
+.......
+.......
+.......
+.......
+$ ./pacman level.txt RRD
+.......
+.......
+..   ..
+....P..
+.......
+.......
+.......
+$ ./pacman level.txt RRDDLL
+.......
+.......
+..   ..
+.... ..
+..P  ..
+.......
+.......
+$ ./pacman level.txt RRDDLLUU
+.......
+.......
+..P  ..
+.. . ..
+..   ..
+.......
+.......
+$ ./pacman level.txt RRDDLLUULLLL
+.......
+.......
+     P
+.. . ..
+..   ..
+.......
+.......
+
+```
+
+## 4. Clyde Πρώτοι (25 Μονάδες)
+
+### Πρόγραμμα: clyde.c
+
+Ένας ακέραιος λέγεται πρώτος όταν διαιρείται μόνο με τον εαυτό του και την μονάδα. Ένας πρώτος λέγεται clyde πρώτος όταν υπάρχει μια περιστροφή των ψηφίων του (με βάση το 10) που είναι επίσης πρώτος. Γράψτε ένα πρόγραμμα που παίρνει έναν ακέραιο από την κονσόλα και αποφαίνεται αν είναι Clyde πρώτος ή όχι. Παραδείγματα εκτέλεσης:
+
+```
+$ gcc -o clyde clyde.c -lm
+$ ./clyde 13
+13 is a clyde prime because 31 is prime too
+$ ./clyde 99923
+99923 is a clyde prime because 92399 is prime too
+$ ./clyde 41
+41 is NOT a clyde prime
+$ ./clyde 99924
+99924 is NOT a clyde prime
+$ ./clyde 90000520793
+90000520793 is a clyde prime because 93900005207 is prime too
 ```
