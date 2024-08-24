@@ -1,0 +1,5 @@
+cat
+DOG
+Giraffe
+tennis
+turtle

@@ -1,0 +1,18 @@
+## Διαγωνίσματα
+
+1. [ex0](/exams/2023/fall/ex0/README.md)
+1. [ex1](/exams/2023/fall/ex1/README.md)
+1. [ex2](/exams/2023/fall/ex2/README.md)
+1. [ex3](/exams/2023/fall/ex3/README.md)
+1. [ex4](/exams/2023/fall/ex4/README.md)
+1. [ex5](/exams/2023/fall/ex5/README.md)
+1. [ex6](/exams/2023/fall/ex6/README.md)
+1. [ex7](/exams/2023/fall/ex7/README.md)
+1. [ex8](/exams/2023/fall/ex8/README.md)
+1. [ex9](/exams/2023/fall/ex9/README.md)
+1. [ex10](/exams/2023/fall/ex10/README.md)
+1. [ex11](/exams/2023/fall/ex11/README.md)
+1. [ex12](/exams/2023/fall/ex12/README.md)
+1. [ex13](/exams/2023/fall/ex13/README.md)
+1. [ex14](/exams/2023/fall/ex14/README.md)
+1. [ex15](/exams/2023/fall/ex15/README.md)
