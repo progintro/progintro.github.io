@@ -23,17 +23,17 @@
 
 ### Φυλλάδια Εργαστηρίων
 
-* [Φυλλάδιο 1](/resources/lab01.pdf)
-* [Φυλλάδιο 2](/resources/lab02.pdf)
-* [Φυλλάδιο 3](/resources/lab03.pdf)
-* [Φυλλάδιο 4](/resources/lab04.pdf)
-* [Φυλλάδιο 5](/resources/lab05.pdf)
-* [Φυλλάδιο 6](/resources/lab06.pdf)
-* [Φυλλάδιο 7](/resources/lab07.pdf)
-* [Φυλλάδιο 8](/resources/lab08.pdf)
-* [Φυλλάδιο 9](/resources/lab09.pdf)
-* [Φυλλάδιο 10](/resources/lab10.pdf)
-* [Φυλλάδιο 11](/resources/lab11.pdf)
+* [Φυλλάδιο 1](./resources/labs/lab01.pdf)
+* [Φυλλάδιο 2](./resources/labs/lab02.pdf)
+* [Φυλλάδιο 3](./resources/labs/lab03.pdf)
+* [Φυλλάδιο 4](./resources/labs/lab04.pdf)
+* [Φυλλάδιο 5](./resources/labs/lab05.pdf)
+* [Φυλλάδιο 6](./resources/labs/lab06.pdf)
+* [Φυλλάδιο 7](./resources/labs/lab07.pdf)
+* [Φυλλάδιο 8](./resources/labs/lab08.pdf)
+* [Φυλλάδιο 9](./resources/labs/lab09.pdf)
+* [Φυλλάδιο 10](./resources/labs/lab10.pdf)
+* [Φυλλάδιο 11](./resources/labs/lab11.pdf)
   
 * [Ενδεικτικές λύσεις για εργαστήρια](https://github.com/dimskomex/ip-labs-solutions) - ευχαριστούμε πολύ [@dimskomex](https://github.com/dimskomex)!
 
@@ -44,44 +44,44 @@
 
     | Ημερομηνία | Περιεχόμενο Μαθήματος | Αρχείο |
     | --- | --- | --- |
-    | 02/10 | Διάλεξη 0: Καλημέρα Κόσμε! | [pdf](/resources/lec00.pdf) |
-    | 06/10 | Διάλεξη 1: Γραμμή Εντολών, Πρόγραμματα και Μεταγλώττιση | [pdf](/resources/lec01.pdf) |
-    | 13/10 | Διάλεξη 2: Συναρτήσεις και Version Control | [pdf](/resources/lec02.pdf) |
-    | 18/10 | Διάλεξη 3: Μνήμη και Μεταβλητές | [pdf](/resources/lec03.pdf) |
-    | 20/10 | Διάλεξη 4: Τελεστές | [pdf](/resources/lec04.pdf) |
-    | 23/10 | Διάλεξη 5: Εντολές και Ροή Ελέγχου | [pdf](/resources/lec05.pdf) |
-    | 27/10 | Διάλεξη 6: Επίλυση Προβλημάτων | [pdf](/resources/lec06.pdf) |
-    | 30/10 | Διάλεξη 7: Δομές Ελέγχου #2 | [pdf](/resources/lec07.pdf) |
-    | 03/11 | Διάλεξη 8: Πίνακες | [pdf](/resources/lec08.pdf) |
-    | 06/11 | Διάλεξη 9: Δείκτες | [pdf](/resources/lec09.pdf) |
-    | 10/11 | Διάλεξη 10: Πίνακες και Δείκτες | [pdf](/resources/lec10.pdf) |
-    | 13/11 | Διάλεξη 11: Δεδομένα Εισόδου | [pdf](/resources/lec11.pdf) |
-    | 13/11 | Guest Lecture on Collatz | [pdf](/resources/optimizing-collatz-sequence-finding.pdf) |
-    | 13/11 | Guest Lecture on Forums Q&A | [pdf](/resources/forums.pdf) |
-    | 20/11 | Διάλεξη 12: Μνήμη | [pdf](/resources/lec12.pdf) |
+    | 02/10 | Διάλεξη 0: Καλημέρα Κόσμε! | [pdf](./resources/slides/lec00.pdf) |
+    | 06/10 | Διάλεξη 1: Γραμμή Εντολών, Πρόγραμματα και Μεταγλώττιση | [pdf](./resources/slides/lec01.pdf) |
+    | 13/10 | Διάλεξη 2: Συναρτήσεις και Version Control | [pdf](./resources/slides/lec02.pdf) |
+    | 18/10 | Διάλεξη 3: Μνήμη και Μεταβλητές | [pdf](./resources/slides/lec03.pdf) |
+    | 20/10 | Διάλεξη 4: Τελεστές | [pdf](./resources/slides/lec04.pdf) |
+    | 23/10 | Διάλεξη 5: Εντολές και Ροή Ελέγχου | [pdf](./resources/slides/lec05.pdf) |
+    | 27/10 | Διάλεξη 6: Επίλυση Προβλημάτων | [pdf](./resources/slides/lec06.pdf) |
+    | 30/10 | Διάλεξη 7: Δομές Ελέγχου #2 | [pdf](./resources/slides/lec07.pdf) |
+    | 03/11 | Διάλεξη 8: Πίνακες | [pdf](./resources/slides/lec08.pdf) |
+    | 06/11 | Διάλεξη 9: Δείκτες | [pdf](./resources/slides/lec09.pdf) |
+    | 10/11 | Διάλεξη 10: Πίνακες και Δείκτες | [pdf](./resources/slides/lec10.pdf) |
+    | 13/11 | Διάλεξη 11: Δεδομένα Εισόδου | [pdf](./resources/slides/lec11.pdf) |
+    | 13/11 | Guest Lecture on Collatz | [pdf](./resources/extra/optimizing-collatz-sequence-finding.pdf) |
+    | 13/11 | Guest Lecture on Forums Q&A | [pdf](./resources/extra/forums.pdf) |
+    | 20/11 | Διάλεξη 12: Μνήμη | [pdf](./resources/slides/lec12.pdf) |
     | 22/11 | Διάλεξη 13: Επίλυση Προβλημάτων |  |
-    | 24/11 | Διάλεξη 14: Πολυπλοκότητα και Προεπεξεργαστής | [pdf](/resources/lec14.pdf) |
-    | 27/11 | Διάλεξη 15: Εμβέλεια, Μνήμη και Συμβολοσειρές | [pdf](/resources/lec15.pdf) |
-    | 01/12 | Διάλεξη 16: Δεδομένα Εισόδου #2 - Αρχεία | [pdf](/resources/lec16.pdf) |
-    | 04/12 | Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση | [pdf](/resources/lec17.pdf) |
-    | 08/12 | Διάλεξη 18: Ταξινόμηση #2 | [pdf](/resources/lec18.pdf) |
-    | 11/12 | Διάλεξη 19: Δομές | [pdf](/resources/lec19.pdf) |
-    | 15/12 | Διάλεξη 20: Προχωρημένες Δομές | [pdf](/resources/lec20.pdf) |
-    | 18/12 | Διάλεξη 21: Λίστες | [pdf](/resources/lec21.pdf) |
-    | 22/12 | Διάλεξη 22: Δέντρα | [pdf](/resources/lec22.pdf) |
-    | 08/01 | Διάλεξη 23: Προχωρημένα Θέματα | [pdf](/resources/lec23.pdf) |
+    | 24/11 | Διάλεξη 14: Πολυπλοκότητα και Προεπεξεργαστής | [pdf](./resources/slides/lec14.pdf) |
+    | 27/11 | Διάλεξη 15: Εμβέλεια, Μνήμη και Συμβολοσειρές | [pdf](./resources/slides/lec15.pdf) |
+    | 01/12 | Διάλεξη 16: Δεδομένα Εισόδου #2 - Αρχεία | [pdf](./resources/slides/lec16.pdf) |
+    | 04/12 | Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση | [pdf](./resources/slides/lec17.pdf) |
+    | 08/12 | Διάλεξη 18: Ταξινόμηση #2 | [pdf](./resources/slides/lec18.pdf) |
+    | 11/12 | Διάλεξη 19: Δομές | [pdf](./resources/slides/lec19.pdf) |
+    | 15/12 | Διάλεξη 20: Προχωρημένες Δομές | [pdf](./resources/slides/lec20.pdf) |
+    | 18/12 | Διάλεξη 21: Λίστες | [pdf](./resources/slides/lec21.pdf) |
+    | 22/12 | Διάλεξη 22: Δέντρα | [pdf](./resources/slides/lec22.pdf) |
+    | 08/01 | Διάλεξη 23: Προχωρημένα Θέματα | [pdf](./resources/slides/lec23.pdf) |
   
 
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
-* [Σημειώσεις](/resources/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
+* [Σημειώσεις](./resources/extra/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
 
 ## Εργασίες
 
-1. [Εργασία 0](/resources/hw0.pdf). Προθεσμία: 08/11/2023, 23:59.
-1. [Εργασία 1](/resources/hw1.pdf). Προθεσμία: 06/12/2023, 23:59.
-1. [Εργασία 2](/resources/hw2.pdf). Προθεσμία: 14/01/2024, 23:59.
-1. [Εργασία 3](/resources/hw3.pdf). Προθεσμία: 13/02/2024, 23:59.
+1. [Εργασία 0](./resources/assignments/hw0.pdf). Προθεσμία: 08/11/2023, 23:59.
+1. [Εργασία 1](./resources/assignments/hw1.pdf). Προθεσμία: 06/12/2023, 23:59.
+1. [Εργασία 2](./resources/assignments/hw2.pdf). Προθεσμία: 14/01/2024, 23:59.
+1. [Εργασία 3](./resources/assignments/hw3.pdf). Προθεσμία: 13/02/2024, 23:59.
 
 
 * [uoabot](https://cgi.di.uoa.gr/~uoabot/) - ευχαριστούμε πολύ [@George-RG](https://github.com/George-RG/)!
@@ -119,7 +119,7 @@
 
 ## Άλλοι Σύνδεσμοι
 
-* [Unix Tutorial από τον καθηγητή Παναγιώτη Σταματόπουλο](/resources/Unix.pdf)
+* [Unix Tutorial από τον καθηγητή Παναγιώτη Σταματόπουλο](./resources/extra/Unix.pdf)
 * [Οδηγίες εγκατάστασης VS Code από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/)
 * [Οδηγός Σπουδών για το μάθημα](https://www.di.uoa.gr/studies/undergraduate/courses/k04)
 
