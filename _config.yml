@@ -7,3 +7,4 @@ plugins:
 markdown: kramdown
 kramdown:
   parse_block_html: true
+  toc_levels: 2..2
