@@ -41,7 +41,7 @@ TBD
 
 ### Φυλλάδια
 
-* [Φυλλάδιο 1](https://github.com/progintro/lab-material/releases/download/0.1.14/lab00.pdf)
+* [Φυλλάδιο 1](https://github.com/progintro/lab-material/releases/download/0.1.15/lab00.pdf)
 
 Θες να βοηθήσεις να βελτιώσουμε τα Φυλλάδια; Στείλε μας PR στο [lab-material repo](https://github.com/progintro/lab-material).
 
