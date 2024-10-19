@@ -29,6 +29,8 @@ int main() {
 
 ## Υπολογισμός Βαθμολογίας - grade.c - lec04
 
+Credits: Άρτεμις
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -50,6 +52,58 @@ int main(int argc, char ** argv) {
   int lab = atoi(argv[3]);
   int final_grade = grade(final_exam, homework, lab);
   printf("My grade is: %d\n", final_grade);
+  return 0;
+}
+```
+
+## Prefix vs postfix operators - lec05
+
+```c
+#include <stdio.h>
+int main() {
+  int x = 42, y = 42;
+  printf("%d %d\n", x++, ++y);
+}
+```
+
+## Rounding function & ternary operator - lec05
+
+Credits: Τάσος και Φώτης
+
+```c
+#include <stdio.h>
+
+int myround(double x) {
+  int first = (int) x;
+  double result = (x - first >= 0.5) ? first + 1 : first;
+  return result;
+}
+
+int main() {
+   printf("%d\n", myround(42.67));
+   printf("%d\n", myround(42.499999));
+   printf("%d\n", myround(42.99));
+   printf("%d\n", myround(42.50000001));
+   return 0;
+}
+```
+
+## Conditionals and max/min computation - lec05
+
+```c
+#include <stdio.h>
+
+int main() {
+  int x = 43, y = 42;
+  int max, min;
+  if (x > y) {
+         max = x;
+         min = y;
+  } else {
+         max = y;
+         min = x;
+  }
+  printf("%d, %d", min, max);
   return 0;
 }
 ```
