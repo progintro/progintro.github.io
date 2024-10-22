@@ -50,6 +50,7 @@
 
 * [Φυλλάδιο 0](https://github.com/progintro/lab-material/releases/download/0.1.15/lab00.pdf)
 * [Φυλλάδιο 1](https://github.com/progintro/lab-material/releases/download/0.1.17/lab01.pdf)
+* [Φυλλάδιο 2](https://github.com/progintro/lab-material/releases/download/0.1.19/lab02.pdf)
 
 Θες να βοηθήσεις να βελτιώσουμε τα Φυλλάδια; Στείλε μας PR στο [lab-material repo](https://github.com/progintro/lab-material).
 
