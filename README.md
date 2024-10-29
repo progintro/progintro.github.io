@@ -49,10 +49,12 @@
 
 ### Φυλλάδια
 
-* [Φυλλάδιο 0](https://github.com/progintro/lab-material/releases/download/0.1.15/lab00.pdf)
-* [Φυλλάδιο 1](https://github.com/progintro/lab-material/releases/download/0.1.17/lab01.pdf)
-* [Φυλλάδιο 2](https://github.com/progintro/lab-material/releases/download/0.1.19/lab02.pdf)  [lab02](https://classroom.github.com/a/pqB_gumQ)
-* [Φυλλάδιο 3](https://github.com/progintro/lab-material/releases/download/0.1.20/lab03.pdf)
+| PDF | Markdown | GitHub Classroom (optional) |
+| --- | --- | --- |
+| [Φυλλάδιο 0.pdf](https://github.com/progintro/lab-material/releases/download/0.1.15/lab00.pdf) | [lab00.md](https://github.com/progintro/lab-material/tree/main/labs/lab00) | |
+| [Φυλλάδιο 1.pdf](https://github.com/progintro/lab-material/releases/download/0.1.17/lab01.pdf) | [lab01.md](https://github.com/progintro/lab-material/tree/main/labs/lab00) | |
+| [Φυλλάδιο 2.pdf](https://github.com/progintro/lab-material/releases/download/0.1.19/lab02.pdf) | [lab02.md](https://github.com/progintro/lab-material/tree/main/labs/lab00) | [lab02](https://classroom.github.com/a/pqB_gumQ) |
+| [Φυλλάδιο 3.pdf](https://github.com/progintro/lab-material/releases/download/0.1.23/lab03.pdf) | [lab03.md](https://github.com/progintro/lab-material/tree/main/labs/lab00) | [lab03](https://classroom.github.com/a/WCiS9-wG) |
 
 Θες να βοηθήσεις να βελτιώσουμε τα Φυλλάδια; Στείλε μας PR στο [lab-material repo](https://github.com/progintro/lab-material).
 
