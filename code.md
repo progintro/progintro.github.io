@@ -242,4 +242,51 @@ int main(int argc, char ** argv) {
 }
 ```
 
+## Εκτύπωση command line arguments - lec12
+
+```c
+// Program expects *exactly* one argument (so 2 in total including its name)
+// And then proceeds iterating through all of argv and printing them as strings.
+#include <stdio.h>
+
+int main(int argc, char * argv[]) {
+  if (argc != 2) {
+    printf("Usage: %s num1\n", argv[0]);
+    return 1;
+  }
+  int i;
+  for(i = 0 ; i < argc ; i++) {
+    printf("%s\n", argv[i]);
+  }
+  return 0;
+}
+```
+
+## Πράξεις με pointers - lec12
+
+Credits: Δημήτρης και Δημήτρης
+
+```c
+// A small program to test how pointers behave
+// and also how is an assignment expression
+// evaluated in C.
+#include <stdio.h>
+
+int main() {
+  int *p;
+  int x[] = {5, 7, 2, 3, 6, 0, 1, 4};
+  p = x;
+  while (1) {
+    printf("p: %p\n", p);
+    printf("p + 2: %p\n", p + 2);
+    printf("*p: %d\n", *p);
+    printf("*(p+2): %d\n", *(p+2));
+    printf("Value of *p = *(p+2): %d\n", *p = *(p+2));  // try to use +1000000000 instead of +2 and see what happens
+    if (!(*p)) break;
+    p++;
+  }
+  return 0;
+}
+```
+
 
