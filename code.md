@@ -289,4 +289,60 @@ int main() {
 }
 ```
 
+## Δέσμευση δυναμικού πίνακα - lec13
+
+```c
+// Program that allocates and deallocates a 2D array of integers.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int ** create_2d(int rows, int cols) {
+  int ** array = malloc(rows * sizeof(int *));
+  if (array == NULL) {
+    perror("rows malloc");
+    exit(1);
+  }
+  for(int i = 0; i < rows; i++) {
+    array[i] = malloc(cols * sizeof(int));
+    if (array[i] == NULL) {
+      perror("cols malloc");
+      exit(1);
+    }
+  }
+  return array;
+}
+
+void free_2d(int ** array, int rows) {
+  for(int i = 0; i < rows; i++) {
+    free(array[i]);
+  }
+  free(array);
+}
+
+int main() {
+  int ** array = create_2d(3, 4);
+  array[0][0] = 1;
+  free_2d(array, 3);
+  return 0;
+}
+```
+
+## Συγκρίνοντας δύο αλφαριθμητικά - lec14
+
+```c
+// Comparing two strings using strcmp vs comparing the pointers (i.e., addresses)
+// of two strings. The result is very different.
+
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char ** argv) {
+  if (argc != 3) return 1;
+  printf("strcmp(arg1, arg2): %d %d\n",
+         strcmp(argv[1], argv[2]), argv[1] == argv[2]);
+  return 0;
+}
+```
+
 
