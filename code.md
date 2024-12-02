@@ -396,10 +396,11 @@ long long int loops = 0;
 
 int is_prime(int i) {
   int is_first = 1;
-  for (int j = 2; j*j < i; j++) {
+  for (int j = 2; j*j <= i; j++) {
     loops++;
     if (i % j == 0) {
       is_first = 0;
+      break;
     }
   }
   return is_first;
@@ -417,7 +418,7 @@ int main(int argc, char **argv) {
     }
     i++;
   }
-  printf("The 100001st prime number is %d\n", hold);
+  printf("Prime number %d is %d\n", max_prime, hold);
   printf("Number of loops: %lld\n", loops);
   return 0;
 }
