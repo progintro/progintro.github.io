@@ -424,3 +424,102 @@ int main(int argc, char **argv) {
 }
 ```
 
+## 1ο παράδειγμα χρήσης Valgrind - Guest Lecture 2/12
+
+```c 
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <unistd.h>
+
+#define N 3
+#define M 2
+
+int main(void)
+{
+    int **arr, i, j;
+    arr = malloc(N * sizeof(int*));
+    for (i = 0; i < N; ++i)
+        arr[i] = malloc(M * sizeof(int));
+
+    for (i = 0; i < N; ++i) {
+        for (j = 0; j < M; ++j) {
+            arr[i][j] = time(NULL);
+            sleep(1);
+        }
+    }
+
+    for (i = 0; i < N; ++i) {
+        for (j = 0; j < M; ++j)
+            printf("%d\t", arr[i][j]);
+
+        printf("\n");
+    }
+
+    for (i = 0; i < N; i++)
+        free(arr[i]);
+    free(arr);
+
+    return 0;
+}
+```
+
+## 2ο παράδειγμα χρήσης Valgrind - Geust Lecture 2/12
+
+### Αρχείο example2.c
+```c
+#include <stdio.h>
+#include "primes.h"
+
+int main(void)
+{
+    int a, b;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    printf("%d\n", count_of_prime_numbers(a, b));
+    return 0;
+}
+```
+
+### Αρχείο primes.c (προσπαθήστε να βρείτε & να λύσετε τα memleaks!)
+```c 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "primes.h"
+
+int64_t count_of_prime_numbers(int64_t from, int64_t to)
+{
+    if (from > to || from < 1 || to < 1) {
+        printf("Wrong data\n");
+        return -1;
+    }
+
+    uint8_t *primes = malloc((to + 1) * sizeof(uint8_t));
+    if (primes == NULL) {
+        printf("Malloc failed!\n");
+        return -1;
+    }
+
+    memset(primes, 1, (to + 1) * sizeof(uint8_t));
+    primes[0] = 0;
+    primes[1] = 0;
+
+    int i, j;
+    for (i = 2; i * i <= to; ++i) {
+        if (!primes[i])
+            continue;
+
+        for (j = i * i; j <= to; j += i)
+            primes[j] = 0;
+    }
+
+    int64_t count = 0;
+    for (i = from; i <= to; ++i) {
+        if (primes[i])
+            ++count;
+    }
+
+    return count;
+}
+```
