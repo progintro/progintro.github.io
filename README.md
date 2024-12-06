@@ -47,6 +47,7 @@
 | 29/11 | Διάλεξη 16: Πολυπλοκότητα και Προεπεξεργαστής | [pdf](./assets/pdf/lec16.pdf) |
 | 02/12 | Διάλεξη 17: Δυαδική Αναζήτηση | [pdf](./assets/pdf/lec17.pdf) |
 | 02/12 | Guest Lecture on Memory Managment | [pdf](./assets/pdf/MemoryManagement.pdf) |
+| 06/12 | Διάλεξη 18: Ταξινόμηση και Δεδομένα Εισόδου #2 | [pdf](./assets/pdf/lec18.pdf) |
 
 
 * [Κώδικας διαλέξεων](./code.md)
