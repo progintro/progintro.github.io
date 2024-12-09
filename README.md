@@ -80,6 +80,8 @@
 | [Φυλλάδιο 6.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab06.pdf) | [lab06.md](https://github.com/progintro/lab-material/tree/main/labs/lab06) | [lab06.html](https://progintro.github.io/lab-material/labs/lab06) | [lab06](https://classroom.github.com/a/ZR5aJ15G) |
 | [Φυλλάδιο 7.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab07.pdf) | [lab07.md](https://github.com/progintro/lab-material/tree/main/labs/lab07) | [lab07.html](https://progintro.github.io/lab-material/labs/lab07) | [lab07](https://classroom.github.com/a/QNB3HfRl) |
 | [Φυλλάδιο 8.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab08.pdf) | [lab08.md](https://github.com/progintro/lab-material/tree/main/labs/lab08) | [lab08.html](https://progintro.github.io/lab-material/labs/lab08) | [lab08](https://classroom.github.com/a/7uWfTB0U) |
+| [Φυλλάδιο 9.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab09.pdf) | [lab09.md](https://github.com/progintro/lab-material/tree/main/labs/lab09) | [lab09.html](https://progintro.github.io/lab-material/labs/lab09) | [lab09](https://classroom.github.com/a/9eRqujUF) |
+
 
 Θες να βοηθήσεις να βελτιώσουμε τα Φυλλάδια; Στείλε μας PR στο [lab-material repo](https://github.com/progintro/lab-material).
 
