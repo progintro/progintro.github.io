@@ -1,8 +1,8 @@
 ---
 author:
-- "Εργασία \\#1"
+- "Εργασία 1"
 bibliography: biblio.bib
-date: Νοέμβριος 2024
+date: 2024-11-18T00:00:00Z
 lang: el
 link-citations: true
 title: Εισαγωγή στον Προγραμματισμό
