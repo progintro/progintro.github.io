@@ -57,6 +57,7 @@
 
 * [Εισαγωγή στους Pointers](https://www.youtube.com/watch?v=tH2JW8HsPNw)
 * [Ενδεικτικές λύσεις για τα εργαστήρια](https://github.com/dimskomex/ip-labs-solutions)
+* [Ενδεικτικά README/Σχόλια](./samples/README.md)
 
 ## Εργασίες
 
