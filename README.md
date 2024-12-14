@@ -49,6 +49,7 @@
 | 02/12 | Guest Lecture on Memory Managment | [pdf](./assets/pdf/MemoryManagement.pdf) |
 | 06/12 | Διάλεξη 18: Ταξινόμηση και Δεδομένα Εισόδου #2 | [pdf](./assets/pdf/lec18.pdf) |
 | 09/12 | Διάλεξη 19: Δομές | [pdf](./assets/pdf/lec19.pdf) |
+| 13/12 | Διάλεξη 20: Προχωρημένες Δομές | [pdf](./assets/pdf/lec20.pdf) |
 
 
 * [Κώδικας διαλέξεων](./code.md)
