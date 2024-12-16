@@ -523,3 +523,104 @@ int64_t count_of_prime_numbers(int64_t from, int64_t to)
     return count;
 }
 ```
+
+### Αρχείο league.c (παλιό θέμα) - lec20
+
+Credits: Αλέξανδρος
+
+```c
+// Program for computing league scores.
+// Possible solution to: https://progintro.github.io/exams/2023/fall/ex13/ - problem #3
+
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Datastructure for holding team data
+typedef struct {
+  char name[64]; // including null terminator
+  int points;
+  int goals[2]; // in, out
+} Team;
+
+// TEST ASAP
+// Comparing teams first by points, then by goal difference, last by name
+int teamcmp(const void *team1, const void *team2) {
+  Team *t1 = (Team *)team1; // implicit casting, cry
+  Team *t2 = (Team *)team2;
+  if (t1->points != t2->points)
+    return t2->points - t1->points;
+  int diff = (t2->goals[0] - t2->goals[1]) - (t1->goals[0] - t1->goals[1]);
+  if (diff != 0)
+    return diff;
+  return strcmp(t1->name, t2->name);
+}
+
+// Up to 100 teams, more checks are needed for real world usage
+Team teams[100] = {0};
+int8_t last_team = 0;
+// TODO add helper functions... eventually(tm)
+
+int team_index(char *name) {
+  int index = -1;
+  // char found=0; // JUSTICE FOR UNCONDITIONAL JUMPS
+  for (int i = 0; i < last_team; i++) {
+    if (strcmp(name, teams[i].name) == 0) {
+      index = i;
+      break;
+    }
+  }
+  return index;
+}
+
+void add_team(char *name) {
+  strcpy(teams[last_team].name, name); // ez pwn challenge
+  last_team++;
+}
+
+int main(int argc, char **argv) {
+  if (argc != 2)
+    return 1;
+  FILE *f = fopen(argv[1], "r");
+  if (!f)
+    return 1;
+  char name1[64], name2[64];
+  int gin, gout;
+  while (fscanf(f, "%63[^-]-%63[^,],%d-%d\n", name1, name2, &gin, &gout) == 4) {
+    int team1_index = team_index(name1);
+    int team2_index = team_index(name2);
+    if (team1_index == -1) {
+      add_team(name1);
+      team1_index = team_index(name1);
+    }
+    if (team2_index == -1) {
+      add_team(name2);
+      team2_index = team_index(name2);
+    }
+    teams[team1_index].goals[0] += gin;
+    teams[team2_index].goals[0] += gout;
+    teams[team1_index].goals[1] += gout;
+    teams[team2_index].goals[1] += gin;
+    int points = 0;
+    if (gin > gout) {
+      teams[team1_index].points += 3;
+    } else if (gout > gin) {
+      teams[team2_index].points += 3;
+    } else {
+      teams[team1_index].points += 1;
+      teams[team2_index].points += 1;
+    }
+
+  } // GET OUT
+  fclose(f);
+  // Sort out the teams
+  qsort(teams, last_team, sizeof(Team), &teamcmp);
+  for (int i = 0; i < last_team; i++) {
+    fprintf(stdout, "%s, %d, %d - %d\n", teams[i].name, teams[i].points,
+            teams[i].goals[0], teams[i].goals[1]);
+  }
+
+  return 0;
+}
+```
