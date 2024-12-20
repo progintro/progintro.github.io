@@ -65,7 +65,7 @@ $\\frac{9 + 7 + 7 + 1 + 4 + 4 + 4 + 38 + 8 + 4}{10} = 8.60$. Για να
 3. Τότε ο κινούμενος μέσος με παράθυρο 3 για αυτά τα στοιχεία λαμβάνει
 υπόψη του μόνο τα τελευταία 3:
 
-$$9 \\quad 7 \\quad 7 \\quad 1 \\quad 4 \\quad 4 \\quad 4 \\quad \\underbrace{38 \\quad 8 \\quad 4}\_{\\text{$SMA_3$}}$$
+$$9 \quad 7 \quad 7 \quad 1 \quad 4 \quad 4 \quad 4 \quad \underbrace{38 \quad 8 \quad 4}\_{SMA_3}$$
 
 και επομένως $SMA_3 = \\frac{38 + 8 + 4}{3} = 16.67$. Αντίστοιχα,
 μπορούν να οριστούν κινούμενοι μέσοι με μικρότερα παράθυρα (π.χ.,
@@ -132,7 +132,7 @@ $$9 \\quad 7 \\quad 7 \\quad 1 \\quad 4 \\quad 4 \\quad 4 \\quad \\underbrace{38
 
 <div class="english">
 
-    $ ./future 
+    $ ./future
     Usage: ./future <filename> [--window N (default: 50)]
     $ cat values.txt
     9 7 7 1 4 4 4 38 8 4
@@ -166,13 +166,13 @@ dow_jones.txt βρίσκεται στο <https://github.com/progintro/data>):
 
 <div class="english">
 
-    $ ./future dow_jones.txt 
+    $ ./future dow_jones.txt
     43471.71
     $ ./future dow_jones.txt --window 200
     40677.19
     $ ./future dow_jones.txt --window 1000
     35273.61
-    $ wc -l dow_jones.txt 
+    $ wc -l dow_jones.txt
     8302 dow_jones.txt
     $ ./future dow_jones.txt --window 8000
     15447.33
@@ -331,18 +331,18 @@ Problem* ([Wikipedia, χ.χ.i](#ref-tsp)), ελληνιστί το πρόβλη
 
 <div class="english">
 
-    $ cat map4.txt 
+    $ cat map4.txt
     Athens-Thessaloniki: 501
     Athens-Ioannina: 422
     Athens-Patras: 224
     Patras-Thessaloniki: 468
     Patras-Ioannina: 223
     Thessaloniki-Ioannina: 261
-     ./jabbamaps map4.txt 
+     ./jabbamaps map4.txt
     We will visit the cities in the following order:
     Athens -(224)-> Patras -(223)-> Ioannina -(261)-> Thessaloniki
     Total cost: 708
-    $ ./jabbamaps map7.txt 
+    $ ./jabbamaps map7.txt
     We will visit the cities in the following order:
     Athens -(211)-> Amfissa -(122)-> Patras -(223)-> Ioannina -(128)->
       Trikala -(123)-> Volos -(211)-> Thessaloniki
@@ -356,7 +356,7 @@ Problem* ([Wikipedia, χ.χ.i](#ref-tsp)), ελληνιστί το πρόβλη
 
 <div class="english">
 
-    $ ./jabbamaps tatooine.txt 
+    $ ./jabbamaps tatooine.txt
     We will visit the cities in the following order:
     Republic City -(65)-> Aldera -(124)-> Anchorhead -(44)-> Lessu -(45)->
       Mos Pelgo -(32)-> Canto Bight -(65)-> Mos Espa -(80)-> Coronet City -(53)->
@@ -480,7 +480,7 @@ object μπορεί να περιέχει ένα πεδίο τύπου JSON obje
           "index": 0,
           "message": {
             "role": "assistant",
-            "content": "Why do programmers always mix up Halloween 
+            "content": "Why do programmers always mix up Halloween
                         and Christmas?\nBecause Oct 31 == Dec 25!\n",
             "refusal": null
           },
