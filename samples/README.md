@@ -10,3 +10,5 @@
 1. [fauxtoshop code - hw2 (1)](./code/fauxtoshop1/fauxtoshop.c)
 1. [dna README - hw2 (1)](./code/dna1/README.md)
 1. [dna code - hw2 (1)](./code/dna1/dna.c)
+1. [coop README - hw2 (1)](./code/coop1/README.md)
+1. [coop code - hw2 (1)](./code/coop1/coop.c)
