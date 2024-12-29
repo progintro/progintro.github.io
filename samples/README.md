@@ -8,3 +8,5 @@
 1. [newton code - hw1 (1)](./code/newton1/newton.c)
 1. [fauxtoshop README - hw2 (1)](./code/fauxtoshop1/README.md)
 1. [fauxtoshop code - hw2 (1)](./code/fauxtoshop1/fauxtoshop.c)
+1. [dna README - hw2 (1)](./code/dna1/README.md)
+1. [dna code - hw2 (1)](./code/dna1/dna.c)
