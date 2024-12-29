@@ -95,6 +95,8 @@
 * Λάζαρος Χαβατζόγλου (coop)
 * Νικόλαος Τσούλος (coop, zoomba)
 
+### Άλλα Project
+
 * [uoabot](https://cgi.di.uoa.gr/~uoabot/) - ευχαριστούμε πολύ [@George-RG](https://github.com/George-RG/)!
 * Εντυπωσιακό [visualization της σειράς collatz](https://github.com/georomporas/collatz_visualization/) - ευχαριστούμε πολύ [@georomporas](https://github.com/georomporas/)!
 
