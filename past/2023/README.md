@@ -34,7 +34,7 @@
 * [Φυλλάδιο 9](./resources/labs/lab09.pdf)
 * [Φυλλάδιο 10](./resources/labs/lab10.pdf)
 * [Φυλλάδιο 11](./resources/labs/lab11.pdf)
-  
+
 * [Ενδεικτικές λύσεις για εργαστήρια](https://github.com/dimskomex/ip-labs-solutions) - ευχαριστούμε πολύ [@dimskomex](https://github.com/dimskomex)!
 
 
@@ -70,7 +70,7 @@
     | 18/12 | Διάλεξη 21: Λίστες | [pdf](./resources/slides/lec21.pdf) |
     | 22/12 | Διάλεξη 22: Δέντρα | [pdf](./resources/slides/lec22.pdf) |
     | 08/01 | Διάλεξη 23: Προχωρημένα Θέματα | [pdf](./resources/slides/lec23.pdf) |
-  
+
 
 
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
@@ -83,6 +83,17 @@
 1. [Εργασία 2](./resources/assignments/hw2.pdf). Προθεσμία: 14/01/2024, 23:59.
 1. [Εργασία 3](./resources/assignments/hw3.pdf). Προθεσμία: 13/02/2024, 23:59.
 
+### Πρώτες Θέσεις σε Διαγωνισμούς (Αλφαβητική Σειρά)
+
+* Γεώργιος Κρανιδιώτης (zoomba)
+* Γεώργιος Σιαφαρίκας (zoomba)
+* Δημήτριος Αλεξανδρής (collatz)
+* Δημήτριος Νικολαΐδης (coop, zoomba)
+* Δημοσθένης Θεοδοσίου (zoomba)
+* Ευστάθιος Κωνσταντίνου (zoomba)
+* Ιωάννης-Παναγιώτης Μπαλωμένος (coop)
+* Λάζαρος Χαβατζόγλου (coop)
+* Νικόλαος Τσούλος (coop, zoomba)
 
 * [uoabot](https://cgi.di.uoa.gr/~uoabot/) - ευχαριστούμε πολύ [@George-RG](https://github.com/George-RG/)!
 * Εντυπωσιακό [visualization της σειράς collatz](https://github.com/georomporas/collatz_visualization/) - ευχαριστούμε πολύ [@georomporas](https://github.com/georomporas/)!
