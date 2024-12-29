@@ -12,3 +12,5 @@
 1. [dna code - hw2 (1)](./code/dna1/dna.c)
 1. [coop README - hw2 (1)](./code/coop1/README.md)
 1. [coop code - hw2 (1)](./code/coop1/coop.c)
+1. [flawless README - hw1 (1)](./code/flawless1/README.md)
+1. [flawless code - hw1 (1)](./code/flawless1/flawless.c)
