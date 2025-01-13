@@ -69,7 +69,7 @@
 | [Εργασία 0](./assets/pdf/hw0.pdf) | | 23:59, 11 Νοεμβρίου 2024 |
 | [Εργασία 1 (PDF)](./assets/pdf/hw1.pdf) | [Εργασία 1 (Markdown)](./assets/md/hw1.md) | 23:59, 17 Δεκεμβρίου 2024 |
 | [Εργασία 2 (PDF)](./assets/pdf/hw2.pdf) | [Εργασία 2 (Markdown)](./assets/md/hw2.md) | 23:59, 14 Ιανουαρίου 2025 |
-| [Εργασία 3 (PDF)](./assets/pdf/hw3.pdf) | TBD | 23:59, 26 Φεβρουαρίου 2025 |
+| [Εργασία 3 (PDF)](./assets/pdf/hw3.pdf) | [Εργασία 3 (Markdown)](./assets/md/hw3.md) | 23:59, 26 Φεβρουαρίου 2025 |
 
 
 ## Εργαστήρια
