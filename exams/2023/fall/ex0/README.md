@@ -58,8 +58,8 @@ Riley Avery,6.16
 Skyler,5.88
 Taylor,5.3
 Alex,3.4
-Morgan,1.7
 Jordan,2
+Morgan,1.7
 Jamie,0
 Quinn,-1.1
 ```
