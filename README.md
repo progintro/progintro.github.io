@@ -51,6 +51,7 @@
 | 09/12 | Διάλεξη 19: Δομές | [pdf](./assets/pdf/lec19.pdf) |
 | 13/12 | Διάλεξη 20: Προχωρημένες Δομές | [pdf](./assets/pdf/lec20.pdf) |
 | 16/12 | Διάλεξη 21: Λίστες και Δέντρα | [pdf](./assets/pdf/lec21.pdf) |
+| 20/12 | Guest Lecture on Integer Factorization Algorithms | [pdf](./assets/pdf/IntegerFactorizationAlgorithms.pdf) |
 | 20/12 | Διάλεξη 22: Οργάνωση Κώδικα | [pdf](./assets/pdf/lec22.pdf) |
 | 10/01 | Διάλεξη 23: Προχωρημένα Θέματα | [pdf](./assets/pdf/lec23.pdf) |
 
