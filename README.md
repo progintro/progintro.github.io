@@ -217,6 +217,8 @@
 
 ## Προηγούμενα Διαγωνίσματα
 
+1. [Χειμερινή Εξεταστική 2024](/exams/2024/january/exam-january-25.pdf)
+1. [Κατατακτήριες Εξετάσεις 2024](/exams/2024/entrance/exam-entrance-24.pdf)
 1. [Επαναληπτική Εξεταστική 2024](/exams/2024/september/exam-september-24.pdf)
 1. [Επί Πτυχίω Εξεταστική 2024](/exams/2024/graduating/exam-graduating-24.pdf)
 1. [Χειμερινή Εξεταστική 2023 (Online)](/exams/2023/fall/)
