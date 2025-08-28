@@ -5,11 +5,9 @@
 
 ## Πρόγραμμα
 
-* Διαλέξεις: Δευτέρα και Παρασκευή 09:00-11:00 στο Αμφιθέατρο
-* Ώρες Γραφείου:
-  * Δευτέρα 11:00-12:00, γραφείο Α40
-  * Παρασκευή 11:00-12:00, αίθουσα Α3
-* Πρόσθεσε το πρόγραμμα του μαθήματος στο [google calendar](https://calendar.google.com/calendar/u/3?cid=Y182MTg0NDNiZDA4YWJiOGJkOWI0MjZiNWEwZWZmZmUzMjQ2NGYyM2M1NmFmODJiMDZiMTFhZjY1YWE0MDI5NDAwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+* Διαλέξεις: Δευτέρα και Παρασκευή 09:00-11:00 στο TBD
+* Ώρες Γραφείου: TBD
+* Πρόσθεσε το πρόγραμμα του μαθήματος στο [google calendar](TBD)
 
 ## Συμμετοχή
 
@@ -18,42 +16,17 @@
 * Λογαριασμό Gmail - άνοιξε [εδώ](https://accounts.google.com/SignUp) αν δεν έχεις ήδη.
 * Λογαριασμό GitHub - άνοιξε [εδώ](https://github.com/join) αν δεν έχεις ήδη.
 
-**ΣΗΜΑΝΤΙΚΟ**: Για να βαθμολογηθείς στο μάθημα, **πρέπει** να συμπληρώσεις τα στοιχεία σου σε αυτήν την [φόρμα](https://forms.gle/gP6zcnYk2cyE1uZ96) - απαιτεί λογαριασμό Gmail.
+**ΣΗΜΑΝΤΙΚΟ**: Για να βαθμολογηθείς στο μάθημα, **πρέπει** να συμπληρώσεις τα στοιχεία σου σε αυτήν την [φόρμα](TBD) - απαιτεί λογαριασμό Gmail.
 
 ## Επικοινωνία
 
-Ερωτήσεις για διαδικαστικά, το μάθημα και τις ασκήσεις αποκλειστικά στο [Piazza](https://piazza.com/uoa.gr/fall2024/197af) - απαιτεί di.uoa.gr email. Δεν έχεις ακόμα di.uoa.gr email; Βεβαιώσου ότι συμπλήρωσες την φόρμα στην Συμμετοχή παραπάνω και θα σου στείλουμε πρόσκληση.
+Ερωτήσεις για διαδικαστικά, το μάθημα και τις ασκήσεις αποκλειστικά στο [Piazza](TBD) - απαιτεί di.uoa.gr email. Δεν έχεις ακόμα di.uoa.gr email; Βεβαιώσου ότι συμπλήρωσες την φόρμα στην Συμμετοχή παραπάνω και θα σου στείλουμε πρόσκληση.
 
 ## Διαλέξεις
 
 | Ημερομηνία | Περιεχόμενο Μαθήματος | Αρχείο |
 | --- | --- | --- |
-| 30/09 | Διάλεξη 0: Καλημέρα Κόσμε! | [pdf](./assets/pdf/lec00.pdf) |
-| 04/10 | Διάλεξη 1: Η Γραμμή Εντολών | [pdf](./assets/pdf/lec01.pdf) |
-| 07/10 | Διάλεξη 2: Μνήμη και Μεταβλητές | [pdf](./assets/pdf/lec02.pdf) |
-| 11/10 | Διάλεξη 3: Συναρτήσεις | [pdf](./assets/pdf/lec03.pdf) |
-| 14/10 | Διάλεξη 4: Git και Τελεστές | [pdf](./assets/pdf/lec04.pdf) |
-| 18/10 | Διάλεξη 5: Τελεστές και Εντολές | [pdf](./assets/pdf/lec05.pdf) |
-| 25/10 | Διάλεξη 6: Εντολές και Ροή Ελέγχου | [pdf](./assets/pdf/lec06.pdf) |
-| 31/10 | Διάλεξη 7: Επίλυση Προβλήμάτων | [pdf](./assets/pdf/lec07.pdf) |
-| 01/11 | Διάλεξη 8: Ροή Ελέγχου #2 | [pdf](./assets/pdf/lec08.pdf) |
-| 04/11 | Διάλεξη 9: Δεδομένα Εισόδου | [pdf](./assets/pdf/lec09.pdf) |
-| 08/11 | Διάλεξη 10: Πίνακες | [pdf](./assets/pdf/lec10.pdf) |
-| 11/11 | Διάλεξη 11: Δείκτες και Αναδρομή | [pdf](./assets/pdf/lec11.pdf) |
-| 18/11 | Διάλεξη 12: Δείκτες και Πίνακες | [pdf](./assets/pdf/lec12.pdf) |
-| 22/11 | Διάλεξη 13: Μνήμη | [pdf](./assets/pdf/lec13.pdf) |
-| 25/11 | Διάλεξη 14: Εμβέλεια, Μνήμη και Συμβολοσειρές | [pdf](./assets/pdf/lec14.pdf) |
-| 28/11 | Διάλεξη 15: Επίλυση Προβλημάτων | [pdf](./assets/pdf/lec15.pdf) |
-| 29/11 | Διάλεξη 16: Πολυπλοκότητα και Προεπεξεργαστής | [pdf](./assets/pdf/lec16.pdf) |
-| 02/12 | Διάλεξη 17: Δυαδική Αναζήτηση | [pdf](./assets/pdf/lec17.pdf) |
-| 02/12 | Guest Lecture on Memory Managment | [pdf](./assets/pdf/MemoryManagement.pdf) |
-| 06/12 | Διάλεξη 18: Ταξινόμηση και Δεδομένα Εισόδου #2 | [pdf](./assets/pdf/lec18.pdf) |
-| 09/12 | Διάλεξη 19: Δομές | [pdf](./assets/pdf/lec19.pdf) |
-| 13/12 | Διάλεξη 20: Προχωρημένες Δομές | [pdf](./assets/pdf/lec20.pdf) |
-| 16/12 | Διάλεξη 21: Λίστες και Δέντρα | [pdf](./assets/pdf/lec21.pdf) |
-| 20/12 | Guest Lecture on Integer Factorization Algorithms | [pdf](./assets/pdf/IntegerFactorizationAlgorithms.pdf) |
-| 20/12 | Διάλεξη 22: Οργάνωση Κώδικα | [pdf](./assets/pdf/lec22.pdf) |
-| 10/01 | Διάλεξη 23: Προχωρημένα Θέματα | [pdf](./assets/pdf/lec23.pdf) |
+| 29/09 | Διάλεξη 0: Καλημέρα Κόσμε! | TBD |
 
 
 * [Κώδικας διαλέξεων](./code.md)
@@ -66,66 +39,26 @@
 
 ## Εργασίες
 
-| PDF | Markdown | Προθεσμία |
-| --- | --- | --- |
-| [Εργασία 0](./assets/pdf/hw0.pdf) | | 23:59, 11 Νοεμβρίου 2024 |
-| [Εργασία 1 (PDF)](./assets/pdf/hw1.pdf) | [Εργασία 1 (Markdown)](./assets/md/hw1.md) | 23:59, 17 Δεκεμβρίου 2024 |
-| [Εργασία 2 (PDF)](./assets/pdf/hw2.pdf) | [Εργασία 2 (Markdown)](./assets/md/hw2.md) | 23:59, 14 Ιανουαρίου 2025 |
-| [Εργασία 3 (PDF)](./assets/pdf/hw3.pdf) | [Εργασία 3 (Markdown)](./assets/md/hw3.md) | 23:59, 26 Φεβρουαρίου 2025 |
-
-### Πρώτες Θέσεις σε Διαγωνισμούς (Αλφαβητική Σειρά)
-
-* Άγγελος Μαμουρίδης (future)
-* Άγγελος-Παναγιώτης Κοζομπόλης (chess)
-* Βλάσης Μασούτης (chess)
-* Γιάννης Γρηγοράτος (chess)
-* Γρηγόριος Ντερέκης (factor, chess)
-* Κωνσταντίνος Διάκονος (future)
-* Μάρκος Ραδαίος (factor)
-* Ορέστης Τσεκρεζί (chess)
-* Παναγιώτης Χριστοφορίδης (future)
-* Σινάν Κιουτσούκ (future)
-* Χάρης Κοϊμτζόπουλος (factor)
+TBD
 
 ## Εργαστήρια
 
-Γραφτείτε στο τμήμα εργαστηρίου που ταιριάζει στο πρόγραμμά σας μέσω [eclass](https://eclass.uoa.gr/modules/group/index.php?course=DI649&urlview=1) - απαιτεί di.uoa.gr email. Δεν έχεις ακόμα di.uoa.gr email; Βεβαιώσου ότι συμπλήρωσες την φόρμα στην Συμμετοχή παραπάνω και θα προσπαθήσουμε να σε συμπεριλάβουμε στην λίστα.
+Γραφτείτε στο τμήμα εργαστηρίου που ταιριάζει στο πρόγραμμά σας μέσω [eclass](TBD) - απαιτεί di.uoa.gr email. Δεν έχεις ακόμα di.uoa.gr email; Βεβαιώσου ότι συμπλήρωσες την φόρμα στην Συμμετοχή παραπάνω και θα προσπαθήσουμε να σε συμπεριλάβουμε στην λίστα.
 
 ### Φυλλάδια
 
 | PDF | Markdown | HTML | GitHub Classroom (optional) |
 | --- | --- | --- | --- |
 | [Φυλλάδιο 0.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab00.pdf) | [lab00.md](https://github.com/progintro/lab-material/tree/main/labs/lab00) | [lab00.html](https://progintro.github.io/lab-material/labs/lab00) | |
-| [Φυλλάδιο 1.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab01.pdf) | [lab01.md](https://github.com/progintro/lab-material/tree/main/labs/lab01) | [lab01.html](https://progintro.github.io/lab-material/labs/lab01) | |
-| [Φυλλάδιο 2.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab02.pdf) | [lab02.md](https://github.com/progintro/lab-material/tree/main/labs/lab02) | [lab02.html](https://progintro.github.io/lab-material/labs/lab02) | [lab02](https://classroom.github.com/a/pqB_gumQ) |
-| [Φυλλάδιο 3.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab03.pdf) | [lab03.md](https://github.com/progintro/lab-material/tree/main/labs/lab03) | [lab03.html](https://progintro.github.io/lab-material/labs/lab03) | [lab03](https://classroom.github.com/a/WCiS9-wG) |
-| [Φυλλάδιο 4.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab04.pdf) | [lab04.md](https://github.com/progintro/lab-material/tree/main/labs/lab04) | [lab04.html](https://progintro.github.io/lab-material/labs/lab04) | [lab04](https://classroom.github.com/a/5V-31VHn) |
-| [Φυλλάδιο 5.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab05.pdf) | [lab05.md](https://github.com/progintro/lab-material/tree/main/labs/lab05) | [lab05.html](https://progintro.github.io/lab-material/labs/lab05) | [lab05](https://classroom.github.com/a/Gzr8ZRF7) |
-| [Φυλλάδιο 6.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab06.pdf) | [lab06.md](https://github.com/progintro/lab-material/tree/main/labs/lab06) | [lab06.html](https://progintro.github.io/lab-material/labs/lab06) | [lab06](https://classroom.github.com/a/ZR5aJ15G) |
-| [Φυλλάδιο 7.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab07.pdf) | [lab07.md](https://github.com/progintro/lab-material/tree/main/labs/lab07) | [lab07.html](https://progintro.github.io/lab-material/labs/lab07) | [lab07](https://classroom.github.com/a/QNB3HfRl) |
-| [Φυλλάδιο 8.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab08.pdf) | [lab08.md](https://github.com/progintro/lab-material/tree/main/labs/lab08) | [lab08.html](https://progintro.github.io/lab-material/labs/lab08) | [lab08](https://classroom.github.com/a/7uWfTB0U) |
-| [Φυλλάδιο 9.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab09.pdf) | [lab09.md](https://github.com/progintro/lab-material/tree/main/labs/lab09) | [lab09.html](https://progintro.github.io/lab-material/labs/lab09) | [lab09](https://classroom.github.com/a/9eRqujUF) |
-| [Φυλλάδιο 10.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab10.pdf) | [lab10.md](https://github.com/progintro/lab-material/tree/main/labs/lab10) | [lab10.html](https://progintro.github.io/lab-material/labs/lab10) | [lab10](https://classroom.github.com/a/j05SSG_A) |
 
 
 Θες να βοηθήσεις να βελτιώσουμε τα Φυλλάδια; Στείλε μας PR στο [lab-material repo](https://github.com/progintro/lab-material).
 
 ### Πρόγραμμα
 
-Το εργαστήριο είναι **υποχρεωτικό** για τους πρωτοετείς. Το ακόλουθο πρόγραμμα ξεκίνησε την 7η Οκτωβρίου 2024:
+Το εργαστήριο είναι **υποχρεωτικό** για τους πρωτοετείς. Το ακόλουθο πρόγραμμα θα ξεκινήσει την 6η Οκτωβρίου 2025:
 
-| Τμήμα | Εργαστήριο | Υπεύθυνος | Συνεργάτες |
-| --- | --- | --- | --- |
-| #0 | Δευ 13:00-15:00 (Windows PC1) | Νίκος Περδικοπάνης | Αλέξανδρος Κουρσάρης, Κωνσταντίνος Γεωργακόπουλος, Παναγιώτης Ζησιμόπουλος, Θεοδώρου Κίμων, Σταύρος Μιχαηλίδης, Γεώργιος Σιαφαρίκας, Κωνσταντίνος Τσιτσιλώνης|
-| #1 | Δευ 15:00-17:00 (Windows PC1) | Διονύσης Βασιλόπουλος | Δημήτρης Σκόνδρας Μέξης, Γιώργος Νικολαΐδης, Δημήτριος Στέφανος Πορίχης, Νίκος Τσούλος, Κωνσταντίνος Τσιτσιλώνης, Δημήτρης Νικολαΐδης, Πρωτόπαπας Παναγιώτης, Γεράσιμος Καραουλάνης, Βασίλειος Γκόλφος |
-| #2 | Δευ 17:00-19:00 (Windows PC1) | Νίκος Περδικοπάνης | Γιώργος Σπύρου, Γεώργιος Σιαφαρίκας, Μπαρμπαρόσος Θεοφάνης, Παύλος Νταής, Νίκος Τσούλος, Δημήτριος Στέφανος Πορίχης, Χαβατζόγλου Λάζαρος |
-| #3 | Τρί 13:00-15:00 (Linux)       | Μίλτος Κυριακάκος | Σταύρος Μιχαηλίδης, Παπανικολάου Γεώργιος, Σκαρπαθάκης Παναγιώτης, Μιχαήλ-Ραφαήλ Κωσταγιάννης, Γιώργος Σωφρονάς, Στάθης Κωνσταντίνου |
-| #4 | Τρί 15:00-17:00 (Windows PC1) | Γιάννης Χαμόδρακας | Άγγελος Κοραλής, Δημήτριος Στέφανος Πορίχης, Σπυρίδων Φεραδούρος, Σπυρίδων Μπενέκης, Αριάδνη Κουκουδάκη |
-| #5 | Τετ 15:00-17:00 (Windows PC1) | Στέφανος Σταμάτης | Ζωή Μάνεση, Ζήσιμος Βακράς, Ξηρός Ιωάννης, Ευάγγελος Καρούνος, Σκαρπαθάκης Παναγιώτης, Νίκος Τσούλος, Δημήτριος Αλεξανδρής, Θανάσης Καραδήμος, Ιωάννης Βογιατζής, Νίκος Δάλκος |
-| #6 | Τετ 17:00-19:00 (Windows PC1) | Γιάννης Χαμόδρακας | Μπαρμπαρόσος Θεοφάνης, Γιώργος Σπύρου, Δημήτρης Ανδρεάκης |
-| #7 | Τετ 19:00-21:00 (Windows PC1) | Θανάσης Αυγερινός | Γεώργιος Τόλης, Πέτρος Κατηφόρης, Ρεβέκκα Ζάβου, Ιωάννης Αμελαδιώτης, Δημήτρης Σκόνδρας Μέξης, Μαρία-Μυρτώ Σαπουντζάκη, Στάθης Κωνσταντίνου, Γκρίτζαλης Δημήτριος, Αναστάσης Τριανταφύλλου, Δημοσθένης Θεοδοσίου, Νίκος Δάλκος |
-| #8 | Πέμ 13:00-15:00 (Windows PC1) | Μίλτος Κυριακάκος | Σπυρίδων Φεραδούρος, Άγγελος Κοραλής, Δημήτριος Στέφανος Πορίχης, Παύλος Νταής |
-| B+ | Τρί 18:00-20:00 (Linux)       | Δημήτρης Βερλέκης | Κωνσταντίνος Στεργίου, Ματίνα Ναδάλη, Νίκος Δάλκος |
+TBD
 
 
 ## Συγγράμματα και Υλικό Μαθήματος
@@ -139,6 +72,7 @@
 
 ### Άλλοι Σύνδεσμοι
 
+* [Σημειώσεις](/assets/pdf/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
 * [Unix Tutorial από τον καθηγητή Παναγιώτη Σταματόπουλο](/assets/pdf/Unix.pdf)
 * [Οδηγίες εγκατάστασης VS Code από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/)
 * [Οδηγός Σπουδών για το μάθημα](https://www.di.uoa.gr/studies/undergraduate/courses/k04)
@@ -179,7 +113,6 @@
 * [2024](/past/2024/README.md)
 * [2023](/past/2023/README.md)
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
-* [Σημειώσεις](/assets/pdf/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
 
 ## Προηγούμενα Διαγωνίσματα
 
