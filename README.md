@@ -8,7 +8,9 @@
 * Διαλέξεις: Δευτέρα και Παρασκευή 09:00-11:00
   * Άρτιοι: Αμφιθέατρο
   * Περιττοί: Α2
-* Ώρες Γραφείου: TBD
+* Ώρες Γραφείου:
+  * Δευτέρα 11:00-12:00 (Αυγερινός @ Α40, Σταματόπουλος @ Α48)
+  * Παρασκευή 11:00-12:00 (Αυγερινός @ Α3, Σταματόπουλος @ Α48)
 * Πρόσθεσε το πρόγραμμα του μαθήματος στο [google calendar](https://calendar.google.com/calendar/u/3?cid=Y182MTg0NDNiZDA4YWJiOGJkOWI0MjZiNWEwZWZmZmUzMjQ2NGYyM2M1NmFmODJiMDZiMTFhZjY1YWE0MDI5NDAwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
 
 ## Συμμετοχή
