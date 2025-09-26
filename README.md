@@ -138,6 +138,7 @@ TBD
 
 ## Προηγούμενα Διαγωνίσματα
 
+1. [Επαναληπτική Εξεταστική 2025](/exams/2025/september/exam-september-25.pdf)
 1. [Χειμερινή Εξεταστική 2024](/exams/2024/january/exam-january-25.pdf)
 1. [Κατατακτήριες Εξετάσεις 2024](/exams/2024/entrance/exam-entrance-24.pdf)
 1. [Επαναληπτική Εξεταστική 2024](/exams/2024/september/exam-september-24.pdf)
