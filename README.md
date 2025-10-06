@@ -93,6 +93,7 @@ TBD
 * [Σημειώσεις](/assets/pdf/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
 * [Unix Tutorial από τον καθηγητή Παναγιώτη Σταματόπουλο](/assets/pdf/Unix.pdf)
 * [Οδηγίες εγκατάστασης VS Code από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/)
+* [Οδηγίες εγκατάστασης WSL από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/windows/)
 * [Οδηγός Σπουδών για το μάθημα](https://www.di.uoa.gr/studies/undergraduate/courses/k04)
 
 
