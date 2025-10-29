@@ -1,5 +1,25 @@
 # Κώδικας Διαλέξεων
 
+## perfect.c - Credit: Στέφανος
+
+```c
+// Program to compute the sum of perfect squares up to a point.
+#include <stdio.h>
+
+int main(int argc, char ** argv) {
+  long long int threshold = 540000;
+  long long int i;
+  long long sum = 0;
+  for(i = 1; i <= threshold; i+=2) {
+     sum += i * i;
+     printf("Intermediate value: %lld\n", i * i);
+  }
+  printf("Sum: %lld\n", sum);
+  return 0;
+
+}
+```
+
 ## grade.c - Credit: Γιάννης
 
 ```c
