@@ -1,6 +1,44 @@
 # Κώδικας Διαλέξεων
 
 
+## prime.c - Credit: Ματθαίος
+
+```c
+// Computing the n-th prime (efficient enough? can it be done without math.h?)
+#include <stdio.h>
+#include <math.h>
+
+long long is_prime(long long num) {
+  long long count = 0;
+  if (num == 2) return 1;
+  if (num % 2 == 0) return 0;
+  for (long long j = 3; j <= sqrt(num); j+=2) {
+    if (num % j == 0) {
+      count++;
+      break;
+    }
+  }
+  if (count == 0) {
+    return 1;
+  } else
+    return 0;
+}
+
+int main() {
+  long long a = 0;
+  for (long long int i = 2; i <= 1000000; i++) {
+    if (is_prime(i) == 1) {
+      a++;
+    }
+    if (a == 20001) {
+      printf("%lld\n", i);
+      i = 1000000;
+    }
+  }
+  return 0;
+}
+```
+
 ## multiples.c - Credit: Θανάσης
 
 ```c
