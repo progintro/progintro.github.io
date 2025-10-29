@@ -1,5 +1,24 @@
 # Κώδικας Διαλέξεων
 
+
+## multiples.c - Credit: Θανάσης
+
+```c
+// Computing the sum of all 3-digit multiples of 3 or 5.
+#include <stdio.h>
+
+int main(){
+    long long int sum = 0;
+    for (  int i = 3; i < 1000; i++){
+        if (( i % 3 == 0) || (i % 5 ==0)){
+           sum += i;
+        }
+    }
+    printf("Sum: %lld\n", sum);
+    return 0;
+}
+```
+
 ## perfect.c - Credit: Στέφανος
 
 ```c
