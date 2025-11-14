@@ -63,7 +63,7 @@
 ## Bonus (Προαιρετικά)
 
 | Εργασία | GitHub |
-| --- | --- | --- |
+| --- | --- |
 | [Bonus #0](./assets/pdf/stergios.pdf) | [Invite](https://classroom.github.com/a/IXkf4sQe) |
 
 
