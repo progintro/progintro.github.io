@@ -56,7 +56,7 @@
 ## Εργασίες
 
 | Εργασία | GitHub | Προθεσμία |
-| --- | --- |
+| --- | --- | --- |
 | [Εργασία 0](./assets/pdf/hw0.pdf) | [Invite](https://classroom.github.com/a/XwPvT9Jk) | 12 Νοεμβρίου 2025, 23:59 |
 | [Εργασία 1](./assets/pdf/hw1.pdf) | [Invite](https://classroom.github.com/a/Ej4U3Ftp) | 10 Δεκεμβρίου 2025, 23:59 |
 
