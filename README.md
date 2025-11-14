@@ -60,6 +60,13 @@
 | [Εργασία 0](./assets/pdf/hw0.pdf) | [Invite](https://classroom.github.com/a/XwPvT9Jk) | 12 Νοεμβρίου 2025, 23:59 |
 | [Εργασία 1](./assets/pdf/hw1.pdf) | [Invite](https://classroom.github.com/a/Ej4U3Ftp) | 10 Δεκεμβρίου 2025, 23:59 |
 
+## Bonus (Προαιρετικά)
+
+| Εργασία | GitHub |
+| --- | --- | --- |
+| [Bonus #0](./assets/pdf/stergios.pdf) | [Invite](https://classroom.github.com/a/IXkf4sQe) |
+
+
 ## Εργαστήρια
 
 Γραφτείτε στο τμήμα εργαστηρίου που ταιριάζει στο πρόγραμμά σας μέσω [eclass](https://eclass.uoa.gr/modules/group/index.php?course=DI681&urlview=1) - απαιτεί di.uoa.gr email. Δεν έχεις ακόμα di.uoa.gr email; Βεβαιώσου ότι συμπλήρωσες την φόρμα στην Συμμετοχή παραπάνω και θα προσπαθήσουμε να σε συμπεριλάβουμε στην λίστα.
