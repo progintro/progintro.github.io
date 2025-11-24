@@ -45,6 +45,8 @@
 | 10/11 | Διάλεξη 12: Δείκτες και Πίνακες | [PDF](./assets/pdf/lec12.pdf) |
 | 14/11 | Διάλεξη 13: Μνήμη | [PDF](./assets/pdf/lec13.pdf) |
 | 21/11 | Διάλεξη 14: Εμβέλεια, Μνήμη και Συμβολοσειρές | [PDF](./assets/pdf/lec14.pdf) |
+| 24/11 | Διάλεξη 15: Πολυπλοκότητα και Προεπεξεργαστής | [PDF](./assets/pdf/lec15.pdf) |
+
 
 
 
@@ -85,6 +87,7 @@
 | [Φυλλάδιο 4.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab04.pdf) | [lab04.md](https://github.com/progintro/lab-material/tree/main/labs/lab04) | [lab04.html](https://progintro.github.io/lab-material/labs/lab04) | [lab04](https://classroom.github.com/a/Am6C7QwX) |
 | [Φυλλάδιο 5.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab05.pdf) | [lab05.md](https://github.com/progintro/lab-material/tree/main/labs/lab05) | [lab05.html](https://progintro.github.io/lab-material/labs/lab05) | |
 | [Φυλλάδιο 6.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab06.pdf) | [lab06.md](https://github.com/progintro/lab-material/tree/main/labs/lab06) | [lab06.html](https://progintro.github.io/lab-material/labs/lab06) | |
+| [Φυλλάδιο 7.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab07.pdf) | [lab07.md](https://github.com/progintro/lab-material/tree/main/labs/lab07) | [lab07.html](https://progintro.github.io/lab-material/labs/lab07) | |
 
 
 
