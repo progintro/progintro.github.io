@@ -52,6 +52,7 @@
 | 05/12 | Διάλεξη 19: Δομές | [PDF](./assets/pdf/lec19.pdf) |
 | 08/12 | Διάλεξη 20: Προχωρημένες Δομές | [PDF](./assets/pdf/lec20.pdf) |
 | 12/12 | Διάλεξη 21: Λίστες και Δέντρα | [PDF](./assets/pdf/lec21.pdf) |
+| 15/12 | Διάλεξη 22: Δέντρα | [PDF](./assets/pdf/lec22.pdf) |
 
 
 
@@ -69,7 +70,7 @@
 | Εργασία | GitHub | Προθεσμία |
 | --- | --- | --- |
 | [Εργασία 0](./assets/pdf/hw0.pdf) | [Invite](https://classroom.github.com/a/XwPvT9Jk) | 12 Νοεμβρίου 2025, 23:59 |
-| [Εργασία 1](./assets/pdf/hw1.pdf) | [Invite](https://classroom.github.com/a/Ej4U3Ftp) | 10 Δεκεμβρίου 2025, 23:59 |
+| [Εργασία 1](./assets/pdf/hw1.pdf) | [Invite](https://classroom.github.com/a/Ej4U3Ftp) | 10 Δεκεμβρίου 2026, 23:59 |
 | [Εργασία 2](./assets/pdf/hw2.pdf) | [Invite](https://classroom.github.com/a/nuK8kuu6) | 10 Ιανουαρίου 2026, 23:59 |
 
 ## Bonus (Προαιρετικά)
