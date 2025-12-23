@@ -55,6 +55,7 @@
 | 15/12 | Διάλεξη 22: Δέντρα | [PDF](./assets/pdf/lec22.pdf) |
 | 19/12 | Διάλεξη 23: Οργάνωση Κώδικα | [PDF](./assets/pdf/lec23.pdf) |
 | 19/12 | Guest Lecture: How to Make? | [PDF](./assets/pdf/make.pdf) |
+| 22/12 | Διάλεξη 24: Προχωρημένα Θέματα | [pdf](./assets/pdf/lec24.pdf) |
 
 
 * [Κώδικας διαλέξεων](./code.md)
