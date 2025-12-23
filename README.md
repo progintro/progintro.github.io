@@ -73,6 +73,7 @@
 | [Εργασία 0](./assets/pdf/hw0.pdf) | [Invite](https://classroom.github.com/a/XwPvT9Jk) | 12 Νοεμβρίου 2025, 23:59 |
 | [Εργασία 1](./assets/pdf/hw1.pdf) | [Invite](https://classroom.github.com/a/Ej4U3Ftp) | 10 Δεκεμβρίου 2025, 23:59 |
 | [Εργασία 2](./assets/pdf/hw2.pdf) | [Invite](https://classroom.github.com/a/nuK8kuu6) | 10 Ιανουαρίου 2026, 23:59 |
+| [Εργασία 3](./assets/pdf/hw3.pdf) | [Invite](https://classroom.github.com/a/UWzEAYS3) | 17 Ιανουαρίου 2026, 23:59 |
 
 ## Bonus (Προαιρετικά)
 
