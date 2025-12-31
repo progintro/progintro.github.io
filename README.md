@@ -55,6 +55,7 @@
 | 15/12 | Διάλεξη 22: Δέντρα | [PDF](./assets/pdf/lec22.pdf) |
 | 19/12 | Διάλεξη 23: Οργάνωση Κώδικα | [PDF](./assets/pdf/lec23.pdf) |
 | 19/12 | Guest Lecture: How to Make? | [PDF](./assets/pdf/make.pdf) |
+| 22/12 | Διάλεξη 24: Προχωρημένα Θέματα | [pdf](./assets/pdf/lec24.pdf) |
 
 
 * [Κώδικας διαλέξεων](./code.md)
@@ -72,6 +73,7 @@
 | [Εργασία 0](./assets/pdf/hw0.pdf) | [Invite](https://classroom.github.com/a/XwPvT9Jk) | 12 Νοεμβρίου 2025, 23:59 |
 | [Εργασία 1](./assets/pdf/hw1.pdf) | [Invite](https://classroom.github.com/a/Ej4U3Ftp) | 10 Δεκεμβρίου 2025, 23:59 |
 | [Εργασία 2](./assets/pdf/hw2.pdf) | [Invite](https://classroom.github.com/a/nuK8kuu6) | 10 Ιανουαρίου 2026, 23:59 |
+| [Εργασία 3](./assets/pdf/hw3.pdf) | [Invite](https://classroom.github.com/a/UWzEAYS3) | 17 Ιανουαρίου 2026, 23:59 |
 
 ## Bonus (Προαιρετικά)
 
@@ -97,8 +99,8 @@
 | [Φυλλάδιο 6.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab06.pdf) | [lab06.md](https://github.com/progintro/lab-material/tree/main/labs/lab06) | [lab06.html](https://progintro.github.io/lab-material/labs/lab06) | [lab06](https://classroom.github.com/a/N0yq1Biu) |
 | [Φυλλάδιο 7.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab07.pdf) | [lab07.md](https://github.com/progintro/lab-material/tree/main/labs/lab07) | [lab07.html](https://progintro.github.io/lab-material/labs/lab07) | [lab07](https://classroom.github.com/a/ts_bs6Bt) |
 | [Φυλλάδιο 8.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab08.pdf) | [lab08.md](https://github.com/progintro/lab-material/tree/main/labs/lab08) | [lab08.html](https://progintro.github.io/lab-material/labs/lab08) | [lab08](https://classroom.github.com/a/SzB4M12z) |
-| [Φυλλάδιο 9.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab09.pdf) | [lab09.md](https://github.com/progintro/lab-material/tree/main/labs/lab09) | [lab09.html](https://progintro.github.io/lab-material/labs/lab09) |  |
-
+| [Φυλλάδιο 9.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab09.pdf) | [lab09.md](https://github.com/progintro/lab-material/tree/main/labs/lab09) | [lab09.html](https://progintro.github.io/lab-material/labs/lab09) | [lab09](https://classroom.github.com/a/BX9DV9Pi) |
+| [Φυλλάδιο 10.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab10.pdf) | [lab10.md](https://github.com/progintro/lab-material/tree/main/labs/lab10) | [lab10.html](https://progintro.github.io/lab-material/labs/lab10) | [lab10](https://classroom.github.com/a/i_0p5nBl) |
 
 
 
