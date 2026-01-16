@@ -1,0 +1,3 @@
+[submodule "samples/makefiles/feohzero"]
+	path = samples/makefiles/feohzero
+	url = https://github.com/ohgreg/feohzero.git
