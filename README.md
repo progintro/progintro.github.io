@@ -231,14 +231,14 @@
 
 ## Προηγούμενα Διαγωνίσματα
 
-1. [Χειμερινή Εξεταστική 2025](/exams/2025/january/exam-january-26.pdf)
-1. [Επαναληπτική Εξεταστική 2025](/exams/2025/september/exam-september-25.pdf)
-1. [Χειμερινή Εξεταστική 2024](/exams/2024/january/exam-january-25.pdf)
-1. [Κατατακτήριες Εξετάσεις 2024](/exams/2024/entrance/exam-entrance-24.pdf)
-1. [Επαναληπτική Εξεταστική 2024](/exams/2024/september/exam-september-24.pdf)
-1. [Επί Πτυχίω Εξεταστική 2024](/exams/2024/graduating/exam-graduating-24.pdf)
+1. [Χειμερινή Εξεταστική 2025](/exams/2026/progintro-exam-jan-26.pdf)
+1. [Επαναληπτική Εξεταστική 2025](/exams/2025/progintro-exam-sep-25.pdf)
+1. [Χειμερινή Εξεταστική 2024](/exams/2025/progintro-exam-jan-25.pdf)
+1. [Κατατακτήριες Εξετάσεις 2024](/exams/2024/progintro-exam-dec-24.pdf)
+1. [Επαναληπτική Εξεταστική 2024](/exams/2024/progintro-exam-sep-24.pdf)
+1. [Επί Πτυχίω Εξεταστική 2024](/exams/2024/progintro-exam-jul-24.pdf)
 1. [Χειμερινή Εξεταστική 2023 (Online)](/exams/2023/fall/)
-1. [Κατατακτήριες Εξετάσεις 2023](/exams/2023/entrance/exam-entrance-23.pdf)
+1. [Κατατακτήριες Εξετάσεις 2023](/exams/2023/progintro-exam-dec-23.pdf)
 
 ## Ευχαριστίες
 
