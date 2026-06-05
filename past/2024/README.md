@@ -28,32 +28,32 @@
 
 | Ημερομηνία | Περιεχόμενο Μαθήματος | Αρχείο |
 | --- | --- | --- |
-| 30/09 | Διάλεξη 0: Καλημέρα Κόσμε! | [pdf](./assets/pdf/lec00.pdf) |
-| 04/10 | Διάλεξη 1: Η Γραμμή Εντολών | [pdf](./assets/pdf/lec01.pdf) |
-| 07/10 | Διάλεξη 2: Μνήμη και Μεταβλητές | [pdf](./assets/pdf/lec02.pdf) |
-| 11/10 | Διάλεξη 3: Συναρτήσεις | [pdf](./assets/pdf/lec03.pdf) |
-| 14/10 | Διάλεξη 4: Git και Τελεστές | [pdf](./assets/pdf/lec04.pdf) |
-| 18/10 | Διάλεξη 5: Τελεστές και Εντολές | [pdf](./assets/pdf/lec05.pdf) |
-| 25/10 | Διάλεξη 6: Εντολές και Ροή Ελέγχου | [pdf](./assets/pdf/lec06.pdf) |
-| 31/10 | Διάλεξη 7: Επίλυση Προβλήμάτων | [pdf](./assets/pdf/lec07.pdf) |
-| 01/11 | Διάλεξη 8: Ροή Ελέγχου #2 | [pdf](./assets/pdf/lec08.pdf) |
-| 04/11 | Διάλεξη 9: Δεδομένα Εισόδου | [pdf](./assets/pdf/lec09.pdf) |
-| 08/11 | Διάλεξη 10: Πίνακες | [pdf](./assets/pdf/lec10.pdf) |
-| 11/11 | Διάλεξη 11: Δείκτες και Αναδρομή | [pdf](./assets/pdf/lec11.pdf) |
-| 18/11 | Διάλεξη 12: Δείκτες και Πίνακες | [pdf](./assets/pdf/lec12.pdf) |
-| 22/11 | Διάλεξη 13: Μνήμη | [pdf](./assets/pdf/lec13.pdf) |
-| 25/11 | Διάλεξη 14: Εμβέλεια, Μνήμη και Συμβολοσειρές | [pdf](./assets/pdf/lec14.pdf) |
-| 28/11 | Διάλεξη 15: Επίλυση Προβλημάτων | [pdf](./assets/pdf/lec15.pdf) |
-| 29/11 | Διάλεξη 16: Πολυπλοκότητα και Προεπεξεργαστής | [pdf](./assets/pdf/lec16.pdf) |
-| 02/12 | Διάλεξη 17: Δυαδική Αναζήτηση | [pdf](./assets/pdf/lec17.pdf) |
-| 02/12 | Guest Lecture on Memory Managment | [pdf](./assets/pdf/MemoryManagement.pdf) |
-| 06/12 | Διάλεξη 18: Ταξινόμηση και Δεδομένα Εισόδου #2 | [pdf](./assets/pdf/lec18.pdf) |
-| 09/12 | Διάλεξη 19: Δομές | [pdf](./assets/pdf/lec19.pdf) |
-| 13/12 | Διάλεξη 20: Προχωρημένες Δομές | [pdf](./assets/pdf/lec20.pdf) |
-| 16/12 | Διάλεξη 21: Λίστες και Δέντρα | [pdf](./assets/pdf/lec21.pdf) |
-| 20/12 | Guest Lecture on Integer Factorization Algorithms | [pdf](./assets/pdf/IntegerFactorizationAlgorithms.pdf) |
-| 20/12 | Διάλεξη 22: Οργάνωση Κώδικα | [pdf](./assets/pdf/lec22.pdf) |
-| 10/01 | Διάλεξη 23: Προχωρημένα Θέματα | [pdf](./assets/pdf/lec23.pdf) |
+| 30/09 | Διάλεξη 0: Καλημέρα Κόσμε! | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec00.pdf) |
+| 04/10 | Διάλεξη 1: Η Γραμμή Εντολών | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec01.pdf) |
+| 07/10 | Διάλεξη 2: Μνήμη και Μεταβλητές | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec02.pdf) |
+| 11/10 | Διάλεξη 3: Συναρτήσεις | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec03.pdf) |
+| 14/10 | Διάλεξη 4: Git και Τελεστές | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec04.pdf) |
+| 18/10 | Διάλεξη 5: Τελεστές και Εντολές | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec05.pdf) |
+| 25/10 | Διάλεξη 6: Εντολές και Ροή Ελέγχου | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec06.pdf) |
+| 31/10 | Διάλεξη 7: Επίλυση Προβλήμάτων | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec07.pdf) |
+| 01/11 | Διάλεξη 8: Ροή Ελέγχου #2 | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec08.pdf) |
+| 04/11 | Διάλεξη 9: Δεδομένα Εισόδου | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec09.pdf) |
+| 08/11 | Διάλεξη 10: Πίνακες | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec10.pdf) |
+| 11/11 | Διάλεξη 11: Δείκτες και Αναδρομή | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec11.pdf) |
+| 18/11 | Διάλεξη 12: Δείκτες και Πίνακες | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec12.pdf) |
+| 22/11 | Διάλεξη 13: Μνήμη | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec13.pdf) |
+| 25/11 | Διάλεξη 14: Εμβέλεια, Μνήμη και Συμβολοσειρές | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec14.pdf) |
+| 28/11 | Διάλεξη 15: Επίλυση Προβλημάτων | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec15.pdf) |
+| 29/11 | Διάλεξη 16: Πολυπλοκότητα και Προεπεξεργαστής | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec16.pdf) |
+| 02/12 | Διάλεξη 17: Δυαδική Αναζήτηση | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec17.pdf) |
+| 02/12 | Guest Lecture on Memory Managment | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/MemoryManagement.pdf) |
+| 06/12 | Διάλεξη 18: Ταξινόμηση και Δεδομένα Εισόδου #2 | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec18.pdf) |
+| 09/12 | Διάλεξη 19: Δομές | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec19.pdf) |
+| 13/12 | Διάλεξη 20: Προχωρημένες Δομές | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec20.pdf) |
+| 16/12 | Διάλεξη 21: Λίστες και Δέντρα | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec21.pdf) |
+| 20/12 | Guest Lecture on Integer Factorization Algorithms | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/IntegerFactorizationAlgorithms.pdf) |
+| 20/12 | Διάλεξη 22: Οργάνωση Κώδικα | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec22.pdf) |
+| 10/01 | Διάλεξη 23: Προχωρημένα Θέματα | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec23.pdf) |
 
 
 * [Κώδικας διαλέξεων](./code.md)
@@ -68,10 +68,10 @@
 
 | PDF | Markdown | Προθεσμία |
 | --- | --- | --- |
-| [Εργασία 0](./assets/pdf/hw0.pdf) | | 23:59, 11 Νοεμβρίου 2024 |
-| [Εργασία 1 (PDF)](./assets/pdf/hw1.pdf) | [Εργασία 1 (Markdown)](./assets/md/hw1.md) | 23:59, 17 Δεκεμβρίου 2024 |
-| [Εργασία 2 (PDF)](./assets/pdf/hw2.pdf) | [Εργασία 2 (Markdown)](./assets/md/hw2.md) | 23:59, 14 Ιανουαρίου 2025 |
-| [Εργασία 3 (PDF)](./assets/pdf/hw3.pdf) | [Εργασία 3 (Markdown)](./assets/md/hw3.md) | 23:59, 26 Φεβρουαρίου 2025 |
+| [Εργασία 0](https://github.com/progintro/progintro.github.io/releases/download/2024/hw0.pdf) | | 23:59, 11 Νοεμβρίου 2024 |
+| [Εργασία 1 (PDF)](https://github.com/progintro/progintro.github.io/releases/download/2024/hw1.pdf) | [Εργασία 1 (Markdown)](./assets/md/hw1.md) | 23:59, 17 Δεκεμβρίου 2024 |
+| [Εργασία 2 (PDF)](https://github.com/progintro/progintro.github.io/releases/download/2024/hw2.pdf) | [Εργασία 2 (Markdown)](./assets/md/hw2.md) | 23:59, 14 Ιανουαρίου 2025 |
+| [Εργασία 3 (PDF)](https://github.com/progintro/progintro.github.io/releases/download/2024/hw3.pdf) | [Εργασία 3 (Markdown)](./assets/md/hw3.md) | 23:59, 26 Φεβρουαρίου 2025 |
 
 ### Πρώτες Θέσεις σε Διαγωνισμούς (Αλφαβητική Σειρά)
 
@@ -139,7 +139,7 @@
 
 ### Άλλοι Σύνδεσμοι
 
-* [Unix Tutorial από τον καθηγητή Παναγιώτη Σταματόπουλο](/assets/pdf/Unix.pdf)
+* [Unix Tutorial από τον καθηγητή Παναγιώτη Σταματόπουλο](https://github.com/progintro/progintro.github.io/releases/download/2024/Unix.pdf)
 * [Οδηγίες εγκατάστασης VS Code από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/)
 * [Οδηγός Σπουδών για το μάθημα](https://www.di.uoa.gr/studies/undergraduate/courses/k04)
 
@@ -226,7 +226,7 @@
 
 * [2023](/past/2023/README.md)
 * [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
-* [Σημειώσεις](/assets/pdf/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
+* [Σημειώσεις](https://github.com/progintro/progintro.github.io/releases/download/2024/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
 
 ## Προηγούμενα Διαγωνίσματα
 
