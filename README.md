@@ -244,3 +244,15 @@
 ## Ευχαριστίες
 
 Θερμές ευχαριστίες στον [Στέφανο Σταμάτη](https://telekpa.uoa.gr/personalrec.php?lang=el&rid=7474) χωρίς τον οποίο το μάθημα θα ήταν αδύνατο να στηθεί.
+
+## Συνεισφορές
+
+Δεχόμαστε με χαρά διορθώσεις και προσθήκες — δείτε το
+[CONTRIBUTING.md](https://github.com/progintro/progintro.github.io/blob/main/CONTRIBUTING.md)
+για το πώς χτίζεται η σελίδα και πώς να στείλετε μια αλλαγή. Για τα φυλλάδια των
+εργαστηρίων, τα PR πάνε στο
+[lab-material](https://github.com/progintro/lab-material).
+
+## Άδεια χρήσης
+
+[MIT](https://github.com/progintro/progintro.github.io/blob/main/LICENSE.md) · © University of Athens

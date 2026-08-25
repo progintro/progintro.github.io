@@ -1,0 +1,8 @@
+# Local Jekyll preview (see CONTRIBUTING.md) - the published build runs on GitHub Pages.
+Gemfile
+Gemfile.lock
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.DS_Store

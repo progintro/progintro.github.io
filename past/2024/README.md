@@ -56,7 +56,7 @@
 | 10/01 | Διάλεξη 23: Προχωρημένα Θέματα | [pdf](https://github.com/progintro/progintro.github.io/releases/download/2024/lec23.pdf) |
 
 
-* [Κώδικας διαλέξεων](./code.md)
+* [Κώδικας διαλέξεων](./assets/code.md)
 
 ## Εκπαιδευτικό Υλικό Από Φοιτητές για Φοιτητές
 
