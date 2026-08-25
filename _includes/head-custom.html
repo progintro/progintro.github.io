@@ -1,0 +1,198 @@
+<!--
+  Brand + rendering layer for the course sites.
+
+  Everything between the SHARED BEGIN / SHARED END markers below is meant to be
+  byte-identical to progintro/lab-material's _includes/head-custom.html. Both repos now
+  render with jekyll-theme-primer, so the same selectors apply on both sides and the
+  block can be copied across verbatim. If you change a colour or a script here, copy the
+  whole block over there (and vice versa) rather than editing one half.
+
+  Below SHARED END are the parts that only exist on this site: the masthead, the student
+  work montage, the table of contents card and the exercise pager.
+-->
+
+<!-- ==================== SHARED BEGIN (keep in sync with lab-material) ============ -->
+
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("code.language-mermaid").forEach((block) => {
+      const parent = block.parentElement;
+      const mermaidDiv = document.createElement("div");
+      mermaidDiv.classList.add("mermaid");
+      mermaidDiv.innerHTML = block.textContent;
+      parent.replaceWith(mermaidDiv);
+    });
+    mermaid.initialize({ startOnLoad: true });
+  })
+</script>
+
+
+<style>
+  /* Brand palette, taken from the two institutional marks: the dit cyan and charcoal
+     blocks and the cornflower blue of the UOA crest. Kept in sync with labs/header.tex,
+     which applies the same colours to the PDFs. */
+  :root {
+    --dit-cyan: #0B7FA3;
+    --dit-charcoal: #444444;
+    --uoa-blue: #3F6FB5;
+  }
+
+  .markdown-body a { color: var(--dit-cyan); }
+  .markdown-body h1, .markdown-body h2 { border-bottom-color: #dfe6ea; }
+  .markdown-body h2 { color: var(--dit-charcoal); }
+
+  .lab-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .lab-nav-top { border-bottom: 2px solid var(--dit-cyan); margin-bottom: 24px; }
+  .lab-nav-bottom { border-top: 2px solid var(--dit-cyan); margin-top: 40px; }
+  .lab-nav-side { flex: 1; }
+  .lab-nav-right { text-align: right; }
+  .lab-nav-mid { flex: 0 0 auto; color: #6a737d; }
+  .lab-nav a { color: var(--dit-cyan); text-decoration: none; font-weight: 600; }
+  .lab-nav a:hover { text-decoration: underline; }
+
+  .lab-index td:first-child { white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  .crest-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .crest-row img { max-height: 64px; width: auto; }
+</style>
+
+<!-- ==================== SHARED END =============================================== -->
+
+
+<style>
+  /* ---- This site only ---------------------------------------------------------
+     The syllabus has a masthead on every page, a montage of student work on the
+     landing page, a long table of contents and a pager over the 2023 exam exercises.
+     None of that exists in lab-material, so it lives outside the shared block.
+     ------------------------------------------------------------------------------ */
+
+  /* Masthead. The crests use .crest-row from the shared block above, so they are sized
+     and spaced identically to the ones on lab-material's landing page - and, like
+     lab-material, they appear on the landing page only. Inner pages get .masthead-slim:
+     the same wordmark bar and cyan rule, without the institutional marks. There is
+     deliberately no <h1> here either; every page in this repo opens with its own. */
+  .masthead {
+    border-bottom: 2px solid var(--dit-cyan);
+    padding-bottom: 12px;
+    margin-bottom: 28px;
+  }
+  .masthead-slim { padding-bottom: 8px; margin-bottom: 24px; }
+  /* Primer's `.markdown-body p { margin-bottom: 16px }` outranks the plain class
+     selectors below, so the masthead's own paragraphs are zeroed at equal specificity. */
+  .markdown-body .masthead p { margin: 0; }
+  .markdown-body .masthead .crest-row { margin-bottom: 8px; }
+  .masthead-wordmark {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 14px;
+  }
+  .masthead-wordmark > a {
+    color: var(--dit-charcoal);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .masthead-wordmark > a:hover { color: var(--dit-cyan); }
+  /* Flex items default to min-width:auto, so the nav refused to shrink below the width
+     of its own text and pushed the whole page sideways on a phone. */
+  .masthead-wordmark > a { flex: 0 0 auto; }
+  .masthead-links {
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: right;
+    color: #6a737d;
+  }
+  .masthead-links a { color: var(--dit-cyan); font-weight: 600; }
+
+  @media (max-width: 560px) {
+    .masthead-wordmark { display: block; }
+    .masthead-links { display: block; margin-top: 6px; text-align: left; }
+  }
+
+  /* Student work montage. It used to be a 30%-wide float wedged against the table of
+     contents; as a centred banner it reads as the showcase it is, and the caption gives
+     the work its credit and a way through to the samples. */
+  .montage {
+    max-width: 820px;
+    margin: 0 auto 36px;
+  }
+  .montage img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #dfe6ea;
+    border-radius: 6px;
+  }
+  .montage figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #6a737d;
+    text-align: center;
+  }
+
+  /* Table of contents. kramdown's {:toc} emits a bare <ul id="markdown-toc">, which on
+     the landing page is fifteen items tall and pushes the first real section below the
+     fold. Set as a bordered multi-column card it works as the page index it is. */
+  #markdown-toc {
+    columns: 3;
+    column-gap: 32px;
+    list-style: none;
+    margin: 0 0 32px;
+    padding: 18px 22px;
+    border: 1px solid #dfe6ea;
+    border-radius: 6px;
+    background: #fafbfc;
+    font-size: 14px;
+  }
+  #markdown-toc li {
+    break-inside: avoid;
+    margin: 0 0 6px;
+  }
+  #markdown-toc > li > ul { display: none; }
+
+  @media (max-width: 900px) { #markdown-toc { columns: 2; } }
+  @media (max-width: 560px) { #markdown-toc { columns: 1; } }
+
+  /* The fork ribbon overlaps the crests on a phone, where it is unreadable anyway. */
+  @media (max-width: 720px) {
+    .github-fork-ribbon { display: none; }
+    .crest-row img { max-height: 44px; }
+  }
+
+  .site-footer {
+    border-top: 1px solid #dfe6ea;
+    margin-top: 48px;
+    padding-top: 16px;
+    font-size: 13px;
+    color: #6a737d;
+  }
+  .site-footer a { color: var(--dit-cyan); }
+</style>

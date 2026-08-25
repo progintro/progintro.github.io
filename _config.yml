@@ -1,13 +1,79 @@
-remote_theme: pages-themes/minimal@v0.2.0
-title: progintro @ dit
+# GitHub Pages configuration.
+#
+# Kept deliberately parallel to progintro/lab-material's _config.yml: the two sites are
+# one course, students cross between them constantly, and anything that drifts here
+# shows up as a visible seam over there. Where the two differ it is because this repo
+# ships its own _layouts/default.html, to carry the masthead and the montage - see
+# the theme note below.
+title: Εισαγωγή στον Προγραμματισμό
+description: >-
+  Το μάθημα «Εισαγωγή στον Προγραμματισμό» (Κ08) του Τμήματος Πληροφορικής και
+  Τηλεπικοινωνιών, Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών: διαλέξεις, εργασίες,
+  εργαστήρια και θέματα εξετάσεων.
 lang: el
+
+# The DIT crest doubles as the site logo in {% seo %} output (Open Graph / Twitter
+# cards), which is why the same file is referenced from _layouts/default.html.
 logo: /assets/img/logo.jpg
-description:
-plugins:
-  - jekyll-remote-theme
+
+# The same theme lab-material uses. This site used to pin pages-themes/minimal via
+# `remote_theme`, which is what made the two halves of the course look like two
+# different websites: minimal is built around a fixed 270px sidebar, sets 14px grey
+# Helvetica body text, and wraps nothing in `.markdown-body`. Primer is the theme the
+# lab handouts already render with, so switching here means the brand CSS in
+# _includes/head-custom.html is *the same file* in both repos rather than one file and
+# a hand-written imitation of it.
+theme: jekyll-theme-primer
+
 markdown: kramdown
 kramdown:
   parse_block_html: true
   toc_levels: 2..2
   input: GFM
   math_engine: mathjax
+
+# GitHub Pages enables a default set of plugins; they are repeated here verbatim so the
+# list reads as the full picture rather than as "the defaults, plus whatever this line
+# happens to say". Two additions on top of the defaults:
+#   - jekyll-seo-tag       {% seo %} in _layouts/default.html; arrives transitively via
+#                          the theme, named explicitly so it cannot silently go away
+#   - jemoji               renders :leopard:-style shortcodes, NOT on by default on
+#                          GitHub Pages - it has to be asked for. lab-material's landing
+#                          page uses it, so the syllabus can too.
+plugins:
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-titles-from-headings
+  - jemoji
+
+# NOTE on jekyll-readme-index (enabled above): it is what makes a directory's README.md
+# serve as that directory's index page - /past/2023/, /samples/, /samples/code/dna1/ and
+# so on.
+#
+# Its `with_frontmatter: true` option looks like the right way to also cover a README
+# that carries front matter, and lab-material uses it. Do NOT turn it on here. Combined
+# with jekyll-optional-front-matter it processes the *plain* READMEs twice - once as a
+# static file, which correctly gives /past/2023/, then again as the page that produced,
+# whose dirname is now one level too high - and every one of them silently moves up a
+# directory (/past/2023/ becomes /past/, /samples/code/dna1/ becomes /samples/code/).
+# lab-material is immune only because every one of its lab READMEs has front matter.
+#
+# The exam exercise READMEs, which do have front matter, therefore carry an explicit
+# `permalink:` instead. See _layouts/exercise.html.
+
+# Files that live in the repo but are not part of the website. Jekyll would otherwise
+# copy every one of them into _site and publish it at a guessable URL.
+exclude:
+  - CONTRIBUTING.md   # contributor documentation, not course material
+  - hi.html           # scratch page, not linked from anywhere
+  - hw1.pdf           # stray copy; the linked one is assets/pdf/hw1.pdf
+  - tas.txt           # internal staff roster - must not become a public URL
+  - posts/            # scraper output (posts/fetch.sh), not course material
+  - vendor/

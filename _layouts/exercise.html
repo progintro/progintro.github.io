@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% comment %}
+  Prev / next navigation for a numbered series of exercises. It reuses the .lab-nav
+  classes from the shared block of _includes/head-custom.html, so it is styled by the
+  same rules as the pager on lab-material's handouts. `index` is the directory holding the series
+  (e.g. /exams/2023/fall/) so the same layout can serve a later exam sitting
+  without being edited; `prev` and `next` are sibling directory names.
+
+  These pages are directory READMEs, and a README that carries front matter is no
+  longer picked up by jekyll-readme-index - so each one also declares an explicit
+  `permalink`. Do not "fix" that by setting `readme_index.with_frontmatter: true` in
+  _config.yml; the comment there explains what that breaks.
+{% endcomment %}
+
+{% assign index_url = page.index | default: "/" %}
+
+<nav class="lab-nav lab-nav-top" aria-label="Πλοήγηση ασκήσεων">
+  <span class="lab-nav-side">
+    {% if page.prev %}<a href="{{ index_url | append: page.prev | append: "/" | relative_url }}">&larr; Προηγούμενο</a>{% endif %}
+  </span>
+  <span class="lab-nav-mid"><a href="{{ index_url | relative_url }}">{{ page.index_title | default: "Όλα τα θέματα" }}</a></span>
+  <span class="lab-nav-side lab-nav-right">
+    {% if page.next %}<a href="{{ index_url | append: page.next | append: "/" | relative_url }}">Επόμενο &rarr;</a>{% endif %}
+  </span>
+</nav>
+
+{{ content }}
+
+<nav class="lab-nav lab-nav-bottom" aria-label="Πλοήγηση ασκήσεων">
+  <span class="lab-nav-side">
+    {% if page.prev %}<a href="{{ index_url | append: page.prev | append: "/" | relative_url }}">&larr; Προηγούμενο</a>{% endif %}
+  </span>
+  <span class="lab-nav-mid"><a href="{{ index_url | relative_url }}">{{ page.index_title | default: "Όλα τα θέματα" }}</a></span>
+  <span class="lab-nav-side lab-nav-right">
+    {% if page.next %}<a href="{{ index_url | append: page.next | append: "/" | relative_url }}">Επόμενο &rarr;</a>{% endif %}
+  </span>
+</nav>
