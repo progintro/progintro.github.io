@@ -5,8 +5,12 @@
 
 ## Πρόγραμμα
 
-* Διαλέξεις: _Θα ανακοινωθεί._ <!-- TODO(2026-27) -->
-* Ώρες Γραφείου: _Θα ανακοινωθούν._ <!-- TODO(2026-27) -->
+* Διαλέξεις: Δευτέρα και Παρασκευή 09:00-11:00
+  * Άρτιοι: Αμφιθέατρο
+  * Περιττοί: Α2
+* Ώρες Γραφείου:
+  * Δευτέρα 11:00-12:00 (Αυγερινός @ Α40, Σταματόπουλος @ Α48)
+  * Παρασκευή 11:00-12:00 (Αυγερινός @ Α3, Σταματόπουλος @ Α48)
 * Πρόσθεσε το πρόγραμμα του μαθήματος στο [google calendar](https://calendar.google.com/calendar/u/3?cid=Y182MTg0NDNiZDA4YWJiOGJkOWI0MjZiNWEwZWZmZmUzMjQ2NGYyM2M1NmFmODJiMDZiMTFhZjY1YWE0MDI5NDAwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
 
 ## Συμμετοχή
@@ -28,6 +32,7 @@
 
 | Ημερομηνία | Περιεχόμενο Μαθήματος | Αρχείο |
 | --- | --- | --- |
+| 29/09 | Διάλεξη 0: Καλημέρα Κόσμε! | TBD |
 
 * [Κώδικας διαλέξεων](./code.md)
 
@@ -53,27 +58,26 @@
 | PDF | Markdown | HTML | GitHub Classroom (optional) <!-- TODO(2026-27) --> |
 | --- | --- | --- | --- |
 | [Φυλλάδιο 0.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab00.pdf) | [lab00.md](https://github.com/progintro/lab-material/tree/main/labs/lab00) | [lab00.html](https://progintro.github.io/lab-material/labs/lab00) | |
-| [Φυλλάδιο 1.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab01.pdf) | [lab01.md](https://github.com/progintro/lab-material/tree/main/labs/lab01) | [lab01.html](https://progintro.github.io/lab-material/labs/lab01) |  |
-| [Φυλλάδιο 2.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab02.pdf) | [lab02.md](https://github.com/progintro/lab-material/tree/main/labs/lab02) | [lab02.html](https://progintro.github.io/lab-material/labs/lab02) |  |
-| [Φυλλάδιο 3.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab03.pdf) | [lab03.md](https://github.com/progintro/lab-material/tree/main/labs/lab03) | [lab03.html](https://progintro.github.io/lab-material/labs/lab03) |  |
-| [Φυλλάδιο 4.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab04.pdf) | [lab04.md](https://github.com/progintro/lab-material/tree/main/labs/lab04) | [lab04.html](https://progintro.github.io/lab-material/labs/lab04) |  |
-| [Φυλλάδιο 5.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab05.pdf) | [lab05.md](https://github.com/progintro/lab-material/tree/main/labs/lab05) | [lab05.html](https://progintro.github.io/lab-material/labs/lab05) |  |
-| [Φυλλάδιο 6.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab06.pdf) | [lab06.md](https://github.com/progintro/lab-material/tree/main/labs/lab06) | [lab06.html](https://progintro.github.io/lab-material/labs/lab06) |  |
-| [Φυλλάδιο 7.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab07.pdf) | [lab07.md](https://github.com/progintro/lab-material/tree/main/labs/lab07) | [lab07.html](https://progintro.github.io/lab-material/labs/lab07) |  |
-| [Φυλλάδιο 8.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab08.pdf) | [lab08.md](https://github.com/progintro/lab-material/tree/main/labs/lab08) | [lab08.html](https://progintro.github.io/lab-material/labs/lab08) |  |
-| [Φυλλάδιο 9.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab09.pdf) | [lab09.md](https://github.com/progintro/lab-material/tree/main/labs/lab09) | [lab09.html](https://progintro.github.io/lab-material/labs/lab09) |  |
-| [Φυλλάδιο 10.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab10.pdf) | [lab10.md](https://github.com/progintro/lab-material/tree/main/labs/lab10) | [lab10.html](https://progintro.github.io/lab-material/labs/lab10) |  |
-
 
 
 Θες να βοηθήσεις να βελτιώσουμε τα Φυλλάδια; Στείλε μας PR στο [lab-material repo](https://github.com/progintro/lab-material).
 
 ### Πρόγραμμα
 
-Το εργαστήριο είναι **υποχρεωτικό** για τους πρωτοετείς. Το πρόγραμμα θα ανακοινωθεί. <!-- TODO(2026-27) -->
+Το εργαστήριο είναι **υποχρεωτικό** για τους πρωτοετείς. Το ακόλουθο πρόγραμμα ισχύει: <!-- TODO(2026-27) -->
 
 | Τμήμα | Εργαστήριο | Υπεύθυνος | Συνεργάτες |
 | --- | --- | --- | --- |
+| #0 | Δευ 13:00-15:00 (Windows PC1) | Νίκος Περδικοπάνης | TBD <!-- TODO(2026-27) --> |
+| #1 | Δευ 15:00-17:00 (Windows PC1) | Διονύσης Βασιλόπουλος | TBD <!-- TODO(2026-27) --> |
+| #2 | Δευ 17:00-19:00 (Windows PC1) | Νίκος Περδικοπάνης | TBD <!-- TODO(2026-27) --> |
+| #3 | Τρί 13:00-15:00 (Linux)       | Μίλτος Κυριακάκος | TBD <!-- TODO(2026-27) --> |
+| #4 | Τρί 15:00-17:00 (Windows PC1) | Κωνσταντίνος Σαλμάς | TBD <!-- TODO(2026-27) --> |
+| #5 | Τετ 15:00-17:00 (Windows PC1) | Στέφανος Σταμάτης | TBD <!-- TODO(2026-27) --> |
+| #6 | Τετ 17:00-19:00 (Windows PC1) | Γεώργιος-Αλέξανδρος Κώστας | TBD <!-- TODO(2026-27) --> |
+| #7 | Πέμ 13:00-15:00 (Windows PC1) | Μίλτος Κυριακάκος | TBD <!-- TODO(2026-27) --> |
+| #8 | Παρ 13:00-15:00 (Windows PC1) | Κάκια Παναγίδη | TBD <!-- TODO(2026-27) --> |
+| B+ | Τρί 18:00-20:00 (Linux)       | Παύλος Νταής / Αρίσταρχος Καλούτσας | TBD <!-- TODO(2026-27) --> |
 
 ## Συγγράμματα και Υλικό Μαθήματος
 
@@ -93,14 +97,12 @@
 * [Οδηγός Σπουδών για το μάθημα](https://www.di.uoa.gr/studies/undergraduate/courses/k04)
 * [Οδηγός για συμμετοχή σε Forums και Q&A sites](/assets/pdf/forums.pdf)
 
-
 ## Βαθμολογία
 
 * Πρωτοετείς: 50% Τελική + 30% Ασκήσεις + 20% Εργαστήριο
 * Υπόλοιπα έτη: 70% Τελική Εξέταση + 30% Ασκήσεις
 
 * Αναπροσαρμογή: Αν ο βαθμός από τις Ασκήσεις είναι πάνω από 3 μονάδες μεγαλύτερος του βαθμού από την Τελική Εξέταση, τότε ο βαθμός για τις Ασκήσεις αναπροσαρμόζεται σε `Τελική Εξέταση + 3`.
-
 
 ## Κώδικας Τιμής
 
@@ -124,15 +126,25 @@
 
 ### Υπεύθυνοι Εργαστηρίων
 
-_Θα ανακοινωθεί._ <!-- TODO(2026-27) -->
+* Μίλτος Κυριακάκος (miltos)
+* Νίκος Περδικοπάνης (nikosp)
+* Διονύσης Βασιλόπουλος (denis)
+* Κάκια Παναγίδη (kakiap)
 
 ### Ειδικοί (Special Ops) Συνεργάτες
 
-_Θα ανακοινωθεί._ <!-- TODO(2026-27) -->
+* Στέφανος Σταμάτης (stef)
+* Γεώργιος-Αλέξανδρος Κώστας
 
 ### Μεταπτυχιακοί Συνεργάτες
 
-_Θα ανακοινωθεί._ <!-- TODO(2026-27) -->
+* Κωνσταντίνος Σαλμάς (ksalmas)
+* Αλεξάνδρα Σοφία
+* Παύλος Νταής
+* Αναστάσης Τριανταφύλλου
+* Προκόπιος Σταμέλιας
+* Αρίσταρχος Καλούτσας
+* Καλλιόπη Δεσποτίδου
 
 ### Προπτυχιακοί Συνεργάτες
 
