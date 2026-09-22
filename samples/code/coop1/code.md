@@ -1,3 +1,8 @@
+# coop.c
+
+Ο κώδικας του παραδείγματος [coop](./README.md), όπως υποβλήθηκε.
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -66,3 +71,4 @@ int main() {
     }
     return 0; //Porgramm returns with success code
 }
+```

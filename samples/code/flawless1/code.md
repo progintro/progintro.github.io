@@ -1,3 +1,8 @@
+# flawless.c
+
+Ο κώδικας του παραδείγματος [flawless](./README.md), όπως υποβλήθηκε.
+
+```c
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -57,3 +62,4 @@ int main(int argc, char **argv) {
   printf("%lld\n", sum);
   return 0;
 }
+```

@@ -1,3 +1,8 @@
+# collatz.c
+
+Ο κώδικας του παραδείγματος [collatz](./README.md), όπως υποβλήθηκε.
+
+```c
 //analitiki eksigisi tou parakato kodika iparhei sto  arheio README.mz
 #include <stdio.h>
 #include <stdlib.h>
@@ -88,3 +93,4 @@ int main(int argc, char **argv){
     }
     return 0;
 }
+```

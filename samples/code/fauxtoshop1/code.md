@@ -1,3 +1,8 @@
+# fauxtoshop.c
+
+Ο κώδικας του παραδείγματος [fauxtoshop](./README.md), όπως υποβλήθηκε.
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -180,3 +185,4 @@ int main()
 
     free(header);
 }
+```
