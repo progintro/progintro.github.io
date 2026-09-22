@@ -1,0 +1,290 @@
+# Εισαγωγή στον Προγραμματισμό
+
+* TOC
+{:toc}
+
+## Πρόγραμμα
+
+* Διαλέξεις: Δευτέρα και Παρασκευή 09:00-11:00
+  * Άρτιοι: Αμφιθέατρο
+  * Περιττοί: Α2
+* Ώρες Γραφείου:
+  * Δευτέρα 11:00-12:00 (Αυγερινός @ Α40, Σταματόπουλος @ Α48)
+  * Παρασκευή 11:00-12:00 (Αυγερινός @ Α3, Σταματόπουλος @ Α48)
+* Πρόσθεσε το πρόγραμμα του μαθήματος στο [google calendar](https://calendar.google.com/calendar/u/3?cid=Y182MTg0NDNiZDA4YWJiOGJkOWI0MjZiNWEwZWZmZmUzMjQ2NGYyM2M1NmFmODJiMDZiMTFhZjY1YWE0MDI5NDAwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+
+## Συμμετοχή
+
+Για την ενεργή συμμετοχή σου στο μάθημα, θα χρειαστείς:
+
+* Λογαριασμό Gmail - άνοιξε [εδώ](https://accounts.google.com/SignUp) αν δεν έχεις ήδη.
+* Λογαριασμό GitHub - άνοιξε [εδώ](https://github.com/join) αν δεν έχεις ήδη.
+
+**ΣΗΜΑΝΤΙΚΟ**: Για να βαθμολογηθείς στο μάθημα, **πρέπει** να συμπληρώσεις τα στοιχεία σου σε αυτήν την [φόρμα](https://forms.gle/vvMY6Nkjbh3STXdEA) - απαιτεί λογαριασμό Gmail.
+
+## Επικοινωνία
+
+Ερωτήσεις για διαδικαστικά, το μάθημα και τις ασκήσεις αποκλειστικά στο [Piazza](https://piazza.com/uoa.gr/fall2025/197af) - απαιτεί di.uoa.gr email. Δεν έχεις ακόμα di.uoa.gr email; Βεβαιώσου ότι συμπλήρωσες την φόρμα στην Συμμετοχή παραπάνω και θα σου στείλουμε πρόσκληση.
+
+## Διαλέξεις
+
+| Ημερομηνία | Περιεχόμενο Μαθήματος | Αρχείο |
+| --- | --- | --- |
+| 29/09 | Διάλεξη 0: Καλημέρα Κόσμε! | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec00.pdf) |
+| 03/10 | Διάλεξη 1: Η Γραμμή Εντολών | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec01.pdf) |
+| 06/10 | Διάλεξη 2: Μνήμη και Μεταβλητές | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec02.pdf) |
+| 10/10 | Διάλεξη 3: Συναρτήσεις | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf) |
+| 13/10 | Διάλεξη 4: Git και Τελεστές | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf) |
+| 17/10 | Διάλεξη 5: Τελεστές και Εντολές | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec05.pdf) |
+| 20/10 | Διάλεξη 6: Εντολές και Ροή Ελέγχου | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf) |
+| 24/10 | Διάλεξη 7: Επίλυση Προβλήμάτων | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec07.pdf) |
+| 27/10 | Διάλεξη 8: Ροή Ελέγχου #2 | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf) |
+| 31/10 | Διάλεξη 9: Δεδομένα Εισόδου | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf) |
+| 03/11 | Διάλεξη 10: Πίνακες | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec10.pdf) |
+| 07/11 | Διάλεξη 11: Δείκτες και Αναδρομή | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec11.pdf) |
+| 10/11 | Διάλεξη 12: Δείκτες και Πίνακες | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec12.pdf) |
+| 14/11 | Διάλεξη 13: Μνήμη | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf) |
+| 21/11 | Διάλεξη 14: Εμβέλεια, Μνήμη και Συμβολοσειρές | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec14.pdf) |
+| 24/11 | Διάλεξη 15: Πολυπλοκότητα και Προεπεξεργαστής | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf) |
+| 27/11 | Διάλεξη 16: Επίλυση Προβλημάτων | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec16.pdf) |
+| 28/11 | Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec17.pdf) |
+| 01/12 | Διάλεξη 18: Ταξινόμηση και Δεδομένα Εισόδου #2 | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec18.pdf) |
+| 05/12 | Διάλεξη 19: Δομές | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec19.pdf) |
+| 08/12 | Διάλεξη 20: Προχωρημένες Δομές | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec20.pdf) |
+| 12/12 | Διάλεξη 21: Λίστες και Δέντρα | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec21.pdf) |
+| 15/12 | Διάλεξη 22: Δέντρα | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec22.pdf) |
+| 19/12 | Διάλεξη 23: Οργάνωση Κώδικα | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec23.pdf) |
+| 19/12 | Guest Lecture: How to Make? | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/make.pdf) |
+| 22/12 | Διάλεξη 24: Προχωρημένα Θέματα | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec24.pdf) |
+| 09/01 | Διάλεξη 25: Επίλυση Προβλημάτων | [PDF](https://github.com/progintro/progintro.github.io/releases/download/2025/lec25.pdf) |
+| 12/01 | Επανάληψη ||
+| 16/01 | Επανάληψη ||
+
+
+* [Κώδικας διαλέξεων](./assets/code.md)
+
+## Εκπαιδευτικό Υλικό Από Φοιτητές για Φοιτητές
+
+* [Εισαγωγή στους Pointers](https://www.youtube.com/watch?v=tH2JW8HsPNw)
+* [Ενδεικτικές λύσεις για τα εργαστήρια](https://github.com/dimskomex/ip-labs-solutions)
+* [Ενδεικτικά README/Σχόλια](/samples/README.md)
+
+## Εργασίες
+
+| Εργασία | GitHub | Προθεσμία |
+| --- | --- | --- |
+| [Εργασία 0](https://github.com/progintro/progintro.github.io/releases/download/2025/hw0.pdf) | [Invite](https://classroom.github.com/a/XwPvT9Jk) | 12 Νοεμβρίου 2025, 23:59 |
+| [Εργασία 1](https://github.com/progintro/progintro.github.io/releases/download/2025/hw1.pdf) | [Invite](https://classroom.github.com/a/Ej4U3Ftp) | 10 Δεκεμβρίου 2025, 23:59 |
+| [Εργασία 2](https://github.com/progintro/progintro.github.io/releases/download/2025/hw2.pdf) | [Invite](https://classroom.github.com/a/nuK8kuu6) | 17 Ιανουαρίου 2026, 23:59 |
+| [Εργασία 3](https://github.com/progintro/progintro.github.io/releases/download/2025/hw3.pdf) | [Invite](https://classroom.github.com/a/UWzEAYS3) | 17 Ιανουαρίου 2026, 23:59 |
+
+## Bonus (Προαιρετικά)
+
+| Εργασία | GitHub |
+| --- | --- |
+| [Bonus #0](https://github.com/progintro/progintro.github.io/releases/download/2025/stergios.pdf) | [Invite](https://classroom.github.com/a/IXkf4sQe) |
+
+### Διακρίσεις σε Διαγωνισμούς (Αλφαβητική Σειρά)
+
+* Αθανάσιος Νυδριώτης (DJ #3)
+* Άνθεα Κούσπου (Go Engine #1)
+* Βασίλειος Σταμέλος (Go Engine #3)
+* Γεώργιος Άμαλλος (DJ #1)
+* Γεώργιος Χαραλάμπους (Go Engine #1)
+* Γεώργιος Χατζόπουλος (Go Engine #2)
+* Εμμανουήλ Δημέρτικα (DJ #3)
+* Θεοχάρης Κουβεδάκης (DJ #3)
+* Κωνσταντίνος Πέτροβας (DJ #2, Go Engine #3)
+* Μαρία Εμμανουήλ (Go Engine #1)
+* Μαρία Παναγιωτοπούλου (Go Engine #2)
+* Ματθαίος Ηλιάδης (Go Engine #1)
+* Μιχαήλ Φαρμάκης (Go Engine #2)
+* Παύλος-Ιωάννης Αθηναίος (Go Engine #3)
+* Περικλής Γιαννακούλης (Go Engine #2)
+* Χρήστος Βιντσάνι (Stergios)
+
+## Εργαστήρια
+
+Γραφτείτε στο τμήμα εργαστηρίου που ταιριάζει στο πρόγραμμά σας μέσω [eclass](https://eclass.uoa.gr/modules/group/index.php?course=DI681&urlview=1) - απαιτεί di.uoa.gr email. Δεν έχεις ακόμα di.uoa.gr email; Βεβαιώσου ότι συμπλήρωσες την φόρμα στην Συμμετοχή παραπάνω και θα προσπαθήσουμε να σε συμπεριλάβουμε στην λίστα.
+
+### Φυλλάδια
+
+| PDF | Markdown | HTML | GitHub Classroom (optional) |
+| --- | --- | --- | --- |
+| [Φυλλάδιο 0.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab00.pdf) | [lab00.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab00) | [lab00.html](https://progintro.github.io/lab-material/labs/lab00) | |
+| [Φυλλάδιο 1.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab01.pdf) | [lab01.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab01) | [lab01.html](https://progintro.github.io/lab-material/labs/lab01) | [lab01](https://classroom.github.com/a/8_3_scjJ) |
+| [Φυλλάδιο 2.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab02.pdf) | [lab02.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab02) | [lab02.html](https://progintro.github.io/lab-material/labs/lab02) | [lab02](https://classroom.github.com/a/nYVKhugL) |
+| [Φυλλάδιο 3.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab03.pdf) | [lab03.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab03) | [lab03.html](https://progintro.github.io/lab-material/labs/lab03) | [lab03](https://classroom.github.com/a/ZN8MqRDQ) |
+| [Φυλλάδιο 4.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab04.pdf) | [lab04.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab04) | [lab04.html](https://progintro.github.io/lab-material/labs/lab04) | [lab04](https://classroom.github.com/a/Am6C7QwX) |
+| [Φυλλάδιο 5.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab05.pdf) | [lab05.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab05) | [lab05.html](https://progintro.github.io/lab-material/labs/lab05) | [lab05](https://classroom.github.com/a/DM0ZWiyw) |
+| [Φυλλάδιο 6.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab06.pdf) | [lab06.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab06) | [lab06.html](https://progintro.github.io/lab-material/labs/lab06) | [lab06](https://classroom.github.com/a/N0yq1Biu) |
+| [Φυλλάδιο 7.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab07.pdf) | [lab07.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab07) | [lab07.html](https://progintro.github.io/lab-material/labs/lab07) | [lab07](https://classroom.github.com/a/ts_bs6Bt) |
+| [Φυλλάδιο 8.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab08.pdf) | [lab08.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab08) | [lab08.html](https://progintro.github.io/lab-material/labs/lab08) | [lab08](https://classroom.github.com/a/SzB4M12z) |
+| [Φυλλάδιο 9.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab09.pdf) | [lab09.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab09) | [lab09.html](https://progintro.github.io/lab-material/labs/lab09) | [lab09](https://classroom.github.com/a/BX9DV9Pi) |
+| [Φυλλάδιο 10.pdf](https://github.com/progintro/lab-material/releases/download/0.1.43/lab10.pdf) | [lab10.md](https://github.com/progintro/lab-material/tree/0.1.43/labs/lab10) | [lab10.html](https://progintro.github.io/lab-material/labs/lab10) | [lab10](https://classroom.github.com/a/i_0p5nBl) |
+
+
+
+Θες να βοηθήσεις να βελτιώσουμε τα Φυλλάδια; Στείλε μας PR στο [lab-material repo](https://github.com/progintro/lab-material).
+
+### Πρόγραμμα
+
+Το εργαστήριο είναι **υποχρεωτικό** για τους πρωτοετείς. Το ακόλουθο πρόγραμμα ξεκίνησε την 6η Οκτωβρίου 2025:
+
+| Τμήμα | Εργαστήριο | Υπεύθυνος | Συνεργάτες |
+| --- | --- | --- | --- |
+| #0 | Δευ 13:00-15:00 (Windows PC1) | Νίκος Περδικοπάνης | Άλεξ Γκιάφης, Ιωάννης Γρηγοράτος, Πλαστήρας Πέτρος, Γιαννάκης Χρήστος, Γιώργος Σπύρου, Μπαρμπαρόσος Θεοφάνης, Θέκλα Μιχαήλ |
+| #1 | Δευ 15:00-17:00 (Windows PC1) | Διονύσης Βασιλόπουλος | Αλέξανδρος Σταυρινουδάκης, Νεφέλη-Ειρήνη Μπαλή, Ασώματος Κυριάκος, Ελένη Μουχλή, Δημήτρης Στάικος |
+| #2 | Δευ 17:00-19:00 (Windows PC1) | Νίκος Περδικοπάνης | Ματίνα Ναδάλη, Νεφέλη-Ειρήνη Μπαλή, Πέτρος Κατηφόρης, Γεώργιος Τόλης, Ασώματος Κυριάκος |
+| #3 | Τρί 13:00-15:00 (Linux)       | Μίλτος Κυριακάκος | Διόλατζης Ραφαήλ-Φώτης, Αλέξανδρος Σταυρινουδάκης |
+| #4 | Τρί 15:00-17:00 (Windows PC1) | Κωνσταντίνος Σαλμάς | Στυλιανός Ρώτας, Μπαρμπαρόσος Θεοφάνης, Μάριος Μογγογιάννης, Γεώργιος Σιαφαρίκας, Θεόδωρος Έξαρχος |
+| #5 | Τετ 15:00-17:00 (Windows PC1) | Στέφανος Σταμάτης | Ζήσιμος Βακράς, Ιωάννης Ξηρός, Ιωάννης Βογιατζής, Ελευθερία Λυκοβαρδή, Παναγιώτης Βαρδαλάς, Γρηγόριος Ντερέκης, Θανάσης Παπαδόπουλος, Φλώρα Πετροπούλου, Κωνσταντίνος Στεργίου, Καρούνος Ευάγγελος |
+| #6 | Τετ 17:00-19:00 (Windows PC1) | Γεώργιος-Αλέξανδρος Κώστας | Ζήσιμος Βακράς, Ιωάννης Ξηρός, Ιωάννης Βογιατζής, Σταύρος Γκουσγκούνης, Δημήτρης Γκρίτζαλης, Δημοσθένης Θεοδοσίου, Παναγιώτης Σκαρπαθάκης, Θανάσης Παπαδόπουλος, Φλώρα Πετροπούλου,Πρωτόπαπας Παναγιώτης |
+| #7 | Πέμ 13:00-15:00 (Windows PC1) | Μίλτος Κυριακάκος | Δημήτρης Σκόνδρας Μέξης, Άγγελος Κοραλής, Αναστασία Μαρία Μαρινάκου, Γεώργιος Σιαφαρίκας, Μάριος Μογγογιάννης,Αλέξανδρος Σταυρινουδάκης |
+| #8 | Παρ 13:00-15:00 (Windows PC1) | Κάκια Παναγίδη | Διόλατζης Ραφαήλ-Φώτης, Νεφέλη-Ειρήνη Μπαλή, Γιώργος Σπύρου, Παναγιώτης Βαρδαλάς, Γιαννάκης Χρήστος |
+| B+ | Τρί 18:00-20:00 (Linux)       | Παύλος Νταής / Αρίσταρχος Καλούτσας | Στυλιανός Ρώτας, Ελένη Μουχλή, Άλεξ Γκιάφης |
+
+## Συγγράμματα και Υλικό Μαθήματος
+
+1. C: Από τη Θεωρία στην Εφαρμογή, Γ. Σ. Τσελίκης - Ν. Δ. Τσελίκας [[Link]](https://service.eudoxus.gr/search/#a/id:68383623:/0)
+2. Η Γλώσσα C Σε Βάθος, Νίκος Μ. Χατζηγιαννάκης [[Link]](https://service.eudoxus.gr/search/#a/id:68384925/0)
+3. Εισαγωγή στον Προγραμματισμό με την C, Μισυρλής Νικόλαος [[Link]](https://service.eudoxus.gr/search/#a/id:112694609/0)
+4. Η Γλώσσα Προγραμματισμού C, Brian W. Kerninghan, Dennis M. Ritchie [[Link]](https://service.eudoxus.gr/search/#a/id:13956/0)
+5. Αρχές και τεχνικές προγραμματισμού με τη γλώσσα C, Hanly Jeri R., Koffman Elliot B. (Συγγρ.) - Καρακαπιλίδης Νίκος, Βράκας Δημήτρης, Κυριαζής Δημοσθένης (Επιμ.) [[Link]](https://service.eudoxus.gr/search/#a/id:102071593/0)
+6. Μαθαίνετε εύκολα C, Καρολίδης Δημήτριος Α. [[Link]](https://service.eudoxus.gr/search/#a/id:102075247/0)
+
+### Άλλοι Σύνδεσμοι
+
+* [Σημειώσεις](https://github.com/progintro/progintro.github.io/releases/download/2025/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
+* [Unix Tutorial από τον καθηγητή Παναγιώτη Σταματόπουλο](https://github.com/progintro/progintro.github.io/releases/download/2025/Unix.pdf)
+* [Οδηγίες εγκατάστασης VS Code από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/)
+* [Οδηγίες εγκατάστασης WSL από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/windows/)
+* [Οδηγός Σπουδών για το μάθημα](https://www.di.uoa.gr/studies/undergraduate/courses/k04)
+* [Οδηγός για συμμετοχή σε Forums και Q&A sites](https://github.com/progintro/progintro.github.io/releases/download/2025/forums.pdf)
+
+
+## Βαθμολογία
+
+* Πρωτοετείς: 50% Τελική + 30% Ασκήσεις + 20% Εργαστήριο
+* Υπόλοιπα έτη: 70% Τελική Εξέταση + 30% Ασκήσεις
+
+* Αναπροσαρμογή: Αν ο βαθμός από τις Ασκήσεις είναι πάνω από 3 μονάδες μεγαλύτερος του βαθμού από την Τελική Εξέταση, τότε ο βαθμός για τις Ασκήσεις αναπροσαρμόζεται σε `Τελική Εξέταση + 3`.
+
+
+## Κώδικας Τιμής
+
+Οι φοιτητές/τριες που παρακολουθούν το μάθημα θα παραδώσουν υλικό για βαθμολόγηση (εργασίες, εργαστήριο, διαγώνισμα) το οποίο θα εκτιμηθεί συνολικά προκειμένου να βγει ο τελικός βαθμός. Καθόλη την διάρκεια του μαθήματος, υποθέτουμε πως όλοι/ες οι φοιτητές/τριες ακολουθούν έναν βασικό κώδικα τιμής:
+
+1. Το υλικό που παραδίδεται πρέπει να έχει παραχθεί από τον/ην φοιτητή/τρια. Απαγορεύεται η παράδοση υλικού που έχει προκύψει από αντιγραφή.
+1. Απαγορεύεται η παραχώρηση εργασιών από φοιτητές/τριες σε συναδέλφους τους.
+1. Επιτρέπεται, αλλά και ενθαρρύνεται, η ανταλλαγή απόψεων σχετικά με τις προς εκπόνηση εργασίες ([whiteboard policy](https://cs50.harvard.edu/x/honesty/)), αλλά απαγορεύεται η διακίνηση υλικού (προγραμμάτων, εγγράφων, κλπ.) που δίνει λύσεις χωρίς να προωθεί την σκέψη. Σε κάθε περίπτωση, ότι υλικό παραδώσετε πρέπει να το έχετε γράψει μόνοι/ες σας.
+1. Εργασίες που βασίζονται σε πηγές από το διαδίκτυο ή αλλού οφείλουν να αναφέρουν ρητά τις πηγές αυτές.
+1. Κάθε φοιτητής/τρια οφείλει να είναι σε θέση να εξηγήσει το περιεχόμενο των εργασιών που έχει παραδώσει όταν του/της ζητηθεί.
+
+Οποιαδήποτε παραβίαση του κώδικα τιμής οδηγεί σε μηδενισμό στο μάθημα για το ακαδημαϊκό έτος κατά το οποίο συνέβη το παράπτωμα.
+Η κρίση για το αν παραβιάστηκε ο κώδικας τιμής από κάποιον/α φοιτητή/τρια γίνεται αποκλειστικά από τους διδάσκοντες του μαθήματος. Φοιτητής/τρια που θεωρεί ότι αδίκως μηδενίστηκε στο μάθημα λόγω παραβίασης του κώδικα τιμής έχει τη δυνατότητα να προσφύγει στα αρμόδια διοικητικά όργανα του Πανεπιστημίου.
+
+## Η Ομάδα του Μαθήματος
+
+### Διδάσκοντες
+
+* Θανάσης Αυγερινός (thanassis)
+* Παναγιώτη Σταματόπουλος (takis)
+
+### Υπεύθυνοι Εργαστηρίων
+
+* Μίλτος Κυριακάκος (miltos)
+* Νίκος Περδικοπάνης (nikosp)
+* Διονύσης Βασιλόπουλος (denis)
+* Κάκια Παναγίδη (kakiap)
+
+### Ειδικοί (Special Ops) Συνεργάτες
+
+* Στέφανος Σταμάτης (stef)
+* Γεώργιος-Αλέξανδρος Κώστας
+
+### Μεταπτυχιακοί Συνεργάτες
+
+* Κωνσταντίνος Σαλμάς (ksalmas)
+* Αλεξάνδρα Σοφία
+* Παύλος Νταής
+* Αναστάσης Τριανταφύλλου
+* Προκόπιος Σταμέλιας
+* Αρίσταρχος Καλούτσας
+* Καλλιόπη Δεσποτίδου
+
+### Προπτυχιακοί Συνεργάτες
+
+* Άγγελος Κοραλής
+* Άλεξ Γκιάφης
+* Αλέξανδρος Σταυρινουδάκης
+* Αναστασία Μαρία Μαρινάκου
+* Ασώματος Κυριάκος
+* Γεώργιος Σιαφαρίκας
+* Γεώργιος Τόλης
+* Γιαννάκης Χρήστος
+* Γιώργος Σπύρου
+* Γρηγόριος Ντερέκης
+* Δημήτρης Γκρίτζαλης
+* Δημήτρης Σκόνδρας Μέξης
+* Δημήτρης Στάικος
+* Δημοσθένης Θεοδοσίου
+* Διόλατζης Ραφαήλ-Φώτης
+* Ελένη Μουχλή
+* Ελευθερία Λυκοβαρδή
+* Ευάγγελος Καρούνος
+* Ζήσιμος Βακράς
+* Θέκλα Μιχαήλ
+* Θανάσης Παπαδόπουλος
+* Θεόδωρος Έξαρχος
+* Ιωάννης Βογιατζής
+* Ιωάννης Γρηγοράτος
+* Ιωάννης Ξηρός
+* Κωνσταντίνος Στεργίου
+* Μάριος Μογγογιάννης
+* Ματίνα Ναδάλη
+* Μπαρμπαρόσος Θεοφάνης
+* Νεφέλη-Ειρήνη Μπαλή
+* Πέτρος Κατηφόρης
+* Παναγιώτης Βαρδαλάς
+* Παναγιώτης Σκαρπαθάκης
+* Πλαστήρας Πέτρος
+* Πρωτόπαπας Παναγιώτης
+* Σταύρος Γκουσγκούνης
+* Στυλιανός Ρώτας
+* Φλώρα Πετροπούλου
+
+## Προηγούμενα Έτη
+
+* [2024](/past/2024/README.md)
+* [2023](/past/2023/README.md)
+* [Προηγούμενα έτη](https://cgi.di.uoa.gr/~ip/)
+
+## Προηγούμενα Διαγωνίσματα
+
+1. [Επαναληπτική Εξεταστική 2026](/exams/2026/progintro-exam-sep-26.pdf)
+1. [Επί Πτυχίω Εξεταστική 2026](/exams/2026/progintro-exam-jun-26.pdf)
+1. [Χειμερινή Εξεταστική 2026](/exams/2026/progintro-exam-jan-26.pdf)
+1. [Επαναληπτική Εξεταστική 2025](/exams/2025/progintro-exam-sep-25.pdf)
+1. [Χειμερινή Εξεταστική 2025](/exams/2025/progintro-exam-jan-25.pdf)
+1. [Κατατακτήριες Εξετάσεις 2024](/exams/2024/progintro-exam-dec-24.pdf)
+1. [Επαναληπτική Εξεταστική 2024](/exams/2024/progintro-exam-sep-24.pdf)
+1. [Επί Πτυχίω Εξεταστική 2024](/exams/2024/progintro-exam-jul-24.pdf)
+1. [Χειμερινή Εξεταστική 2023 (Online)](/exams/2023/fall/)
+1. [Κατατακτήριες Εξετάσεις 2023](/exams/2023/progintro-exam-dec-23.pdf)
+
+## Ευχαριστίες
+
+Θερμές ευχαριστίες στον [Στέφανο Σταμάτη](https://telekpa.uoa.gr/personalrec.php?lang=el&rid=7474) χωρίς τον οποίο το μάθημα θα ήταν αδύνατο να στηθεί.
+
+## Συνεισφορές
+
+Δεχόμαστε με χαρά διορθώσεις και προσθήκες — δείτε το
+[CONTRIBUTING.md](https://github.com/progintro/progintro.github.io/blob/main/CONTRIBUTING.md)
+για το πώς χτίζεται η σελίδα και πώς να στείλετε μια αλλαγή. Για τα φυλλάδια των
+εργαστηρίων, τα PR πάνε στο
+[lab-material](https://github.com/progintro/lab-material).
+
+## Άδεια χρήσης
+
+[MIT](https://github.com/progintro/progintro.github.io/blob/main/LICENSE.md) · © University of Athens
