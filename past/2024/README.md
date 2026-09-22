@@ -230,7 +230,7 @@
 
 ## Προηγούμενα Διαγωνίσματα
 
-1. [Χειμερινή Εξεταστική 2024](/exams/2025/progintro-exam-jan-25.pdf)
+1. [Χειμερινή Εξεταστική 2025](/exams/2025/progintro-exam-jan-25.pdf)
 1. [Κατατακτήριες Εξετάσεις 2024](/exams/2024/progintro-exam-dec-24.pdf)
 1. [Επαναληπτική Εξεταστική 2024](/exams/2024/progintro-exam-sep-24.pdf)
 1. [Επί Πτυχίω Εξεταστική 2024](/exams/2024/progintro-exam-jul-24.pdf)
