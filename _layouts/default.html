@@ -69,8 +69,21 @@
       {% endcomment %}
       {% if page.url == "/" or page.montage %}
       <figure class="montage">
-        <img src="{{ "/assets/img/montage-23-24.png" | relative_url }}"
-             alt="Εικόνες από εργασίες φοιτητών και φοιτητριών: σκακιέρα και fractals του Newton">
+        {% comment %}
+          One image per year's work rather than a single recomposed file: adding a year
+          is a new PNG and a new <img>, and the older panels are never re-encoded. The
+          row keeps both at the same height - see .montage-row in head-custom.html.
+
+          The Go position is synthesised, not a game any team played: the arena publishes
+          per-game metadata only, with no move lists. tools/goboard.py explains it, and
+          the alt text below says so rather than implying otherwise.
+        {% endcomment %}
+        <span class="montage-row">
+          <img src="{{ "/assets/img/montage-23-24.png" | relative_url }}"
+               alt="Εικόνες από εργασίες φοιτητών και φοιτητριών: σκακιέρα και fractals του Newton">
+          <img src="{{ "/assets/img/montage-25.png" | relative_url }}"
+               alt="Ενδεικτική θέση παιχνιδιού Go, από την εργασία μηχανής Go">
+        </span>
         <figcaption>
           Έργα φοιτητών και φοιτητριών του μαθήματος &mdash;
           <a href="{{ "/samples/" | relative_url }}">δείτε κι άλλα παραδείγματα</a>.

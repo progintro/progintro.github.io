@@ -140,7 +140,11 @@ MathJax = {
      contents; as a centred banner it reads as the showcase it is, and the caption gives
      the work its credit and a way through to the samples. */
   .montage {
-    max-width: 820px;
+    /* 980px is about what container-lg leaves after px-3. It was 820px when the montage
+       was a single image; with the Go panel alongside it, the extra width is what keeps
+       the chess board near its old size (~285px tall here, ~341px before, ~239px if this
+       stayed at 820px). */
+    max-width: 980px;
     margin: 0 auto 36px;
   }
   .montage img {
@@ -149,6 +153,28 @@ MathJax = {
     height: auto;
     border: 1px solid #dfe6ea;
     border-radius: 6px;
+  }
+  /* One panel per year, side by side. Giving each image a flex-grow equal to its
+     intrinsic width with flex-basis:0 makes the row divide the width in exactly that
+     ratio, which for images of equal height means they render at equal height - no
+     fixed pixel sizes, and nothing to recompute if a panel is replaced. Adding next
+     year's work is one more <img> plus its width here. */
+  .montage-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .montage-row img {
+    flex-basis: 0;
+    min-width: 0;
+  }
+  .montage-row img:nth-child(1) { flex-grow: 1104; }  /* montage-23-24.png is 1104x460 */
+  .montage-row img:nth-child(2) { flex-grow: 460; }   /* montage-25.png is 460x460 */
+  @media (max-width: 700px) {
+    /* Side by side, the Go board would be about 90px across on a phone. Stacked, both
+       panels stay legible. */
+    .montage-row { display: block; }
+    .montage-row img + img { margin-top: 10px; }
   }
   .montage figcaption {
     margin-top: 10px;
