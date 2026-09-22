@@ -1,3 +1,8 @@
+# trolley.c
+
+Ο κώδικας του παραδείγματος [trolley](./README.md), όπως υποβλήθηκε.
+
+```c
 // File: trolley.c
 // Compile with:
 //     gcc -O0 -m32 -Wall -Wextra -Werror -pedantic -o trolley trolley.c
@@ -138,3 +143,4 @@ int main(void) {
     }
   }
 }
+```

@@ -1,3 +1,8 @@
+# newton.c
+
+Ο κώδικας του παραδείγματος [newton](./README.md), όπως υποβλήθηκε.
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h> //Απαραίτητη βιβλιοθήκη για την χρήση των fabs(), fabsl() και pow().
@@ -54,3 +59,4 @@ long double df(long double x0, double FACT[6])
 {
     return (FACT[1] + 2 * FACT[2] * x0 + 3 * FACT[3] * pow(x0, 2) + 4 * FACT[4] * pow(x0, 3) + 5 * FACT[5] * pow(x0, 4)); //Υπολογισμός f'(x0).
 }
+```

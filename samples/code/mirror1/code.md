@@ -1,3 +1,8 @@
+# mirror.c
+
+Ο κώδικας του παραδείγματος [mirror](./README.md), όπως υποβλήθηκε.
+
+```c
 /**
  * @file mirror.c
  * @author Chavatzoglou Lazaros
@@ -182,4 +187,4 @@ int main(int argc, char **argv){
 	return 0;
 
 }
-
+```

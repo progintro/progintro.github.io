@@ -1,3 +1,8 @@
+# trolley.c
+
+Ο κώδικας του παραδείγματος [trolley](./README.md), όπως υποβλήθηκε.
+
+```c
 #include <stdio.h>
 
 int main() {
@@ -29,3 +34,4 @@ int main() {
         }
     }
 }
+```
