@@ -103,8 +103,315 @@
   .crest-row img { max-height: 64px; width: auto; }
 </style>
 
+
 <!-- ==================== SHARED END =============================================== -->
 
+<script>
+  /* Theme picker. The <select> is built from THEMES rather than written into the layout,
+     so adding a theme is one CSS block plus one line here - two places, not three.
+
+     "auto" is the absence of a stored value, not a theme: it clears storage and lets the
+     resolver above fall back to the operating system. */
+  (function () {
+    var THEMES = [
+      ["auto",     "Αυτόματο"],
+      ["light",    "Φωτεινό"],
+      ["dark",     "Σκοτεινό"],
+      ["paper",    "Χαρτί"],
+      ["contrast", "Υψηλή αντίθεση"]
+    ];
+    document.addEventListener("DOMContentLoaded", function () {
+      var sel = document.getElementById("theme-select");
+      if (!sel || !window.__theme) return;
+      THEMES.forEach(function (t) {
+        var o = document.createElement("option");
+        o.value = t[0];
+        o.textContent = t[1];
+        sel.appendChild(o);
+      });
+      sel.value = window.__theme.stored() || "auto";
+      sel.addEventListener("change", function () {
+        try {
+          if (sel.value === "auto") localStorage.removeItem(window.__theme.KEY);
+          else localStorage.setItem(window.__theme.KEY, sel.value);
+        } catch (e) { /* storage blocked: the choice still applies to this page */ }
+        window.__theme.apply(sel.value === "auto" ? null : sel.value);
+      });
+    });
+  })();
+</script>
+
+
+<script>
+  /* Theme, applied before first paint.
+
+     Synchronous in <head> on purpose: setting data-theme after the stylesheet has
+     painted gives a white flash on every navigation for anyone on a dark theme.
+
+     It also resolves the operating system preference into the attribute, instead of the
+     CSS carrying a second copy of the dark tokens under prefers-color-scheme. That copy
+     was twenty values that had to be kept identical to [data-theme="dark"] by hand, and
+     the failure mode - edit one, forget the other - is silent and shows only for people
+     who never opened the picker. The cost is that with JavaScript off everyone gets the
+     light theme: readable and correct, just not their preference. */
+  window.__theme = (function () {
+    var KEY = "progintro-theme";
+    function stored() {
+      try { return localStorage.getItem(KEY); } catch (e) { return null; }
+    }
+    function osDark() {
+      return !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    }
+    function apply(name) {
+      document.documentElement.setAttribute(
+        "data-theme", name || stored() || (osDark() ? "dark" : "light"));
+      /* Keep the mobile browser chrome in step. Read back from the computed --bg
+         rather than keeping a per-theme list, which would be one more thing to fill
+         in for every new theme and one more thing to forget. */
+      var bg = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+      if (!bg) return;
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (!m) {
+        m = document.createElement("meta");
+        m.setAttribute("name", "theme-color");
+        document.head.appendChild(m);
+      }
+      m.setAttribute("content", bg);
+    }
+    apply();
+    if (window.matchMedia) {
+      /* Follow the OS while the picker is on "auto" (nothing stored). */
+      window.matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", function () { if (!stored()) apply(); });
+    }
+    return { KEY: KEY, stored: stored, apply: apply };
+  })();
+</script>
+
+<style>
+  /* ---- Themes -----------------------------------------------------------------
+
+     Everything below is driven by the tokens in :root. A theme is one block that
+     redefines them; nothing else in the stylesheet mentions a literal colour, so a new
+     theme cannot half-apply. To add one: copy a [data-theme] block, change the values,
+     and add an entry to THEMES in the picker script near the end of this file.
+
+     This deliberately lives in the site-specific half rather than the shared block.
+     lab-material wants the same treatment eventually, but syncing a design that is
+     still being experimented with into two repositories means changing both every time
+     a colour moves. It gets promoted once the set of themes settles.
+
+     The jekyll-theme-primer stylesheet hardcodes its colours, so each surface it paints
+     is re-pointed at a token further down. That mapping is the fiddly part and is why
+     the token list is short: every token added has to be given a value in every theme.
+     ------------------------------------------------------------------------------ */
+
+  :root {
+    color-scheme: light;
+    --bg: #ffffff;
+    --surface: #fafbfc;        /* cards: contents, quick links, table stripe */
+    --surface-2: #f6f8fa;      /* code blocks */
+    --fg: #24292e;
+    --fg-muted: #586069;
+    --fg-subtle: #6a737d;
+    --border: #dfe6ea;
+    --border-strong: #c6cbd1;
+    --link: #0B7FA3;           /* --dit-cyan */
+    --accent: #0B7FA3;
+    --heading: #444444;        /* --dit-charcoal */
+    --code-inline-bg: rgba(27, 31, 35, 0.05);
+
+    --syn-comment: #68717b;
+    --syn-keyword: #ce3746;
+    --syn-string: #032f62;
+    --syn-number: #005cc5;
+    --syn-function: #6f42c1;
+    --syn-type: #bc5107;
+    --syn-punct: #24292e;
+  }
+
+  [data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface-2: #161b22;
+    --fg: #c9d1d9;
+    --fg-muted: #8b949e;
+    --fg-subtle: #8b949e;
+    --border: #30363d;
+    --border-strong: #3d444d;
+    --link: #4db8d8;           /* the brand cyan lifted until it clears 4.5:1 on #0d1117 */
+    --accent: #4db8d8;
+    --heading: #e6edf3;
+    --code-inline-bg: rgba(110, 118, 129, 0.4);
+
+    --syn-comment: #8b949e;
+    --syn-keyword: #ff7b72;
+    --syn-string: #a5d6ff;
+    --syn-number: #79c0ff;
+    --syn-function: #d2a8ff;
+    --syn-type: #ffa657;
+    --syn-punct: #c9d1d9;
+  }
+
+  /* Warm and low-contrast, for reading a long handout rather than scanning a table. */
+  [data-theme="paper"] {
+    color-scheme: light;
+    --bg: #faf4e8;
+    --surface: #f3ebda;
+    --surface-2: #f1e7d3;
+    --fg: #3b3327;
+    --fg-muted: #6b5f4c;
+    --fg-subtle: #766b5b;
+    --border: #ddd0b8;
+    --border-strong: #c8b99c;
+    --link: #0a6e8f;
+    --accent: #0a6e8f;
+    --heading: #4a4133;
+    --code-inline-bg: rgba(59, 51, 39, 0.07);
+
+    --syn-comment: #726654;
+    --syn-keyword: #9c2f2f;
+    --syn-string: #2a5c2a;
+    --syn-number: #1f5d8f;
+    --syn-function: #6b3fa0;
+    --syn-type: #98580f;
+    --syn-punct: #3b3327;
+  }
+
+  /* Maximum separation: for projection in a lecture hall, and for anyone who needs it. */
+  [data-theme="contrast"] {
+    color-scheme: light;
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f2f2f2;
+    --fg: #000000;
+    --fg-muted: #1a1a1a;
+    --fg-subtle: #333333;
+    --border: #000000;
+    --border-strong: #000000;
+    --link: #0000cc;
+    --accent: #000000;
+    --heading: #000000;
+    --code-inline-bg: #ebebeb;
+
+    --syn-comment: #444444;
+    --syn-keyword: #a00000;
+    --syn-string: #00008b;
+    --syn-number: #00008b;
+    --syn-function: #551a8b;
+    --syn-type: #8b4500;
+    --syn-punct: #000000;
+  }
+
+  /* ---- Re-pointing Primer at the tokens ---------------------------------------- */
+
+  html, body { background: var(--bg); }
+  .markdown-body { color: var(--fg); background: transparent; }
+  .markdown-body a { color: var(--link); }
+  .markdown-body h1, .markdown-body h2 { border-bottom-color: var(--border); }
+  .markdown-body h2 { color: var(--heading); }
+  .markdown-body h6 { color: var(--fg-subtle); }
+  .markdown-body hr { background-color: var(--border); }
+  .markdown-body blockquote { color: var(--fg-muted); border-left-color: var(--border); }
+  .markdown-body table tr { background-color: var(--bg); border-top-color: var(--border-strong); }
+  .markdown-body table tr:nth-child(2n) { background-color: var(--surface); }
+  .markdown-body table td, .markdown-body table th { border-color: var(--border-strong); }
+  .markdown-body code, .markdown-body tt { background-color: var(--code-inline-bg); }
+  .markdown-body .highlight pre, .markdown-body pre { background-color: var(--surface-2); }
+  /* Primer paints an opaque white box behind every image, which shows as a white slab
+     around the montage and the crests on any dark theme. */
+  .markdown-body img { background-color: transparent; }
+  .markdown-body kbd {
+    color: var(--fg); background-color: var(--surface);
+    border-color: var(--border-strong); box-shadow: none;
+  }
+
+  /* Keyboard focus. Primer's focus styling assumes a light background, so on a dark
+     theme the ring is close to invisible - which matters more here than usual, since the
+     page is mostly links. */
+  :where(a, button, select, summary, [tabindex]):focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection { background: var(--accent); color: var(--bg); }
+
+  /* ---- Syntax ------------------------------------------------------------------
+     Rouge emits 57 token classes. They are grouped here into the seven a C listing
+     actually distinguishes, so a new theme sets seven values rather than fifty-seven. */
+  .highlight .c, .highlight .c1, .highlight .cm, .highlight .cs, .highlight .cd,
+  .highlight .cp { color: var(--syn-comment); font-style: italic; }
+  .highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp,
+  .highlight .kr, .highlight .ow { color: var(--syn-keyword); }
+  .highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc,
+  .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx,
+  .highlight .sr, .highlight .ss { color: var(--syn-string); }
+  .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo,
+  .highlight .il { color: var(--syn-number); }
+  .highlight .nf, .highlight .na, .highlight .nb, .highlight .bp,
+  .highlight .nc { color: var(--syn-function); }
+  .highlight .kt, .highlight .nt, .highlight .no, .highlight .nn,
+  .highlight .nd { color: var(--syn-type); }
+  .highlight .p, .highlight .o, .highlight .nv, .highlight .nx,
+  .highlight .n { color: var(--syn-punct); }
+  .highlight .nl, .highlight .ni, .highlight .ne, .highlight .py,
+  .highlight .vc, .highlight .vg, .highlight .vi { color: var(--syn-function); }
+  .highlight .kv, .highlight .mx { color: var(--syn-number); }
+  .highlight .w { color: var(--fg-subtle); }
+  /* Generic and diff output. Primer gives .err/.gd/.gi opaque pastel backgrounds that
+     glare on any dark theme; the foreground carries the meaning, so the boxes go. */
+  .highlight .err { color: var(--syn-keyword); background-color: transparent; }
+  .highlight .gd { color: var(--syn-keyword); background-color: transparent; }
+  .highlight .gi { color: var(--syn-string); background-color: transparent; }
+  .highlight .gr, .highlight .gt { color: var(--syn-keyword); }
+  .highlight .go, .highlight .gp, .highlight .gh,
+  .highlight .gu, .highlight .gs, .highlight .ge { color: var(--fg-muted); }
+  .highlight, .highlight pre { color: var(--fg); }
+
+  /* The exercise pager lives in the shared block and still resolves --dit-cyan, which
+     is a light-theme value. Re-point it here rather than editing the shared half. */
+  .lab-nav-top { border-bottom-color: var(--accent); }
+  .lab-nav-bottom { border-top-color: var(--accent); }
+  .lab-nav a { color: var(--link); }
+  .lab-nav-mid { color: var(--fg-subtle); }
+
+  /* Print. Students print the handouts and past exams, and a dark theme on paper is
+     both unreadable and an ink bill. Rather than redefining every token for print -
+     which would reintroduce exactly the duplicated block removed above - this flattens
+     the few surfaces that matter and drops the page furniture. */
+  @media print {
+    html, body { background: #fff !important; }
+    .markdown-body { color: #000 !important; }
+    .markdown-body a { color: #000 !important; text-decoration: underline; }
+    .markdown-body pre, .markdown-body code, .markdown-body tt,
+    .markdown-body .highlight pre { background: #f5f5f5 !important; }
+    .markdown-body table tr,
+    .markdown-body table tr:nth-child(2n) { background: #fff !important; }
+    .markdown-body table td, .markdown-body table th { border-color: #999 !important; }
+    /* Navigation, decoration and controls are not worth the paper. */
+    .theme-picker, .montage, .github-fork-ribbon, .quicklinks { display: none !important; }
+    .masthead { border-bottom-color: #000 !important; }
+  }
+
+  /* ---- The picker --------------------------------------------------------------- */
+  .theme-picker {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--fg-subtle);
+  }
+  .theme-picker select {
+    font: inherit;
+    color: var(--fg);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 6px;
+  }
+</style>
 
 <style>
   /* ---- This site only ---------------------------------------------------------
@@ -119,7 +426,7 @@
      the same wordmark bar and cyan rule, without the institutional marks. There is
      deliberately no <h1> here either; every page in this repo opens with its own. */
   .masthead {
-    border-bottom: 2px solid var(--dit-cyan);
+    border-bottom: 2px solid var(--accent);
     padding-bottom: 12px;
     margin-bottom: 28px;
   }
@@ -138,12 +445,12 @@
     font-size: 14px;
   }
   .masthead-wordmark > a {
-    color: var(--dit-charcoal);
+    color: var(--heading);
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 0.02em;
   }
-  .masthead-wordmark > a:hover { color: var(--dit-cyan); }
+  .masthead-wordmark > a:hover { color: var(--accent); }
   /* Flex items default to min-width:auto, so the nav refused to shrink below the width
      of its own text and pushed the whole page sideways on a phone. */
   .masthead-wordmark > a { flex: 0 0 auto; }
@@ -151,9 +458,9 @@
     flex: 1 1 auto;
     min-width: 0;
     text-align: right;
-    color: #6a737d;
+    color: var(--fg-subtle);
   }
-  .masthead-links a { color: var(--dit-cyan); font-weight: 600; }
+  .masthead-links a { color: var(--accent); font-weight: 600; }
 
   @media (max-width: 560px) {
     .masthead-wordmark { display: block; }
@@ -175,7 +482,7 @@
     display: block;
     width: 100%;
     height: auto;
-    border: 1px solid #dfe6ea;
+    border: 1px solid var(--border);
     border-radius: 6px;
   }
   /* One panel per year, side by side. Giving each image a flex-grow equal to its
@@ -208,7 +515,7 @@
     margin-top: 10px;
     font-size: 13px;
     line-height: 1.5;
-    color: #6a737d;
+    color: var(--fg-subtle);
     text-align: center;
   }
 
@@ -226,15 +533,15 @@
   }
   .quicklinks a {
     padding: 6px 14px;
-    border: 1px solid #dfe6ea;
+    border: 1px solid var(--border);
     border-radius: 999px;
-    background: #fafbfc;
+    background: var(--surface);
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
   }
   .quicklinks a:hover {
-    border-color: var(--dit-cyan);
+    border-color: var(--accent);
     background: #fff;
     text-decoration: none;
   }
@@ -248,9 +555,9 @@
     list-style: none;
     margin: 0 0 32px;
     padding: 18px 22px;
-    border: 1px solid #dfe6ea;
+    border: 1px solid var(--border);
     border-radius: 6px;
-    background: #fafbfc;
+    background: var(--surface);
     font-size: 14px;
   }
   #markdown-toc li {
@@ -276,11 +583,11 @@
   }
 
   .site-footer {
-    border-top: 1px solid #dfe6ea;
+    border-top: 1px solid var(--border);
     margin-top: 48px;
     padding-top: 16px;
     font-size: 13px;
-    color: #6a737d;
+    color: var(--fg-subtle);
   }
-  .site-footer a { color: var(--dit-cyan); }
+  .site-footer a { color: var(--accent); }
 </style>
