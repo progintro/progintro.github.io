@@ -13,27 +13,51 @@
 
 <!-- ==================== SHARED BEGIN (keep in sync with lab-material) ============ -->
 
-<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
-<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
+  /* Mermaid is 1.5 MB and MathJax another 250 KB. Both used to load on every page of
+     both sites, and mermaid loaded render-blocking - nothing painted until it had
+     downloaded and parsed. Together they were 1.7 MB of the syllabus landing page's
+     2.5 MB, and that page contains no diagram and no formula at all; most lab pages
+     use one or the other, not both.
+
+     Each is now fetched only if the rendered page actually contains its syntax, and
+     always asynchronously. A page with neither loads no third-party JavaScript.
+
+     The ES6 polyfill that used to sit above this was also render-blocking. Every
+     browser that needs it has been out of support for years. */
   document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("code.language-mermaid").forEach((block) => {
-      const parent = block.parentElement;
-      const mermaidDiv = document.createElement("div");
-      mermaidDiv.classList.add("mermaid");
-      mermaidDiv.innerHTML = block.textContent;
-      parent.replaceWith(mermaidDiv);
-    });
-    mermaid.initialize({ startOnLoad: true });
-  })
+    const load = (src, onload) => {
+      const s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      if (onload) s.onload = onload;
+      document.head.appendChild(s);
+    };
+
+    const blocks = document.querySelectorAll("code.language-mermaid");
+    if (blocks.length) {
+      load("https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js", () => {
+        blocks.forEach((block) => {
+          const parent = block.parentElement;
+          const mermaidDiv = document.createElement("div");
+          mermaidDiv.classList.add("mermaid");
+          mermaidDiv.innerHTML = block.textContent;
+          parent.replaceWith(mermaidDiv);
+        });
+        mermaid.initialize({ startOnLoad: true });
+      });
+    }
+
+    /* The delimiters MathJax is configured for below: $x$, $$x$$, \(x\), \[x\]. The
+       inline test needs a closing $ on the same line, so the terminal transcripts in
+       the handouts ("$ gcc -o foo foo.c") do not drag in a quarter of a megabyte. If
+       a page's math is ever missed it renders as its own source, which is visible
+       rather than silent. */
+    if (/\$\$|\\\(|\\\[|\$[^$\n]+\$/.test(document.body.textContent)) {
+      window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+      load("https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js");
+    }
+  });
 </script>
 
 
@@ -168,8 +192,8 @@ MathJax = {
     flex-basis: 0;
     min-width: 0;
   }
-  .montage-row img:nth-child(1) { flex-grow: 1104; }  /* montage-23-24.png is 1104x460 */
-  .montage-row img:nth-child(2) { flex-grow: 460; }   /* montage-25.png is 460x460 */
+  .montage-row img:nth-child(1) { flex-grow: 1104; }  /* montage-23-24.webp is 1104x460 */
+  .montage-row img:nth-child(2) { flex-grow: 460; }   /* montage-25.webp is 460x460 */
   @media (max-width: 700px) {
     /* The montage is decoration and it sits above every section of the page, so on a
        phone its job is to be thin. Stacking the two panels was the obvious reading of

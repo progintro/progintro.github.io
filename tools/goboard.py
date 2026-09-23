@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the Go panel of the landing-page montage (assets/img/montage-25.png).
+"""Render the Go panel of the landing-page montage (assets/img/montage-25.webp).
 
 The 2025-26 final assignment was a Go engine (progintro/hw3), and the montage had
 nothing from it. The tournament data the arena publishes - ~uoabot/go_scores.json -
@@ -28,9 +28,9 @@ from PIL import Image, ImageDraw
 SIZE = 19                     # 19x19, as the assignment specifies
 SEED = 20260922
 TARGET_STONES = 140           # busy enough to read as a real game, not a wall of stone
-OUT = "assets/img/montage-25.png"
+OUT = "assets/img/montage-25.webp"   # lossless WebP: flat line art, no ringing on the grid
 
-# Sampled from montage-23-24.png: the chess board is the lichess pair, light #f0d9b5
+# Sampled from montage-23-24.webp: the chess board is the lichess pair, light #f0d9b5
 # on dark #b58863. The board field sits between the two so the Go panel reads as part
 # of the same band rather than a new colour scheme.
 PALETTE = {
@@ -42,7 +42,7 @@ PALETTE = {
 }
 
 SCALE = 2                     # render at 2x and downsample; cheap antialiasing
-OUT_PX = 460                  # matches montage-23-24.png's height
+OUT_PX = 460                  # matches montage-23-24.webp's height
 MARGIN = 9                    # small inset; the other montage panels are full-bleed
 
 EMPTY, BLACK, WHITE = 0, 1, 2
@@ -269,7 +269,7 @@ def main():
     assert_alive(board)
     stones = sum(c != EMPTY for row in board for c in row)
     black = sum(c == BLACK for row in board for c in row)
-    render(board).save(OUT)
+    render(board).save(OUT, "WEBP", lossless=True, method=6)
     print(f"{OUT}: {stones} stones ({black} black, {stones - black} white), seed {SEED}")
 
 

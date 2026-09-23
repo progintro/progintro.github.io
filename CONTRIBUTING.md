@@ -70,7 +70,7 @@ docker run --rm -v "$PWD:/srv/jekyll" -p 4000:4000 -w /srv/jekyll ruby:3.3-slim 
 `flex-grow` ίσο με το πλάτος του στο `_includes/head-custom.html`. Οι παλιές εικόνες
 δεν ξαναγράφονται.
 
-Ο πίνακας του Go (`assets/img/montage-25.png`) παράγεται από το `tools/goboard.py`
+Ο πίνακας του Go (`assets/img/montage-25.webp`) παράγεται από το `tools/goboard.py`
 (`python3 tools/goboard.py`, θέλει Pillow). Η θέση είναι **ενδεικτική** — δεν είναι
 παρτίδα που έπαιξε κάποια ομάδα, γιατί η arena δημοσιεύει μόνο μετα-δεδομένα και όχι
 κινήσεις. Το script απορρίπτει θέσεις όπου κάποια ομάδα πετρών δεν έχει ελευθερίες.
