@@ -59,8 +59,18 @@
             <a href="{{ "/code.html" | relative_url }}">Κώδικας</a> ·
             <a href="{{ "/samples/" | relative_url }}">Παραδείγματα</a>
             <span class="theme-picker">
-              <label for="theme-select">Θέμα</label>
-              <select id="theme-select"></select>
+              <button type="button" id="theme-button" class="theme-button"
+                      aria-haspopup="true" aria-expanded="false" aria-controls="theme-menu"
+                      title="Θέμα εμφάνισης">
+                <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"
+                     focusable="false">
+                  <circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor"
+                          stroke-width="1.5"/>
+                  <path d="M8 1.6a6.4 6.4 0 0 0 0 12.8z" fill="currentColor"/>
+                </svg>
+                <span class="visually-hidden">Θέμα εμφάνισης</span>
+              </button>
+              <ul id="theme-menu" class="theme-menu" role="menu" hidden></ul>
             </span>
           </span>
         </p>
