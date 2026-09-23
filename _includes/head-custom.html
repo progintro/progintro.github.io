@@ -107,11 +107,15 @@
 <!-- ==================== SHARED END =============================================== -->
 
 <script>
-  /* Theme picker. The <select> is built from THEMES rather than written into the layout,
-     so adding a theme is one CSS block plus one line here - two places, not three.
+  /* Theme picker. The menu is built from THEMES rather than written into the layout, so
+     adding a theme is one CSS block plus one line here - two places, not three.
 
      "auto" is the absence of a stored value, not a theme: it clears storage and lets the
-     resolver above fall back to the operating system. */
+     resolver above fall back to the operating system.
+
+     A menu rather than a <select> means the keyboard behaviour has to be written out:
+     Escape closes and returns focus, arrows move, Home/End jump, and a click anywhere
+     else dismisses. That is the cost of not using the native control. */
   (function () {
     var THEMES = [
       ["auto",     "Αυτόματο"],
@@ -120,23 +124,83 @@
       ["paper",    "Χαρτί"],
       ["contrast", "Υψηλή αντίθεση"]
     ];
+
     document.addEventListener("DOMContentLoaded", function () {
-      var sel = document.getElementById("theme-select");
-      if (!sel || !window.__theme) return;
-      THEMES.forEach(function (t) {
-        var o = document.createElement("option");
-        o.value = t[0];
-        o.textContent = t[1];
-        sel.appendChild(o);
+      var button = document.getElementById("theme-button");
+      var menu = document.getElementById("theme-menu");
+      if (!button || !menu || !window.__theme) return;
+
+      var items = THEMES.map(function (theme) {
+        var li = document.createElement("li");
+        li.setAttribute("role", "none");
+        var b = document.createElement("button");
+        b.type = "button";
+        b.setAttribute("role", "menuitemradio");
+        b.dataset.theme = theme[0];
+        b.textContent = theme[1];
+        li.appendChild(b);
+        menu.appendChild(li);
+        return b;
       });
-      sel.value = window.__theme.stored() || "auto";
-      sel.addEventListener("change", function () {
+
+      function mark() {
+        var current = window.__theme.stored() || "auto";
+        items.forEach(function (b) {
+          b.setAttribute("aria-checked", String(b.dataset.theme === current));
+        });
+      }
+
+      function open(focusFirst) {
+        menu.hidden = false;
+        button.setAttribute("aria-expanded", "true");
+        mark();
+        if (focusFirst) items[0].focus();
+      }
+
+      function close(refocus) {
+        menu.hidden = true;
+        button.setAttribute("aria-expanded", "false");
+        if (refocus) button.focus();
+      }
+
+      function choose(name) {
         try {
-          if (sel.value === "auto") localStorage.removeItem(window.__theme.KEY);
-          else localStorage.setItem(window.__theme.KEY, sel.value);
+          if (name === "auto") localStorage.removeItem(window.__theme.KEY);
+          else localStorage.setItem(window.__theme.KEY, name);
         } catch (e) { /* storage blocked: the choice still applies to this page */ }
-        window.__theme.apply(sel.value === "auto" ? null : sel.value);
+        window.__theme.apply(name === "auto" ? null : name);
+        mark();
+        close(true);
+      }
+
+      button.addEventListener("click", function () {
+        if (menu.hidden) open(false); else close(false);
       });
+
+      items.forEach(function (b, i) {
+        b.addEventListener("click", function () { choose(b.dataset.theme); });
+        b.addEventListener("keydown", function (e) {
+          var next = null;
+          if (e.key === "ArrowDown") next = items[(i + 1) % items.length];
+          else if (e.key === "ArrowUp") next = items[(i - 1 + items.length) % items.length];
+          else if (e.key === "Home") next = items[0];
+          else if (e.key === "End") next = items[items.length - 1];
+          if (next) { e.preventDefault(); next.focus(); }
+        });
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !menu.hidden) close(true);
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!menu.hidden && !menu.contains(e.target) && e.target !== button
+            && !button.contains(e.target)) {
+          close(false);
+        }
+      });
+
+      mark();
     });
   })();
 </script>
@@ -320,7 +384,7 @@
   .markdown-body code, .markdown-body tt { background-color: var(--code-inline-bg); }
   .markdown-body .highlight pre, .markdown-body pre { background-color: var(--surface-2); }
   /* Primer paints an opaque white box behind every image, which shows as a white slab
-     around the montage and the crests on any dark theme. */
+     around the montage on any dark theme. */
   .markdown-body img { background-color: transparent; }
   .markdown-body kbd {
     color: var(--fg); background-color: var(--surface);
@@ -395,13 +459,81 @@
     .masthead { border-bottom-color: #000 !important; }
   }
 
-  /* ---- The picker --------------------------------------------------------------- */
-  .theme-picker {
+  /* ---- The picker ---------------------------------------------------------------
+     A half-filled circle and a menu, rather than a <select>. Two reasons: a native
+     select renders as a form control, which is what it looked like in a masthead that
+     is otherwise navigation; and its width grows with the longest theme name, while
+     this stays one glyph whether there are four themes or twelve. The dropdown list of
+     a native select is also drawn by the operating system and cannot be themed, so on a
+     dark page it opened as a light panel. */
+  .theme-picker { position: relative; display: inline-flex; margin-left: 10px; }
+  .theme-button {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    font-size: 13px;
-    color: var(--fg-subtle);
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    color: var(--link);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  .theme-button:hover { background: var(--surface); border-color: var(--border); }
+  .theme-button[aria-expanded="true"] { background: var(--surface); border-color: var(--border); }
+
+  .theme-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    z-index: 20;
+    min-width: 172px;
+    margin: 0;
+    padding: 4px;
+    list-style: none;
+    text-align: left;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  }
+  .theme-menu[hidden] { display: none; }
+  .theme-menu button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 6px 10px;
+    font: inherit;
+    font-weight: 400;
+    color: var(--fg);
+    text-align: left;
+    background: transparent;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .theme-menu button:hover { background: var(--surface); }
+  /* The tick is always in the DOM so the label never shifts when the choice changes. */
+  .theme-menu button::before {
+    content: "\2713";
+    width: 1em;
+    color: var(--link);
+    visibility: hidden;
+  }
+  .theme-menu button[aria-checked="true"]::before { visibility: visible; }
+  .theme-menu button[aria-checked="true"] { font-weight: 600; }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px; padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
   }
   .theme-picker select {
     font: inherit;
@@ -420,11 +552,10 @@
      None of that exists in lab-material, so it lives outside the shared block.
      ------------------------------------------------------------------------------ */
 
-  /* Masthead. The crests use .crest-row from the shared block above, so they are sized
-     and spaced identically to the ones on lab-material's landing page - and, like
-     lab-material, they appear on the landing page only. Inner pages get .masthead-slim:
-     the same wordmark bar and cyan rule, without the institutional marks. There is
-     deliberately no <h1> here either; every page in this repo opens with its own. */
+  /* Masthead: a wordmark bar and a cyan rule, the same on every page. It carried the
+     two institutional crests until they were removed - see the comment in
+     _layouts/default.html. There is deliberately no <h1> here; every page in this repo
+     opens with its own. */
   .masthead {
     border-bottom: 2px solid var(--accent);
     padding-bottom: 12px;
@@ -434,7 +565,6 @@
   /* Primer's `.markdown-body p { margin-bottom: 16px }` outranks the plain class
      selectors below, so the masthead's own paragraphs are zeroed at equal specificity. */
   .markdown-body .masthead p { margin: 0; }
-  .markdown-body .masthead .crest-row { margin-bottom: 8px; }
   .masthead-wordmark {
     display: flex;
     align-items: baseline;
@@ -576,10 +706,9 @@
     #markdown-toc li { margin: 0 0 3px; }
   }
 
-  /* The fork ribbon overlaps the crests on a phone, where it is unreadable anyway. */
+  /* The fork ribbon is unreadable on a phone. */
   @media (max-width: 720px) {
     .github-fork-ribbon { display: none; }
-    .crest-row img { max-height: 44px; }
   }
 
   .site-footer {

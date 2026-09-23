@@ -38,19 +38,19 @@
     -->
     <div class="container-lg px-3 my-5 markdown-body">
       {% comment %}
-        The crests are landing-page only, deliberately. lab-material does the same thing
-        - its crest row lives in the README that renders at the site root, not in a
-        layout - because the institutional marks are large and repeating them at the top
-        of every handout is heavy. Inner pages keep only the wordmark bar, which is
-        navigation rather than branding. A page can opt in with `crests: true`.
+        No crests. They were two images totalling 64px of height above every landing
+        page, and the top of the page is the most expensive space on it - the same
+        reasoning that thinned the montage and the contents card on mobile. They also
+        never survived a dark theme: the UoA wordmark is 80% near-white and glowed, and
+        the dit mark is 29% white halo around 36% near-black ink, so it lost its edges
+        and gained a frame at the same time.
+
+        Recolouring an institutional mark is not ours to do. If reversed or mono versions
+        are ever supplied, the .crest-row rules are still in the shared block - restore
+        the crest paragraph here and it will size and space exactly as lab-material's does.
+        assets/img/uoa.webp is kept for that, unreferenced for now.
       {% endcomment %}
-      <header class="masthead{% unless page.url == "/" or page.crests %} masthead-slim{% endunless %}">
-        {% if page.url == "/" or page.crests %}
-        <p class="crest-row">
-          <img src="{{ "/assets/img/uoa.webp" | relative_url }}" alt="Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών">
-          <img src="{{ "/assets/img/logo.jpg" | relative_url }}" alt="Τμήμα Πληροφορικής και Τηλεπικοινωνιών">
-        </p>
-        {% endif %}
+      <header class="masthead masthead-slim">
         <p class="masthead-wordmark">
           <a href="{{ "/" | relative_url }}">progintro @ dit</a>
           <span class="masthead-links">
@@ -59,8 +59,18 @@
             <a href="{{ "/code.html" | relative_url }}">Κώδικας</a> ·
             <a href="{{ "/samples/" | relative_url }}">Παραδείγματα</a>
             <span class="theme-picker">
-              <label for="theme-select">Θέμα</label>
-              <select id="theme-select"></select>
+              <button type="button" id="theme-button" class="theme-button"
+                      aria-haspopup="true" aria-expanded="false" aria-controls="theme-menu"
+                      title="Θέμα εμφάνισης">
+                <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"
+                     focusable="false">
+                  <circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor"
+                          stroke-width="1.5"/>
+                  <path d="M8 1.6a6.4 6.4 0 0 0 0 12.8z" fill="currentColor"/>
+                </svg>
+                <span class="visually-hidden">Θέμα εμφάνισης</span>
+              </button>
+              <ul id="theme-menu" class="theme-menu" role="menu" hidden></ul>
             </span>
           </span>
         </p>
