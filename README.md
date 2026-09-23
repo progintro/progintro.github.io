@@ -38,14 +38,14 @@
 
 ## Εργασίες
 
-<!-- TODO(2026-27) -->
-
-| Εργασία | GitHub | Προθεσμία |
+| Εργασία | Προθεσμία | Github |
 | --- | --- | --- |
+| HW0 | 4 Νοεμβρίου 23:59 | TBD |
+| HW1 | 25 Νοεμβρίου 23:59 | TBD |
+| HW2 | 23 Δεκεμβρίου 23:59 | TBD |
+| HW3 | 15 Ιανουαρίου 23:59 | TBD |
 
 ## Διαλέξεις
-
-<!-- TODO(2026-27) -->
 
 | Ημερομηνία | Περιεχόμενο Μαθήματος | Αρχείο |
 | --- | --- | --- |
@@ -59,9 +59,9 @@
 
 ### Φυλλάδια
 
-| PDF | Markdown | HTML | GitHub Classroom (optional) <!-- TODO(2026-27) --> |
+| PDF | Markdown | HTML |
 | --- | --- | --- | --- |
-| [Φυλλάδιο 0.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab00.pdf) | [lab00.md](https://github.com/progintro/lab-material/tree/main/labs/lab00) | [lab00.html](https://progintro.github.io/lab-material/labs/lab00) | |
+| [Φυλλάδιο 0.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab00.pdf) | [lab00.md](https://github.com/progintro/lab-material/tree/main/labs/lab00) | [lab00.html](https://progintro.github.io/lab-material/labs/lab00) |
 
 
 Θες να βοηθήσεις να βελτιώσουμε τα Φυλλάδια; Στείλε μας PR στο [lab-material repo](https://github.com/progintro/lab-material).
