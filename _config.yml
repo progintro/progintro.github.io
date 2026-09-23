@@ -76,5 +76,4 @@ exclude:
   - hw1.pdf           # stray copy; the linked one is assets/pdf/hw1.pdf
   - tas.txt           # internal staff roster - must not become a public URL
   - posts/            # scraper output (posts/fetch.sh), not course material
-  - tools/            # image generators for assets/, not course material
   - vendor/
