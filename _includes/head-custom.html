@@ -320,7 +320,7 @@
   .markdown-body code, .markdown-body tt { background-color: var(--code-inline-bg); }
   .markdown-body .highlight pre, .markdown-body pre { background-color: var(--surface-2); }
   /* Primer paints an opaque white box behind every image, which shows as a white slab
-     around the montage and the crests on any dark theme. */
+     around the montage on any dark theme. */
   .markdown-body img { background-color: transparent; }
   .markdown-body kbd {
     color: var(--fg); background-color: var(--surface);
@@ -420,11 +420,10 @@
      None of that exists in lab-material, so it lives outside the shared block.
      ------------------------------------------------------------------------------ */
 
-  /* Masthead. The crests use .crest-row from the shared block above, so they are sized
-     and spaced identically to the ones on lab-material's landing page - and, like
-     lab-material, they appear on the landing page only. Inner pages get .masthead-slim:
-     the same wordmark bar and cyan rule, without the institutional marks. There is
-     deliberately no <h1> here either; every page in this repo opens with its own. */
+  /* Masthead: a wordmark bar and a cyan rule, the same on every page. It carried the
+     two institutional crests until they were removed - see the comment in
+     _layouts/default.html. There is deliberately no <h1> here; every page in this repo
+     opens with its own. */
   .masthead {
     border-bottom: 2px solid var(--accent);
     padding-bottom: 12px;
@@ -434,7 +433,6 @@
   /* Primer's `.markdown-body p { margin-bottom: 16px }` outranks the plain class
      selectors below, so the masthead's own paragraphs are zeroed at equal specificity. */
   .markdown-body .masthead p { margin: 0; }
-  .markdown-body .masthead .crest-row { margin-bottom: 8px; }
   .masthead-wordmark {
     display: flex;
     align-items: baseline;
@@ -576,10 +574,9 @@
     #markdown-toc li { margin: 0 0 3px; }
   }
 
-  /* The fork ribbon overlaps the crests on a phone, where it is unreadable anyway. */
+  /* The fork ribbon is unreadable on a phone. */
   @media (max-width: 720px) {
     .github-fork-ribbon { display: none; }
-    .crest-row img { max-height: 44px; }
   }
 
   .site-footer {
