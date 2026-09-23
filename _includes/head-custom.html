@@ -165,6 +165,18 @@
     function apply(name) {
       document.documentElement.setAttribute(
         "data-theme", name || stored() || (osDark() ? "dark" : "light"));
+      /* Keep the mobile browser chrome in step. Read back from the computed --bg
+         rather than keeping a per-theme list, which would be one more thing to fill
+         in for every new theme and one more thing to forget. */
+      var bg = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+      if (!bg) return;
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (!m) {
+        m = document.createElement("meta");
+        m.setAttribute("name", "theme-color");
+        document.head.appendChild(m);
+      }
+      m.setAttribute("content", bg);
     }
     apply();
     if (window.matchMedia) {
@@ -195,6 +207,7 @@
      ------------------------------------------------------------------------------ */
 
   :root {
+    color-scheme: light;
     --bg: #ffffff;
     --surface: #fafbfc;        /* cards: contents, quick links, table stripe */
     --surface-2: #f6f8fa;      /* code blocks */
@@ -207,7 +220,6 @@
     --accent: #0B7FA3;
     --heading: #444444;        /* --dit-charcoal */
     --code-inline-bg: rgba(27, 31, 35, 0.05);
-    --shadow: rgba(27, 31, 35, 0.04);
 
     --syn-comment: #68717b;
     --syn-keyword: #ce3746;
@@ -219,6 +231,7 @@
   }
 
   [data-theme="dark"] {
+    color-scheme: dark;
     --bg: #0d1117;
     --surface: #161b22;
     --surface-2: #161b22;
@@ -231,7 +244,6 @@
     --accent: #4db8d8;
     --heading: #e6edf3;
     --code-inline-bg: rgba(110, 118, 129, 0.4);
-    --shadow: rgba(0, 0, 0, 0.4);
 
     --syn-comment: #8b949e;
     --syn-keyword: #ff7b72;
@@ -244,19 +256,19 @@
 
   /* Warm and low-contrast, for reading a long handout rather than scanning a table. */
   [data-theme="paper"] {
+    color-scheme: light;
     --bg: #faf4e8;
     --surface: #f3ebda;
     --surface-2: #f1e7d3;
     --fg: #3b3327;
     --fg-muted: #6b5f4c;
-    --fg-subtle: #7d7160;
+    --fg-subtle: #766b5b;
     --border: #ddd0b8;
     --border-strong: #c8b99c;
     --link: #0a6e8f;
     --accent: #0a6e8f;
     --heading: #4a4133;
     --code-inline-bg: rgba(59, 51, 39, 0.07);
-    --shadow: rgba(59, 51, 39, 0.06);
 
     --syn-comment: #726654;
     --syn-keyword: #9c2f2f;
@@ -269,6 +281,7 @@
 
   /* Maximum separation: for projection in a lecture hall, and for anyone who needs it. */
   [data-theme="contrast"] {
+    color-scheme: light;
     --bg: #ffffff;
     --surface: #ffffff;
     --surface-2: #f2f2f2;
@@ -281,7 +294,6 @@
     --accent: #000000;
     --heading: #000000;
     --code-inline-bg: #ebebeb;
-    --shadow: transparent;
 
     --syn-comment: #444444;
     --syn-keyword: #a00000;
@@ -315,6 +327,17 @@
     border-color: var(--border-strong); box-shadow: none;
   }
 
+  /* Keyboard focus. Primer's focus styling assumes a light background, so on a dark
+     theme the ring is close to invisible - which matters more here than usual, since the
+     page is mostly links. */
+  :where(a, button, select, summary, [tabindex]):focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection { background: var(--accent); color: var(--bg); }
+
   /* ---- Syntax ------------------------------------------------------------------
      Rouge emits 57 token classes. They are grouped here into the seven a C listing
      actually distinguishes, so a new theme sets seven values rather than fifty-seven. */
@@ -333,6 +356,18 @@
   .highlight .nd { color: var(--syn-type); }
   .highlight .p, .highlight .o, .highlight .nv, .highlight .nx,
   .highlight .n { color: var(--syn-punct); }
+  .highlight .nl, .highlight .ni, .highlight .ne, .highlight .py,
+  .highlight .vc, .highlight .vg, .highlight .vi { color: var(--syn-function); }
+  .highlight .kv, .highlight .mx { color: var(--syn-number); }
+  .highlight .w { color: var(--fg-subtle); }
+  /* Generic and diff output. Primer gives .err/.gd/.gi opaque pastel backgrounds that
+     glare on any dark theme; the foreground carries the meaning, so the boxes go. */
+  .highlight .err { color: var(--syn-keyword); background-color: transparent; }
+  .highlight .gd { color: var(--syn-keyword); background-color: transparent; }
+  .highlight .gi { color: var(--syn-string); background-color: transparent; }
+  .highlight .gr, .highlight .gt { color: var(--syn-keyword); }
+  .highlight .go, .highlight .gp, .highlight .gh,
+  .highlight .gu, .highlight .gs, .highlight .ge { color: var(--fg-muted); }
   .highlight, .highlight pre { color: var(--fg); }
 
   /* The exercise pager lives in the shared block and still resolves --dit-cyan, which
@@ -341,6 +376,24 @@
   .lab-nav-bottom { border-top-color: var(--accent); }
   .lab-nav a { color: var(--link); }
   .lab-nav-mid { color: var(--fg-subtle); }
+
+  /* Print. Students print the handouts and past exams, and a dark theme on paper is
+     both unreadable and an ink bill. Rather than redefining every token for print -
+     which would reintroduce exactly the duplicated block removed above - this flattens
+     the few surfaces that matter and drops the page furniture. */
+  @media print {
+    html, body { background: #fff !important; }
+    .markdown-body { color: #000 !important; }
+    .markdown-body a { color: #000 !important; text-decoration: underline; }
+    .markdown-body pre, .markdown-body code, .markdown-body tt,
+    .markdown-body .highlight pre { background: #f5f5f5 !important; }
+    .markdown-body table tr,
+    .markdown-body table tr:nth-child(2n) { background: #fff !important; }
+    .markdown-body table td, .markdown-body table th { border-color: #999 !important; }
+    /* Navigation, decoration and controls are not worth the paper. */
+    .theme-picker, .montage, .github-fork-ribbon, .quicklinks { display: none !important; }
+    .masthead { border-bottom-color: #000 !important; }
+  }
 
   /* ---- The picker --------------------------------------------------------------- */
   .theme-picker {
