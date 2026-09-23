@@ -171,10 +171,14 @@ MathJax = {
   .montage-row img:nth-child(1) { flex-grow: 1104; }  /* montage-23-24.png is 1104x460 */
   .montage-row img:nth-child(2) { flex-grow: 460; }   /* montage-25.png is 460x460 */
   @media (max-width: 700px) {
-    /* Side by side, the Go board would be about 90px across on a phone. Stacked, both
-       panels stay legible. */
-    .montage-row { display: block; }
-    .montage-row img + img { margin-top: 10px; }
+    /* The montage is decoration and it sits above every section of the page, so on a
+       phone its job is to be thin. Stacking the two panels was the obvious reading of
+       "make them legible" and it cost 517px at a 390px viewport - half a screen of
+       scrolling before the first heading. Side by side the row is about 105px. The
+       stones and pieces are small at that size; they are a banner, not a diagram.
+       The caption goes too: it is credit, not navigation. */
+    .montage { margin-bottom: 20px; }
+    .montage figcaption { display: none; }
   }
   .montage figcaption {
     margin-top: 10px;
@@ -182,6 +186,33 @@ MathJax = {
     line-height: 1.5;
     color: #6a737d;
     text-align: center;
+  }
+
+  /* Quick links. The four things a student wants during term - what is due, this week's
+     slides, this week's handout, and where to ask - reachable without reading the page
+     or the contents card. They are plain anchors rather than the real Piazza/Classroom
+     URLs on purpose: those change every September and would be one more thing to
+     remember, while a heading anchor cannot go stale. Lives in README.md as raw HTML so
+     it renders on github.com too. */
+  .quicklinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin: 0 0 20px;
+  }
+  .quicklinks a {
+    padding: 6px 14px;
+    border: 1px solid #dfe6ea;
+    border-radius: 999px;
+    background: #fafbfc;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .quicklinks a:hover {
+    border-color: var(--dit-cyan);
+    background: #fff;
+    text-decoration: none;
   }
 
   /* Table of contents. kramdown's {:toc} emits a bare <ul id="markdown-toc">, which on
@@ -205,7 +236,14 @@ MathJax = {
   #markdown-toc > li > ul { display: none; }
 
   @media (max-width: 900px) { #markdown-toc { columns: 2; } }
-  @media (max-width: 560px) { #markdown-toc { columns: 1; } }
+  @media (max-width: 560px) {
+    /* Not one column: sixteen items stacked run about 480px, which on a phone is a
+       second screenful of furniture between the title and the first section. Two
+       narrow columns with tighter rows halve it, and the entries are short enough
+       (one or two words) to survive the narrower measure. */
+    #markdown-toc { columns: 2; column-gap: 18px; padding: 14px 16px; font-size: 13px; }
+    #markdown-toc li { margin: 0 0 3px; }
+  }
 
   /* The fork ribbon overlaps the crests on a phone, where it is unreadable anyway. */
   @media (max-width: 720px) {
