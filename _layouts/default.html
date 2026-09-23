@@ -70,7 +70,13 @@
                 </svg>
                 <span class="visually-hidden">Θέμα εμφάνισης</span>
               </button>
-              <ul id="theme-menu" class="theme-menu" role="menu" hidden></ul>
+              <!-- A <span>, not a <ul> or <div>: this sits inside
+                   <p class="masthead-wordmark">, and a <p> may only contain phrasing
+                   content. The parser closes the paragraph when it meets flow content
+                   and ejects the element - which is exactly what happened: the menu
+                   landed as a sibling of the <p>, lost .theme-picker as its positioning
+                   ancestor, and opened 906px down the page. -->
+              <span id="theme-menu" class="theme-menu" role="menu" hidden></span>
             </span>
           </span>
         </p>

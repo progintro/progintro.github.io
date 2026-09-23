@@ -131,22 +131,19 @@
       if (!button || !menu || !window.__theme) return;
 
       var items = THEMES.map(function (theme) {
-        var li = document.createElement("li");
-        li.setAttribute("role", "none");
         var b = document.createElement("button");
         b.type = "button";
         b.setAttribute("role", "menuitemradio");
-        b.dataset.theme = theme[0];
+        b.dataset.themeName = theme[0];
         b.textContent = theme[1];
-        li.appendChild(b);
-        menu.appendChild(li);
+        menu.appendChild(b);
         return b;
       });
 
       function mark() {
         var current = window.__theme.stored() || "auto";
         items.forEach(function (b) {
-          b.setAttribute("aria-checked", String(b.dataset.theme === current));
+          b.setAttribute("aria-checked", String(b.dataset.themeName === current));
         });
       }
 
@@ -178,7 +175,7 @@
       });
 
       items.forEach(function (b, i) {
-        b.addEventListener("click", function () { choose(b.dataset.theme); });
+        b.addEventListener("click", function () { choose(b.dataset.themeName); });
         b.addEventListener("keydown", function (e) {
           var next = null;
           if (e.key === "ArrowDown") next = items[(i + 1) % items.length];
@@ -294,7 +291,7 @@
     --syn-punct: #24292e;
   }
 
-  [data-theme="dark"] {
+  :root[data-theme="dark"] {
     color-scheme: dark;
     --bg: #0d1117;
     --surface: #161b22;
@@ -319,7 +316,7 @@
   }
 
   /* Warm and low-contrast, for reading a long handout rather than scanning a table. */
-  [data-theme="paper"] {
+  :root[data-theme="paper"] {
     color-scheme: light;
     --bg: #faf4e8;
     --surface: #f3ebda;
@@ -344,7 +341,7 @@
   }
 
   /* Maximum separation: for projection in a lecture hall, and for anyone who needs it. */
-  [data-theme="contrast"] {
+  :root[data-theme="contrast"] {
     color-scheme: light;
     --bg: #ffffff;
     --surface: #ffffff;
@@ -485,6 +482,8 @@
   .theme-button[aria-expanded="true"] { background: var(--surface); border-color: var(--border); }
 
   .theme-menu {
+    /* Explicit, because the container is a <span> - see the comment in the layout. */
+    display: block;
     position: absolute;
     top: calc(100% + 6px);
     right: 0;
