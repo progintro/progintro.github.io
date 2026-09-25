@@ -121,7 +121,13 @@
 
 ### Άλλοι Σύνδεσμοι
 
-* [Σημειώσεις](/assets/pdf/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/)
+* [Σημειώσεις](/assets/pdf/K04.pdf) από τον καθηγητή [Παναγιώτη Σταματόπουλο](https://cgi.di.uoa.gr/~takis/) - διαθέσιμες και ως:
+  [HTML](https://progintro.github.io/notes/),
+  [PDF](https://progintro.github.io/notes/downloads/notes.pdf),
+  [Markdown](https://github.com/progintro/notes/tree/main/chapters)
+* [AI Study Guide](https://progintro.github.io/study/): οδηγός μελέτης βασισμένος στις διαλέξεις,
+  γραμμένος με τη βοήθεια τεχνητής νοημοσύνης - μπορεί να έχει λάθη, οπότε αν κάτι δεν σας
+  φαίνεται σωστό, ελέγξτε το στις διαλέξεις και τις σημειώσεις
 * [Unix Tutorial από τον καθηγητή Παναγιώτη Σταματόπουλο](/assets/pdf/Unix.pdf)
 * [Οδηγίες εγκατάστασης VS Code από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/)
 * [Οδηγίες εγκατάστασης WSL από τον καθηγητή Κώστα Χατζηκοκολάκη](https://k08.chatzi.org/vscode/windows/)
