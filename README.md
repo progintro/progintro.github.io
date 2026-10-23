@@ -61,6 +61,7 @@
 | 12/10 | Διάλεξη 4: Git και Τελεστές | [PDF](/assets/pdf/lec04.pdf) |
 | 16/10 | Διάλεξη 5: Τελεστές και Εντολές | [PDF](/assets/pdf/lec05.pdf) |
 | 19/10 | Διάλεξη 6: Εντολές και Ροή Ελέγχου | [PDF](/assets/pdf/lec06.pdf) |
+| 23/10 | Διάλεξη 7: Επίλυση Προβλημάτων | [PDF](/assets/pdf/lec07.pdf) |
 
 * [Κώδικας διαλέξεων](./code.md)
 
@@ -75,6 +76,7 @@
 | [Φυλλάδιο 0.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab00.pdf) | [lab00.md](https://github.com/progintro/lab-material/tree/main/labs/lab00) | [lab00.html](https://progintro.github.io/lab-material/labs/lab00) |
 | [Φυλλάδιο 1.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab01.pdf) | [lab01.md](https://github.com/progintro/lab-material/tree/main/labs/lab01) | [lab01.html](https://progintro.github.io/lab-material/labs/lab01) |
 | [Φυλλάδιο 2.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab02.pdf) | [lab02.md](https://github.com/progintro/lab-material/tree/main/labs/lab02) | [lab02.html](https://progintro.github.io/lab-material/labs/lab02) |
+| [Φυλλάδιο 3.pdf](https://github.com/progintro/lab-material/releases/latest/download/lab03.pdf) | [lab03.md](https://github.com/progintro/lab-material/tree/main/labs/lab03) | [lab03.html](https://progintro.github.io/lab-material/labs/lab03) |
 
 
 Θες να βοηθήσεις να βελτιώσουμε τα Φυλλάδια; Στείλε μας PR στο [lab-material repo](https://github.com/progintro/lab-material).
