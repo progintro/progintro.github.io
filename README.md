@@ -46,7 +46,7 @@
 | Εργασία | Προθεσμία | Github |
 | --- | --- | --- |
 | [HW0](/assets/pdf/hw0.pdf) | 4 Νοεμβρίου 23:59 | [Invite](https://hw.uoa.gr/courses/progintro/assignments/hw0-2026/accept) |
-| HW1 | 25 Νοεμβρίου 23:59 | TBD |
+| [HW1](/assets/pdf/hw1.pdf) | 25 Νοεμβρίου 23:59 | [Invite](https://hw.uoa.gr/courses/progintro/assignments/hw1-2026/accept) |
 | HW2 | 23 Δεκεμβρίου 23:59 | TBD |
 | HW3 | 15 Ιανουαρίου 23:59 | TBD |
 
